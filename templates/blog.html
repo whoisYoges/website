@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="bloglists">
+    <h1>Recent Posts</h1>
+    {% for page in section.pages %}
+    <hr>
+    <article>
+        <h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
+        <p> <small>{{ page.date }}</small> </p>
+        <p>{{ page.summary | safe }}</p>
+        <p><a href="{{ page.permalink | safe }}">continue reading...</a></p>
+    </article>
+    {% endfor %}
+</div>
+{% endblock content %}

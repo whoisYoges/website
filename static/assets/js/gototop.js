@@ -1,0 +1,1 @@
+function autoShow(){window.scrollY>=200?document.getElementById("gotoTop").classList.add("show"):document.getElementById("gotoTop").classList.remove("show")}function topFunction(){document.body.scrollTop=0,document.documentElement.scrollTop=0}window.addEventListener("scroll",autoShow),window.addEventListener("resize",autoShow);

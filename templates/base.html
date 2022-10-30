@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/images/avatar/avatar.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/assets/images/avatar/avatar.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <meta name="author" content="Castor, whoisYoges@castorIsDead.xyz">
+    <meta name="msapplication-TileColor" content="#141414">
+    <meta name="theme-color" content="#141414">
+    <meta name="msapplication-TileImage" content="/assets/images/avatar/avatar.png">
+    <meta name="twitter:creator" content="@whoisYoges">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:locale" content="en_US">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large max-video-preview:-1">
+    <meta name="reply-to" content="whoisYoges@castorIsDead.xyz">
+    <meta property="og:email" content="whoisYoges@castorIsDead.xyz">
+    <meta name="twitter:site" content="@whoisYoges">
+
+    {% if page.extra.copy_code %}
+    <script src="/assets/js/copy.js"></script>
+    {% else %}
+    {% if section.extra.copy_code %}
+    <script src="/assets/js/copy.js"></script>
+    {% endif %}
+    {% endif %}
+
+    {% if page.extra.keywords %}
+    <meta name="keywords" content="{{ page.extra.keywords }}">
+    {% else %}
+    <meta name="keywords" content="castor, castorIsDead, castor is dead, zero to noob linux, whoisYoges, Yogesh Lamichhane, metis linux, open source, FOSS, linux, geek">
+    {% endif %}
+
+    {% if page.title %}
+    <title>{{ page.title }}</title>
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta name="dc.title" content="{{ page.title }}">
+    {% else %}
+    {% if section.title %}
+    <title>{{ section.title }}</title>
+    <meta name="twitter:title" content="{{ section.title }}">
+    <meta property="og:title" content="{{ section.title }}">
+    <meta name="dc.title" content="{{ section.title }}">
+    {% else %}
+    <title>Castor Is Dead</title>
+    <meta name="twitter:title" content="Castor Is Dead">
+    <meta property="og:title" content="Castor Is Dead">
+    <meta name="dc.title" content="Castor Is Dead">
+    {% endif %}
+    {% endif %}
+
+    {% if page.description %}
+    <meta name="twitter:description" content="{{ page.description }}">
+    <meta property="og:description" content="{{ page.description }}">
+    <meta name="description" content="{{ page.description }}">
+    <meta name="dc.description" content="{{ page.description }}">
+    {% else %}
+    {% if section.description %}
+    <meta name="twitter:description" content="{{ section.description }}">
+    <meta property="og:description" content="{{ section.description }}">
+    <meta name="description" content="{{ section.description }}">
+    <meta name="dc.description" content="{{ section.description }}">
+    {% else %}
+    <meta name="og:description" content="Castor - a Linux enthusiast and free and open source supporter!">
+    <meta name="twitter:description" content="Castor - a Linux enthusiast and free and open source supporter!">
+    <meta name="description" content="Castor - a Linux enthusiast and free and open source supporter!">
+    <meta name="dc.description" content="Castor - a Linux enthusiast and free and open source supporter!">
+    {% endif %}
+    {% endif %}
+
+    {% if page.permalink %}
+    <meta property="twitter:url" content="{{ page.permalink | safe }}">
+    <meta property="og:url" content="{{ page.permalink | safe }}">
+    <meta property="og:type" content="article">
+    <meta name="dc.relation" content="{{ page.permalink | safe }}">
+    {% else %}
+    {% if section.permalink %}
+    <meta property="twitter:url" content="{{ section.permalink | safe }}">
+    <meta property="og:url" content="{{ section.permalink | safe }}">
+    <meta property="og:type" content="website">
+    <meta name="dc.relation" content="{{ section.permalink | safe }}">
+    {% else %}
+    <meta property="twitter:url" content="https://castorIsDead.xyz">
+    <meta property="og:url" content="https://castorIsDead.xyz">
+    <meta property="og:type" content="website">
+    <meta name="dc.relation" content="https://castorIsDead.xyz">
+    {% endif %}
+    {% endif %}
+
+    {% if page.extra.opengraph %}
+    <meta name="og:image" content="{{ get_url(path=page.extra.opengraph ) }}">
+    <meta name="twitter:image:src" content="{{ get_url(path=page.extra.opengraph ) }}">
+    {% else %}
+    <meta name="og:image" content="/assets/images/avatar/avatar.jpg">
+    <meta name="twitter:image:src" content="/assets/images/avatar/avatar.jpg">
+    {% endif %}
+</head>
+<body>
+    <div class="contents">
+        <div class="navbar">
+            <input type="checkbox" id="nav-check">
+            <a href="/" class="logo">Castor</a>
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <a href="/">Home</a>
+                <a href="/about/">About</a>
+                <a href="/blog/">Blog</a>
+                <a href="/contact/">Contact</a>
+            </div>
+        </div>
+        <div class="main" id="main">
+            <div class="twocols">
+                <div class="authorcol">
+                    <img src="/assets/images/avatar/avatar.jpg" alt="author logo" class="authorlogo">
+                    <h3 class="author">Castor</h3>
+                    <p class="about">A Linux enthusiast, FOSS/FLOSS advocate, digital privacy and freedom proponent, self-taught frontend designer and developer, and maintainer at <a href="https://metislinux.org" target="_blank" rel="noopener noreferrer">Metis Linux</a>.</p>
+                    <p>Now since you are here, <br>how about you <a href="https://whoisYoges.123Guestbook.com/" target="_blank" rel="noopener noreferrer">sign my guestbook</a>?</p>
+                </div>
+                <div class="maincol">
+                    {% block content %}{% endblock %}
+                    <div class="footer">
+                        <center>
+                            <hr>
+                            <div class="sociallinks">
+                                <a title="Follow me on Twitter" href="https://twitter.com/whoisYoges" target="_blank" rel="noopener noreferrer" class="eachsociallinks"><img src="/assets/images/social-icons/twitter.png" alt="Twitter"></a>
+                                <a href="https://www.linkedin.com/in/whoisyoges" target="_blank" rel="noopener noreferrer" class="eachsociallinks" title="Follow me on Linkedin"><img src="/assets/images/social-icons/linkedin.png" alt="Linkedin"></a>
+                                <a title="Check my codes on GitHub" href="https://github.com/whoisYoges" target="_blank" rel="noopener noreferrer" class="eachsociallinks"><img src="/assets/images/social-icons/github.png" alt="GitHub"></a>
+                                <a href="/atom.xml" target="_blank" rel="noopener noreferrer" class="eachsociallinks" title="My Rss Feed"><img src="/assets/images/social-icons/rssfeed.png" alt="RSS Feed"></a>
+                            </div>
+                            <p>
+                                <a href="https://landchad.net" target="_blank" rel="noopener noreferrer">
+                                    <img src="/assets/images/gif/landchad.gif" target="_blank" alt="landchad.net">
+                                </a>
+                                <a href="https://wiby.me" target="_blank">
+                                    <img src="/assets/images/gif/wiby.gif" target="_blank" rel="noopener noreferrer" alt="wiby.me">
+                                </a>
+                                <a href="https://sadgrl.online/" target="_blank" rel="noopener noreferrer">
+                                    <img src="/assets/images/gif/sadgrl.gif" alt="sadgrl.online">
+                                </a>
+                                <a href="https://nuange.neocities.org/" target="_blank" rel="noopener noreferrer">
+                                    <img src="/assets/images/gif/nuange.gif" alt="nuange.neocities.org">
+                                </a>
+                            </p>
+                            <p>This website is built using <a href="https://getzola.org" target="_blank" rel="noopener noreferrer">zola</a>.</p>
+                            <p>&copy; Copyright <script> document.write(new Date().getFullYear()); </script> <a href="https://castorIsDead.xyz">Yogesh Lamichhane</a>. All rights reserved.</p>
+                        </center>
+                    </div>
+                </div>
+                {% if page.extra.gotoTop %}
+                <button onclick="topFunction()" id="gotoTop" title="Go to top"> ⬆ </button>
+                <script src="/assets/js/gototop.js"></script>
+                {% else %}
+                {% if section.extra.gotoTop %}
+                <button onclick="topFunction()" id="gotoTop" title="Go to top"> ⬆ </button>
+                <script src="/assets/js/gototop.js"></script>
+                {% endif %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</html>
