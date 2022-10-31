@@ -4,6 +4,7 @@ description = "Connect and chat with Castor."
 page_template = "page.html"
 [extra]
 copy_code = true
+gotoTop = true
 +++
 <blockquote>
 ❝ Introvert people are actually talkative when they get comfortable with someone. ❞
@@ -23,7 +24,6 @@ Leave a message at any of the following:
 
 <div class="highlight">
 <pre><code id="mypubgpgkey">-----BEGIN PGP PUBLIC KEY BLOCK-----
-
 mQINBGNdMq4BEADMizVzxXfaRUVkYrFLs2pUzrcpHSjKuumOHnKeVI8hXQOPLvdK
 2FfnW0q7qTbrPVYcjNe4PCpsVEb1kh5h7McJujs7l1Hkaa1crN3NLF0/cv1nr7qx
 OQElQGiUIps8PD2l0qyrzm6ommdccEtg2yPemg7QZ5DiZWcS7uTNqzfJrWdMABuO

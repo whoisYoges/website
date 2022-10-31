@@ -100,7 +100,7 @@ sub   rsa4096 2022-10-30 [E] [expires: 2022-11-01]
 
 </code></pre>
 
-## Share your public key
+## Sharing your public key
 
 You need to share your public key so that people can encrypt and send any message and files to you which can be decrypted using only your private key.
 
@@ -189,7 +189,7 @@ igXd7Kt4qERYzmc1NLbHG7/H/DV6KyxuJ4dJ
 
 Just copy the output starting from `-----BEGIN PGP PUBLIC KEY BLOCK-----` to `-----END PGP PUBLIC KEY BLOCK-----` and send it to anyone who need to send you an encrypted message.
 
-## Delete the needless key
+## Deleting the needless key
 
 Assuming you don't need the keys anymore or if the key has been expired and you wish to delete it, here's the procedure:
 
@@ -304,8 +304,8 @@ gpg: no ultimately trusted keys found
 - [Introduction to GnuPG](#introduction-to-gnupg)
 - [Prerequisite](#prerequisite)
 - [Generating a GPG key pair](#generating-a-gpg-key-pair)
-- [Sharing your public key](#share-your-public-key)
-- [Deleting needless key pair](#delete-the-needless-key)
+- [Sharing your public key](#sharing-your-public-key)
+- [Deleting needless key](#deleting-the-needless-key)
 
 ### Also Read
 
