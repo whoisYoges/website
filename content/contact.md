@@ -14,7 +14,12 @@ gotoTop = true
 
 Leave a message at any of the following:
 <p>Telegram: <a href="https://t.me/whoisYoges" title="Telegram" class="social" target="_blank" rel="noopener noreferrer">t.me/whoisYoges</a></p>
-<p>Email: <a href="mailto:whoisYoges@castorIsDead.xyz" target="_blank" rel="noopener noreferrer" class="social">whoisYoges@castorIsDead.xyz</a></p>
+<p>Email: <a href="mailto:whoisYoges@castorIsDead.xyz" target="_blank" rel="noopener noreferrer" class="social">whoisYoges [at] castorIsDead [dot] xyz</a></p>
+
+### I'm available on following platforms as well
+<p>Codeberg: <a href="https://codeberg.org/whoisYoges" title="Codeberg" class="social" target="_blank" rel="noopener noreferrer">@whoisYoges</a></p>
+<p>Youtube: <a href="https://youtube.com/@castorisdead" title="YouTube" target="_blank" rel="noopener noreferrer" class="social">Castor Is Dead</a></p>
+<p>Odysee: <a href="https://odysee.com/@whoisYoges:7" title="Odysee" target="_blank" rel="noopener noreferrer" class="social">Castor Is Dead</a></p>
 
 ### Need to send me a super confidential message?
 
@@ -23,7 +28,7 @@ Leave a message at any of the following:
 [Need help? How to send an encrypted message using public GPG key?](/blog/encrypt-and-decrypt-a-file-using-gpg-keys)
 
 <div class="highlight">
-<pre><code id="mypubgpgkey">-----BEGIN PGP PUBLIC KEY BLOCK-----
+<pre><code id="mypubgpgkey">-----BEGIN PGP PUBLIC KEY BLOCK-----<br>
 mQINBGNdMq4BEADMizVzxXfaRUVkYrFLs2pUzrcpHSjKuumOHnKeVI8hXQOPLvdK
 2FfnW0q7qTbrPVYcjNe4PCpsVEb1kh5h7McJujs7l1Hkaa1crN3NLF0/cv1nr7qx
 OQElQGiUIps8PD2l0qyrzm6ommdccEtg2yPemg7QZ5DiZWcS7uTNqzfJrWdMABuO
