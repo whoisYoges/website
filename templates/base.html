@@ -167,6 +167,17 @@
                 {% endif %}
                 {% endif %}
             </div>
+            {% if page.extra.shareable %}
+            {% else %}
+            <div class="thirdcol">
+                <h3>Quick Links</h3>
+                <hr>
+                <p><a href="https://github.com/whoisYoges/lhmpage" target="_blank" rel="noopener noreferrer">Best startpage for a browser in the world.</a></p>
+                <p><a href="https://github.com/casualsnek/onthespot" target="_blank" rel="noopener noreferrer">onthespot - Best open source spotify downloader.</a></p>
+                <p><a href="https://github.com/whoisYoges/local-arch-wiki" target="_blank" rel="noopener noreferrer">Fully offline arch linux wiki.</a></p>
+                <p><a href="https://wallpaper.yogeshlamichhane.com.np" target="_blank" rel="noopener noreferrer">Collection of about 900 unique desktop wallpapers.</a></p>
+                </div>
+            {% endif %}
         </div>
     </div>
 </html>
