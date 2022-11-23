@@ -16,12 +16,6 @@ Leave a message at any of the following:
 <p>Telegram: <a href="https://t.me/whoisYoges" title="Telegram" class="social" target="_blank" rel="noopener noreferrer">t.me/whoisYoges</a></p>
 <p>Email: <a href="mailto:whoisYoges@castorIsDead.xyz" target="_blank" rel="noopener noreferrer" class="social">whoisYoges [at] castorIsDead [dot] xyz</a></p>
 
-### I'm available on following platforms as well
-<p>Codeberg: <a href="https://codeberg.org/whoisYoges" title="Codeberg" class="social" target="_blank" rel="noopener noreferrer">@whoisYoges</a></p>
-<p>Youtube: <a href="https://youtube.com/@castorisdead" title="YouTube" target="_blank" rel="noopener noreferrer" class="social">Castor Is Dead</a></p>
-<p>Odysee: <a href="https://odysee.com/@whoisYoges:7" title="Odysee" target="_blank" rel="noopener noreferrer" class="social">@whoisYoges</a></p>
-<p>LinkedIn: <a href="https://www.linkedin.com/in/whoisyoges" target="_blank" rel="noopener noreferrer">Castor</a></p>
-
 ### Need to send me a super confidential message?
 
 #### Use my public GNU GPG key
