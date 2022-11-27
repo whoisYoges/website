@@ -22,7 +22,7 @@ body {
   align-items: center;
 }
 .nav-container {
-  max-width: 1000px;
+  max-width: 565px;
   padding: 0 1.4rem;
   margin: 0 auto;
 }
@@ -30,16 +30,7 @@ body {
   margin: 0.4em;
   width: 100%;
 }
-.home-link {
-  color: #deb887;
-  text-decoration: none;
-  display: flex;
-  font-weight: 700;
-  font-size: 22px;
-  align-items: center;
-  font-family: "kingthings foundation";
-}
-.navbar-link {
+.home-link, .navbar-link {
   color: #deb887;
   text-decoration: none;
   display: flex;
@@ -114,10 +105,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  left: 0;
   right: 0;
-  margin: 1.4rem;
-  border-radius: 5px;
+  margin: 0;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 #navbar-toggle[aria-expanded="true"] + #navbar-menu .navbar-links {
@@ -362,7 +351,7 @@ hr, .footer p, .shareable p {
   .fixedinthird { width: 23% }
   footer { margin: 0 15px 0 30px; }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
   .threecols { flex-direction: column; }
   .maincol{ display: block; width: 100%; }
   .thirdcol{ float: none; width: 100%; margin: auto; }
