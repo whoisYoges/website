@@ -11,6 +11,7 @@ copy_code = true
 shareable = true
 commentable = true
 keywords = "encrypt file using gpg key, encrypt file with gpg key, encrypt file with gpg public key, encrypt using gpg key, encrypt a file using public key, encrypt and decrypt a file in linux, encrypt a file with gpg key, encrypt a file using a public key, use gpg to encrypt a file, encrypt and decrypt a file using gpg key pair authentication , use gpg key to encrypt file, use gpg key to encrypt text, gpg encrypt file, encrypt and decrypt a file using gpg key pair bash, encrypt and decrypt a file using gpg key pair command, encrypt and decrypt a file using gpg key pair cli, encrypt and decrypt a file using gpg key pair centos, encrypt and decrypt a file using gpg key pair download, encrypt and decrypt a file using gpg key pair denied, encrypt and decrypt a file using gpg key pair directory, decrypt gpg key with passphrase, encrypt and decrypt a file using gpg key pair example, encrypt and decrypt a file using gpg key pair empty, encrypt and decrypt a file using gpg key pair file, encrypt and decrypt a file using gpg key pair github, encrypt and decrypt a file using gpg key pair generation, encrypt with gpg key, encrypt and decrypt a file using gpg key pair name, encrypt and decrypt a file using gpg key pair openssl, encrypt and decrypt a file using gpg key pair password, encrypt and decrypt a file using gpg key pair passphrase, encrypt and decrypt a file using gpg key pair paths, encrypt and decrypt a file using gpg key pair pgp, encrypt and decrypt a file using gpg key pair private, encrypt and decrypt a file using gpg key pair public/private, pgp encrypt a file with public key, how to decrypt a file with a public key	, encrypt and decrypt a file using gpg key pair query, encrypt and decrypt a file using gpg key pair question, encrypt and decrypt a file using gpg key pair remote, encrypt and decrypt a file using gpg key pair rhel, encrypt and decrypt a file using gpg key pair redhat, encrypt and decrypt a file using gpg key pair rsa, decrypt gpg rsa key, encrypt and decrypt a file using gpg key pair gpg, encrypt and decrypt a file using gpg key pair script, encrypt and decrypt a file using gpg key pair setup"
+toc = "<p><a href='#how-does-gpg-work'>How does GPG work?</a></p><p><a href='#prerequisite'>Prerequisite</a></p><p><a href='#encryption-using-a-public-gpg-key'>Encryption</a></p><p><a href='#decrypting-using-private-gpg-key'>Decrypting</a></p><p><a href='#deleting-public-keys-from-keyring'>Removal of Public Key</a></p><h3>Also Read</h3><hr><p><a href='/blog/create-and-delete-gpg-key-pair'>How to encrypt and decrypt any message and files using gpg key pair?</a></p>"
 +++
 If you have someone's public gpg key, you can use gnupg to safely encrypt a file and send it to them over an insecure connection (i.e. the internet). They can then use their private key to decrypt the file you sent.
 <!-- more -->
@@ -284,24 +285,4 @@ uid           [ultimate] Castor (Trusted GPG Key of Castor from https://castorIs
 sub   rsa4096 2022-10-29 [E]
 
 </code></pre>
-</div>
-
-<div class="thirdcol">
-
-### Table of Contents
-
-<hr>
-
-- [How does GPG work?](#how-does-gpg-work)
-- [Prerequisite](#prerequisite)
-- [Encryption](#encryption-using-a-public-gpg-key)
-- [Decrypting](#decrypting-using-private-gpg-key)
-- [Removal of Public Key](#deleting-public-keys-from-keyring)
-
-### Also Read
-
-<hr>
-
-- [How to create and delete gpg key pair?](/blog/create-and-delete-gpg-key-pair)
-
 </div>

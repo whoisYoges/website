@@ -20,22 +20,12 @@
     <meta name="reply-to" content="whoisYoges@castorIsDead.xyz">
     <meta property="og:email" content="whoisYoges@castorIsDead.xyz">
     <meta name="twitter:site" content="@whoisYoges">
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2142469365938148"
-    crossorigin="anonymous"></script>
-    {% if page.extra.copy_code %}
-    <script src="/assets/js/copy.js"></script>
-    {% else %}
-    {% if section.extra.copy_code %}
-    <script src="/assets/js/copy.js"></script>
-    {% endif %}
-    {% endif %}
-
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2142469365938148" crossorigin="anonymous"></script> -->
     {% if page.extra.keywords %}
     <meta name="keywords" content="{{ page.extra.keywords }}">
     {% else %}
     <meta name="keywords" content="castor, castorIsDead, castor is dead, zero to noob linux, whoisYoges, Yogesh Lamichhane, metis linux, open source, FOSS, linux, geek">
     {% endif %}
-
     {% if page.title %}
     <title>{{ page.title }}</title>
     <meta name="twitter:title" content="{{ page.title }}">
@@ -54,7 +44,6 @@
     <meta name="dc.title" content="Castor Is Dead">
     {% endif %}
     {% endif %}
-
     {% if page.description %}
     <meta name="twitter:description" content="{{ page.description }}">
     <meta property="og:description" content="{{ page.description }}">
@@ -73,7 +62,6 @@
     <meta name="dc.description" content="A Linux enthusiast, FOSS/FLOSS advocate, digital privacy and freedom proponent, a self-taught frontend designer and developer, and maintainer at https://metislinux.org.">
     {% endif %}
     {% endif %}
-
     {% if page.permalink %}
     <meta property="twitter:url" content="{{ page.permalink | safe }}">
     <meta property="og:url" content="{{ page.permalink | safe }}">
@@ -92,10 +80,9 @@
     <meta name="dc.relation" content="https://castorIsDead.xyz">
     {% endif %}
     {% endif %}
-
     {% if page.extra.opengraph %}
-    <meta name="og:image" content="{{ get_url(path=page.extra.opengraph ) }}">
-    <meta name="twitter:image:src" content="{{ get_url(path=page.extra.opengraph ) }}">
+    <meta name="og:image" content="{{ get_url(path=page.extra.opengraph ) | safe }}">
+    <meta name="twitter:image:src" content="{{ get_url(path=page.extra.opengraph ) | safe }}">
     {% else %}
     <meta name="og:image" content="/assets/images/avatar/avatar.jpg">
     <meta name="twitter:image:src" content="/assets/images/avatar/avatar.jpg">
@@ -103,83 +90,98 @@
 </head>
 <body>
     <div class="contents">
-        <div class="navbar">
-            <input type="checkbox" id="nav-check">
-            <a href="/" class="logo">Castor</a>
-            <div class="nav-btn">
-                <label for="nav-check">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-            </div>
-            <div class="nav-links" id="nav-links">
-                <a href="/">Home</a>
-                <a href="/about/">About</a>
-                <a href="/blog/">Blog</a>
-                <a href="/contact/">Contact</a>
-            </div>
-        </div>
+        <header id="navbar">
+            <nav class="navbar-container nav-container">
+              <a href="/" class="home-link">HOME</a>
+              <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div id="navbar-menu" aria-labelledby="navbar-toggle">
+                <ul class="navbar-links">
+                  <li class="navbar-item" title="About Castor"><a class="navbar-link" href="/about">ABOUT</a></li>
+                  <li class="navbar-item" title="Castor's Blogs"><a class="navbar-link" href="/blog">BLOG</a></li>
+                  <li class="navbar-item" title="Contact Castor"><a class="navbar-link" href="/contact">CONTACT</a></li>
+                  <li class="navbar-item" title="Some useful resources and links!"><a class="navbar-link" href="/homies">HOMIES</a></li>
+                </ul>
+              </div>
+            </nav>
+        </header>
         <div class="main" id="main">
-            <div class="twocols">
+            <div class="threecols">
                 <div class="authorcol">
                     <img src="/assets/images/avatar/avatar.jpg" alt="author logo" class="authorlogo">
                     <h3 class="author">Castor</h3>
                     <p class="about">A Linux enthusiast, FOSS/FLOSS advocate, digital privacy and freedom proponent, self-taught frontend designer and developer, and maintainer at <a href="https://metislinux.org" target="_blank" rel="noopener noreferrer">Metis Linux</a>.</p>
-                    <p>Do you like nerd things?<br>Checkout my <a href="https://whoisYoges.eu.org" target="_blank" rel="noopener noreferrer">terminal-like website</a>!</p>
+                    <p>Do you like nerd stuff?<br>Checkout my <a href="https://whoisYoges.eu.org" target="_blank" rel="noopener noreferrer">terminal-like website</a>!</p>
                     <p>Now since you are here, <br>how about you <a href="https://whoisYoges.123Guestbook.com/" target="_blank" rel="noopener noreferrer">sign my guestbook</a>?</p>
                 </div>
                 <div class="maincol">
                     {% block content %}{% endblock %}
-                    <div class="footer">
-                        <center>
-                            <hr>
-                            <div class="sociallinks">
-                                <a title="Follow me on Mastodon" href="https://fosstodon.org/@whoisYoges" target="_blank" rel="noopener noreferrer" class="eachsociallinks"><img src="/assets/images/social-icons/mastodon.png" alt="Mastodon"></a>
-                                <a title="Follow me on Twitter" href="https://twitter.com/whoisYoges" target="_blank" rel="noopener noreferrer" class="eachsociallinks"><img src="/assets/images/social-icons/twitter.png" alt="Twitter"></a>
-                                <a title="Check my codes on GitHub" href="https://github.com/whoisYoges" target="_blank" rel="noopener noreferrer" class="eachsociallinks"><img src="/assets/images/social-icons/github.png" alt="GitHub"></a>
-                                <a href="/atom.xml" target="_blank" rel="noopener noreferrer" class="eachsociallinks" title="My Rss Feed"><img src="/assets/images/social-icons/rssfeed.png" alt="RSS Feed"></a>
-                            </div>
-                            <p>
-                                <a href="https://landchad.net" target="_blank" rel="noopener noreferrer">
-                                    <img src="/assets/images/gif/landchad.gif" target="_blank" alt="landchad.net">
-                                </a>
-                                <a href="https://wiby.me" target="_blank">
-                                    <img src="/assets/images/gif/wiby.gif" target="_blank" rel="noopener noreferrer" alt="wiby.me">
-                                </a>
-                                <a href="https://sadgrl.online/" target="_blank" rel="noopener noreferrer">
-                                    <img src="/assets/images/gif/sadgrl.gif" alt="sadgrl.online">
-                                </a>
-                                <a href="https://nuange.neocities.org/" target="_blank" rel="noopener noreferrer">
-                                    <img src="/assets/images/gif/nuange.gif" alt="nuange.neocities.org">
-                                </a>
-                            </p>
-                            <p>This website is built using <a href="https://getzola.org" target="_blank" rel="noopener noreferrer">zola</a>.</p>
-                            <p>&copy; Copyright <script> document.write(new Date().getFullYear()); </script> <a href="/">Yogesh Lamichhane</a>. All rights reserved.</p>
-                        </center>
+                </div>
+                <div class="thirdcol">
+                    {% if page.extra.toc %}
+                    <div class="fixedinthird">
+                    <h3>Table of Contents</h3>
+                    <hr>
+                    {{ page.extra.toc | safe }}
                     </div>
+                    {% else %}
+                    <h3>Quick Links</h3>
+                    <hr>
+                    <p><a href="https://github.com/whoisYoges/lhmpage" target="_blank" rel="noopener noreferrer">Best startpage for a browser in the world.</a></p>
+                    <p><a href="https://github.com/casualsnek/onthespot" target="_blank" rel="noopener noreferrer">onthespot - Best open source spotify downloader.</a></p>
+                    <p><a href="https://github.com/whoisYoges/local-arch-wiki" target="_blank" rel="noopener noreferrer">Fully offline arch linux wiki.</a></p>
+                    <p><a href="https://wallpaper.castorIsDead.xyz" target="_blank" rel="noopener noreferrer">Collection of about 900 unique desktop wallpapers.</a></p>
+                    {% endif %}
                 </div>
-                {% if page.extra.gotoTop %}
-                <button onclick="topFunction()" id="gotoTop" title="Go to top"> ^ </button>
-                <script src="/assets/js/gototop.js"></script>
-                {% else %}
-                {% if section.extra.gotoTop %}
-                <button onclick="topFunction()" id="gotoTop" title="Go to top"> ^ </button>
-                <script src="/assets/js/gototop.js"></script>
-                {% endif %}
-                {% endif %}
             </div>
-            {% if page.extra.shareable %}
-            {% else %}
-            <div class="thirdcol">
-                <h3>Quick Links</h3>
-                <hr>
-                <p><a href="https://github.com/whoisYoges/lhmpage" target="_blank" rel="noopener noreferrer">Best startpage for a browser in the world.</a></p>
-                <p><a href="https://github.com/casualsnek/onthespot" target="_blank" rel="noopener noreferrer">onthespot - Best open source spotify downloader.</a></p>
-                <p><a href="https://github.com/whoisYoges/local-arch-wiki" target="_blank" rel="noopener noreferrer">Fully offline arch linux wiki.</a></p>
-                <p><a href="https://wallpaper.castorIsDead.xyz" target="_blank" rel="noopener noreferrer">Collection of about 900 unique desktop wallpapers.</a></p>
-                </div>
-            {% endif %}
         </div>
     </div>
+    <footer>
+        <div class="footer">
+                <hr>
+                <div class="sociallinks">
+                    <a title="Follow me on Mastodon" href="https://fosstodon.org/@whoisYoges" target="_blank" rel="noopener noreferrer" class="eachsociallinks"><img src="/assets/images/social-icons/mastodon.png" alt="Mastodon"></a>
+                    <a title="Follow me on Twitter" href="https://twitter.com/whoisYoges" target="_blank" rel="noopener noreferrer" class="eachsociallinks"><img src="/assets/images/social-icons/twitter.png" alt="Twitter"></a>
+                    <a title="Check my codes on GitHub" href="https://github.com/whoisYoges" target="_blank" rel="noopener noreferrer" class="eachsociallinks"><img src="/assets/images/social-icons/github.png" alt="GitHub"></a>
+                    <a href="/atom.xml" target="_blank" rel="noopener noreferrer" class="eachsociallinks" title="My Rss Feed"><img src="/assets/images/social-icons/rssfeed.png" alt="RSS Feed"></a>
+                </div>
+                <p>
+                    <a href="https://landchad.net" target="_blank" rel="noopener noreferrer">
+                        <img src="/assets/images/gif/landchad.gif" target="_blank" alt="landchad.net">
+                    </a>
+                    <a href="https://wiby.me" target="_blank">
+                        <img src="/assets/images/gif/wiby.gif" target="_blank" rel="noopener noreferrer" alt="wiby.me">
+                    </a>
+                    <a href="https://sadgrl.online/" target="_blank" rel="noopener noreferrer">
+                        <img src="/assets/images/gif/sadgrl.gif" alt="sadgrl.online">
+                    </a>
+                    <a href="https://nuange.neocities.org/" target="_blank" rel="noopener noreferrer">
+                        <img src="/assets/images/gif/nuange.gif" alt="nuange.neocities.org">
+                    </a>
+                </p>
+                <p>This website is built using <a href="https://getzola.org" target="_blank" rel="noopener noreferrer">zola</a>.</p>
+                <p>&copy; Copyright <script> document.write(new Date().getFullYear()); </script> <a href="/">Yogesh Lamichhane</a>. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="/assets/js/menu.js"></script>
+    {% if page.extra.gotoTop %}
+    <button onclick="topFunction()" id="gotoTop" title="Go to top"> ^ </button>
+    <script src="/assets/js/gototop.js"></script>
+    {% else %}
+    {% if section.extra.gotoTop %}
+    <button onclick="topFunction()" id="gotoTop" title="Go to top"> ^ </button>
+    <script src="/assets/js/gototop.js"></script>
+    {% endif %}
+    {% endif %}
+    {% if page.extra.copy_code %}
+    <script src="/assets/js/copy.js"></script>
+    {% else %}
+    {% if section.extra.copy_code %}
+    <script src="/assets/js/copy.js"></script>
+    {% endif %}
+    {% endif %}
+    </body>
 </html>
