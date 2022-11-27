@@ -365,8 +365,8 @@ hr, .footer p, .shareable p {
 @media screen and (max-width: 650px) {
   .threecols { flex-direction: column; }
   .maincol{ display: block; width: 100%; }
-  .thirdcol{ float: none; width: 100%; height: auto; margin: auto; }
-  .fixedinthird { top: auto; position: relative; width: 100% }
+  .thirdcol{ float: none; width: 100%; margin: auto; }
+  .fixedinthird { top: auto; position: relative; width: 100%; height: auto;  }
 }
 
 @font-face {
