@@ -1,6 +1,7 @@
 +++
 title = "Encrypt and decrypt a file using GPG keys"
 date = "2022-10-29"
+updated = "2022-12-07"
 page_template = "page.html"
 draft = false
 description = "If you have someone's public gpg key, you can use gnupg to safely encrypt a file and send it to them over an insecure connection (i.e. the internet). They can then use their private key to decrypt the file you sent."
@@ -49,12 +50,11 @@ The public key on the other hand is meant to be given to others, or anyone you w
 
 ## Encryption using a public GPG key
 
-### Save the public key in a file, say `yoges_pubgpg.acs`
+### Save the public key in a file, say `yoges_pubgpg.asc`
 
-Contents inside `yoges_pubgpg.acs` should seem something like below:
+Contents inside `yoges_pubgpg.asc` should seem something like below:
 
-<pre class="overflowy imagecode"><code class="imagecode">-----BEGIN PGP PUBLIC KEY BLOCK-----
-
+<pre class="overflowy imagecode"><code class="imagecode">-----BEGIN PGP PUBLIC KEY BLOCK-----<br>
 mQINBGNd8zcBEACpJLknkdJmlJ9FWnyc6W/mMBuv/DD9ECF4DB45+2mFhPc21bYW
 nKHZosvtmwBIYHArU6xlHkaOlL2K3Rda7zzwRXB+LzQNqWv0GxN2ukzbS3yixGBg
 s8yDTa4SM1KFBXuLe6j+x0t0/M7p4yD0tTtK1zCIheel2pkWZ8djHqzvboj34ZN9
@@ -110,12 +110,12 @@ igXd7Kt4qERYzmc1NLbHG7/H/DV6KyxuJ4dJ
 ### Add the public GPG key to your keyring
 
 <div class="highlight">
-<pre><code id="addpubgpgkey">gpg --import yoges_pubgpg.acs</code>
+<pre><code id="addpubgpgkey">gpg --import yoges_pubgpg.asc</code>
 <button id="addpubgpgkeybtn" type="button" onclick="copyCode('addpubgpgkey','addpubgpgkeybtn')" value="click">Copy</button>
 </pre>
 </div>
 
-<pre class="imagecode"><code class="imagecode">$ gpg --import yoges_pubgpg.acs
+<pre class="imagecode"><code class="imagecode">$ gpg --import yoges_pubgpg.asc
 gpg: key 33C05B4624890348: public key "yogesh (just a test key) &lt;castor@whoisyoges.eu.org&gt;" imported
 gpg: Total number processed: 1
 gpg:               imported: 1
@@ -139,8 +139,7 @@ If you want to keep a file away from prying eyes and ensure that it comes from t
 pub   rsa4096 2022-10-29 [SC]
       D8C96133251FFDCC8ACFE645AC5C5F04930D8ACF
 uid           [ultimate] Castor (Trusted GPG Key of Castor from https://castorIsDead.xyz; send map of hidden treasure to castor!) &lt;whoisYoges@castorIsDead.xyz&gt;
-sub   rsa4096 2022-10-29 [E]
-
+sub   rsa4096 2022-10-29 [E]<br>
 pub   rsa4096 2022-10-30 [SC] [expires: 2022-11-01]
       036A752DE9DF5516B33E87BE33C05B4624890348
 uid           [ unknown] yogesh (just a test key) &lt;castor@whoisyoges.eu.org&gt;
@@ -157,27 +156,21 @@ The `[ultimate]` one is your personal key. And the other `[unknown]` is the publ
 </pre>
 </div>
 
-<pre class="imagecode"><code class="imagecode">$ gpg --sign-key 036A752DE9DF5516B33E87BE33C05B4624890348
-
+<pre class="imagecode"><code class="imagecode">$ gpg --sign-key 036A752DE9DF5516B33E87BE33C05B4624890348<br>
 pub  rsa4096/33C05B4624890348
      created: 2022-10-30  expires: 2022-11-01  usage: SC
      trust: unknown       validity: unknown
 sub  rsa4096/58A64F87EEA58B99
      created: 2022-10-30  expires: 2022-11-01  usage: E
-[ unknown] (1). yogesh (just a test key) &lt;castor@whoisyoges.eu.org&gt;
-
-
+[ unknown] (1). yogesh (just a test key) &lt;castor@whoisyoges.eu.org&gt;<br><br>
 pub  rsa4096/33C05B4624890348
      created: 2022-10-30  expires: 2022-11-01  usage: SC
      trust: unknown       validity: unknown
- Primary key fingerprint: 036A 752D E9DF 5516 B33E  87BE 33C0 5B46 2489 0348
-&nbsp;
-     yogesh (just a test key) &lt;castor@whoisyoges.eu.org&gt;
-
+ Primary key fingerprint: 036A 752D E9DF 5516 B33E  87BE 33C0 5B46 2489 0348<br>
+     yogesh (just a test key) &lt;castor@whoisyoges.eu.org&gt;<br>
 This key is due to expire on 2022-11-01.
 Are you sure that you want to sign this key with your
-key "Castor (Trusted GPG Key of Castor from https://castorIsDead.xyz; send map of hidden treasure to castor!) &lt;whoisYoges@castorIsDead.xyz&gt;" (AC5C5F04930D8ACF)
-
+key "Castor (Trusted GPG Key of Castor from https://castorIsDead.xyz; send map of hidden treasure to castor!) &lt;whoisYoges@castorIsDead.xyz&gt;" (AC5C5F04930D8ACF)<br>
 Really sign? (y/N) y
 </code></pre>
 
@@ -188,8 +181,7 @@ After signing the public key, the `[unknown]` key is signed and shown as `[ full
 pub   rsa4096 2022-10-29 [SC]
       D8C96133251FFDCC8ACFE645AC5C5F04930D8ACF
 uid           [ultimate] Castor (Trusted GPG Key of Castor from https://castorIsDead.xyz; send map of hidden treasure to castor!) &lt;whoisYoges@castorIsDead.xyz&gt;
-sub   rsa4096 2022-10-29 [E]
-
+sub   rsa4096 2022-10-29 [E]<br>
 pub   rsa4096 2022-10-30 [SC] [expires: 2022-11-01]
       036A752DE9DF5516B33E87BE33C05B4624890348
 uid           [  full  ] yogesh (just a test key) &lt;castor@whoisyoges.eu.org&gt;
@@ -249,8 +241,7 @@ Assuming you don't need the key any more and wish to delete it:
 pub   rsa4096 2022-10-29 [SC]
       D8C96133251FFDCC8ACFE645AC5C5F04930D8ACF
 uid           [ultimate] Castor (Trusted GPG Key of Castor from https://castorIsDead.xyz; send map of hidden treasure to castor!) &lt;whoisYoges@castorIsDead.xyz&gt;
-sub   rsa4096 2022-10-29 [E]
-
+sub   rsa4096 2022-10-29 [E]<br>
 pub   rsa4096 2022-10-30 [SC] [expires: 2022-11-01]
       036A752DE9DF5516B33E87BE33C05B4624890348
 uid           [  full  ] yogesh (just a test key) &lt;castor@whoisyoges.eu.org&gt;

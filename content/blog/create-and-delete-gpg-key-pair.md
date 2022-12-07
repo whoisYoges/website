@@ -1,6 +1,7 @@
 +++
 title = "Create and delete GPG keypair | Introduction to GnuPG "
 date = "2022-10-30"
+updated = "2022-12-07"
 page_template = "page.html"
 draft = false
 description = "GnuPG, popularly known as GPG, is an extremely versatile tool, being widely used as the industry standard for encryption of things like emails, messages, files, or just anything you need to send to someone securely."
@@ -48,8 +49,7 @@ To start working with GPG you need to create a key pair for yourself.
 <pre class="overflowy imagecode"><code class="imagecode">$ gpg --full-generate-key
 gpg (GnuPG) 2.2.39; Copyright (C) 2022 g10 Code GmbH
 This is free software: you are free to change and redistribute it.
-There is NO WARRANTY, to the extent permitted by law.
-
+There is NO WARRANTY, to the extent permitted by law.<br>
 gpg: directory '/home/castor/.gnupg' created
 gpg: keybox '/home/castor/.gnupg/pubring.kbx' created
 Please select what kind of key you want:
@@ -70,16 +70,13 @@ Please specify how long the key should be valid.
       &lt;n&gt;y = key expires in n years
 Key is valid for? (0) 2
 Key expires at Tue 01 Nov 2022 09:29:11 AM +0545
-Is this correct? (y/N) y
-
-GnuPG needs to construct a user ID to identify your key.
-
+Is this correct? (y/N) y<br>
+GnuPG needs to construct a user ID to identify your key.<br>
 Real name: yogesh
 Email address: castor@whoisyoges.eu.org
 Comment: just a test key
 You selected this USER-ID:
-    "yogesh (just a test key) &lt;castor@whoisyoges.eu.org&gt;"
-
+    "yogesh (just a test key) &lt;castor@whoisyoges.eu.org&gt;"<br>
 Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit? O
 We need to generate a lot of random bytes. It is a good idea to perform
 some other action (type on the keyboard, move the mouse, utilize the
@@ -92,8 +89,7 @@ generator a better chance to gain enough entropy.
 gpg: /home/castor/.gnupg/trustdb.gpg: trustdb created
 gpg: directory '/home/castor/.gnupg/openpgp-revocs.d' created
 gpg: revocation certificate stored as '/home/castor/.gnupg/openpgp-revocs.d/036A752DE9DF5516B33E87BE33C05B4624890348.rev'
-public and secret key created and signed.
-
+public and secret key created and signed.<br>
 pub   rsa4096 2022-10-30 [SC] [expires: 2022-11-01]
       036A752DE9DF5516B33E87BE33C05B4624890348
 uid                      yogesh (just a test key) &lt;castor@whoisyoges.eu.org&gt;
@@ -134,8 +130,7 @@ sub   rsa4096 2022-10-30 [E] [expires: 2022-11-01]
 </div>
 
 <pre class="overflowy imagecode"><code class="imagecode">$ gpg --armor --export 036A752DE9DF5516B33E87BE33C05B4624890348
------BEGIN PGP PUBLIC KEY BLOCK-----
-
+-----BEGIN PGP PUBLIC KEY BLOCK-----<br>
 mQINBGNd8zcBEACpJLknkdJmlJ9FWnyc6W/mMBuv/DD9ECF4DB45+2mFhPc21bYW
 nKHZosvtmwBIYHArU6xlHkaOlL2K3Rda7zzwRXB+LzQNqWv0GxN2ukzbS3yixGBg
 s8yDTa4SM1KFBXuLe6j+x0t0/M7p4yD0tTtK1zCIheel2pkWZ8djHqzvboj34ZN9

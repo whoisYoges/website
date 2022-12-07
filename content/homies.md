@@ -18,4 +18,6 @@ Resources and Sites That I find useful or that interests me.
 - [Kanye2049](https://kanye2049.com)
 - [The Useless Web](https://theuselessweb.com)
 - [pwnwriter's palace](https://pwnwriter.xyz)
-
+- [~vern](https://vern.cc)
+- [musicForProgramming();](https://musicforprogramming.net)
+- [POSIX Shell and Utilities Quick Reference](https://shellhaters.org)
