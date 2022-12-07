@@ -13,8 +13,8 @@ gotoTop = true
 ### So, Let's have a chat.
 
 Leave a message at any of the following:
-<p>Telegram: <a href="https://t.me/whoisyoges" title="Telegram" class="social" target="_blank" rel="noopener noreferrer">t.me/whoisyoges</a></p>
-<p>Email: <a href="mailto:whoisyoges@castorisdead.xyz" target="_blank" rel="noopener noreferrer" class="social">whoisyoges @ castorisdead.xyz</a></p>
+<p>Telegram: <a href="https://t.me/whoisyoges" title="Telegram" class="social" target="_blank" rel="noopener nofollow noreferrer">t.me/whoisyoges</a></p>
+<p>Email: <a href="mailto:whoisyoges@castorisdead.xyz" target="_blank" rel="noopener nofollow noreferrer" class="social">whoisyoges @ castorisdead.xyz</a></p>
 
 ### Need to send me a super confidential message?
 

@@ -13,9 +13,9 @@
     {% if page.extra.shareable %}
     <div class="shareable">
         <p class="shareon">SHARE ON</p>
-        <a title="Share on facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ page.permalink | safe }}" target="_blank" rel="noopener noreferrer" class="social"><img src="/assets/images/social-icons/facebook.png" alt="facebook icon"> Facebook</a>
-        <a title="Share on twitter" href="https://twitter.com/intent/tweet?url={{ page.permalink | safe }}" target="_blank" rel="noopener noreferrer" class="social"><img src="/assets/images/social-icons/twitter.png" alt="twitter icon"> Twitter</a>
-        <a href="https://www.linkedin.com/share?url={{ page.permalink | safe }}" target="_blank" rel="noopener noreferrer" class="social" title="Share on linkedin"><img src="/assets/images/social-icons/linkedin.png" alt="linkedin icon"> LinkedIn</a>
+        <a title="Share on facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ page.permalink | safe }}" target="_blank" rel="noopener nofollow noreferrer" class="social"><img src="/assets/images/social-icons/facebook.png" alt="facebook icon"> Facebook</a>
+        <a title="Share on twitter" href="https://twitter.com/intent/tweet?url={{ page.permalink | safe }}" target="_blank" rel="noopener nofollow noreferrer" class="social"><img src="/assets/images/social-icons/twitter.png" alt="twitter icon"> Twitter</a>
+        <a href="https://www.linkedin.com/share?url={{ page.permalink | safe }}" target="_blank" rel="noopener nofollow noreferrer" class="social" title="Share on linkedin"><img src="/assets/images/social-icons/linkedin.png" alt="linkedin icon"> LinkedIn</a>
         <p><a href="/blog/">VIEW ALL POSTS</a></p>
     </div>
     {% endif %}

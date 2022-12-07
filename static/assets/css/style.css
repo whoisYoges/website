@@ -244,6 +244,14 @@ img {
 .blogcontents h2 {
   padding-top: 40px;
 }
+.donate {
+  text-align: center;
+}
+.donate p {
+  max-width: 600px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
 
 footer {
   text-align: center;
