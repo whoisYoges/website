@@ -22,7 +22,7 @@ body {
   align-items: center;
 }
 .nav-container {
-  max-width: 565px;
+  max-width: 680px;
   padding: 0 1.4rem;
   margin: 0 auto;
 }
@@ -324,7 +324,7 @@ hr, .footer p, .shareable p {
   background: #49db1c;
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 750px) {
   #navbar-toggle,
   #navbar-toggle[aria-expanded="true"] {
     display: none;

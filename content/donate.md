@@ -6,7 +6,9 @@ page_template = "page.html"
 
 ## Donations
 
-A donation would help me stay up and running for longer! I currently only take donations in BTC and XMR.
+Since I'm a jobless college dropout and don't have any particular source of income, donate and help me setup and maintain a personal home server space for hosting libre software instances. ([Checkout my preference of programs!](/programs))
+
+I currently only take donations in BTC and XMR.
 
 If you know of another good way to take donations, either in cryptocurrency or traditional banking, please [contact me](/contact/) about adding it.
 
