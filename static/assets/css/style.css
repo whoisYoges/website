@@ -287,6 +287,23 @@ hr, .footer p, .shareable p {
 .eachsociallinks img {
   max-width: 25px;
 }
+.webrings {
+  text-align: center;
+}
+.webrings h3 {
+  display: flex;
+  margin: 30px auto ;
+}
+.webrings a {
+  display: inline-block;
+  margin: 5px;
+}
+.webrings img {
+  width: 88px;
+  height: 31px;
+  border: 2px solid #3c3e42;
+}
+
 #gotoTop {
   visibility: hidden;
   position: fixed;
