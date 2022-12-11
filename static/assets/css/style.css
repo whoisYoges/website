@@ -6,6 +6,7 @@ body {
   color: #ffffff;
   font-family: "JetBrains Mono", "monospace";
   margin: 0;
+  position: relative;
 }
 #navbar {
   position: fixed;
@@ -303,14 +304,16 @@ hr, .footer p, .shareable p {
   height: 31px;
   border: 2px solid #3c3e42;
 }
-
-#gotoTop {
-  visibility: hidden;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  border: none;
+.gototop {
+  position: absolute;
+  top: 120vh;
+  bottom: 2rem;
+  right: 2rem;
+}
+.gototoplink {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90vh;
   background-color: #08356c;
   color: white;
   cursor: pointer;
@@ -319,14 +322,9 @@ hr, .footer p, .shareable p {
   font-size: 20px;
   font-weight: bold;
 }
-#gotoTop.show {
-  visibility: visible;
-  opacity: 1;
+.gototoplink:hover {
+  background-color: #555;
 }
-#gotoTop:hover {
-  background-color: #555555;
-}
-
 ::-webkit-scrollbar {
   width: 4px;
 }
@@ -382,6 +380,7 @@ hr, .footer p, .shareable p {
   .maincol{ display: block; width: 100%; }
   .thirdcol{ float: none; width: 100%; margin: auto; }
   .fixedinthird { top: auto; position: relative; width: 100%; height: auto;  }
+  .gototop { bottom: 8rem;}
 }
 
 @font-face {

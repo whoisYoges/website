@@ -158,12 +158,14 @@
     </footer>
     <script src="/assets/js/menu.js"></script>
     {% if page.extra.gotoTop %}
-    <button onclick="topFunction()" id="gotoTop" title="Go to top"> ^ </button>
-    <script src="/assets/js/gototop.js"></script>
+    <div class="gototop">
+        <a class="gototoplink" href="#"> ^ </a>
+    </div>
     {% else %}
     {% if section.extra.gotoTop %}
-    <button onclick="topFunction()" id="gotoTop" title="Go to top"> ^ </button>
-    <script src="/assets/js/gototop.js"></script>
+    <div class="gototop">
+        <a class="gototoplink" href="#"> ^ </a>
+    </div>
     {% endif %}
     {% endif %}
     {% if page.extra.copy_code %}
