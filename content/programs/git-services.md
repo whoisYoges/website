@@ -3,7 +3,6 @@ title = "Git Services Comparison"
 description = "Comparison, my preference and recommendation of programs"
 page_template = "page.html"
 [extra]
-opengraph = "/assets/images/programs/git/git.jpg"
 comparison = true
 +++
 

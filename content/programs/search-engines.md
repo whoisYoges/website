@@ -3,7 +3,6 @@ title = "Search Engines Comparison"
 description = "Comparison, my preference and recommendation of programs"
 page_template = "page.html"
 [extra]
-opengraph = "/assets/images/programs/search-engine/search-engine.jpg"
 comparison = true
 +++
 
