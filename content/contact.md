@@ -22,6 +22,8 @@ Leave a message at any of the following:
 
 [Need help? How to send an encrypted message using public GPG key?](/blog/encrypt-and-decrypt-a-file-using-gpg-keys)
 
+FRP: 9A4B 7108 57AD F81C 883B  587A 37DB 5BFE 6ED7 9AD5
+
 <div class="highlight">
 <pre><code id="mypubgpgkey">-----BEGIN PGP PUBLIC KEY BLOCK-----<br>
 mQINBGOQU8ABEAC4xJagCzR9hSZNP7q8ukRV387R8cHOfXCSRQYzFWAhfo5HwxJv
