@@ -43,3 +43,5 @@ Resources and Sites That I find useful, interesting, unique or cool.
 - [The Darktheme Club](https://darktheme.club/)
 - [Doma.in Na.me Ha.ck Cl.ub](https://namehack.club/)
 - [WEB MUSIC APPS FOR EVERYBODY ](https://webmusic.pages.dev)
+- [/g/'s based sites](https://based.coom.tech/)
+- [~tildevarsh](https://tildevarsh.in/)
