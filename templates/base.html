@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -91,26 +92,18 @@
     {% endif %}
 
 </head>
+
 <body>
     <div class="contents">
         <header id="navbar">
-            <nav class="navbar-container nav-container">
-                <a href="/" class="home-link">HOME</a>
-                <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <div id="navbar-menu" aria-labelledby="navbar-toggle">
-                <ul class="navbar-links">
-                    <li class="navbar-item" title="About Castor"><a class="navbar-link" href="/about">ABOUT</a></li>
-                    <li class="navbar-item" title="Castor's Blogs"><a class="navbar-link" href="/blog">BLOG</a></li>
-                    <li class="navbar-item" title="Contact Castor"><a class="navbar-link" href="/contact">CONTACT</a></li>
-                    <li class="navbar-item" title="Donate To Castor"><a class="navbar-link" href="/donate/">DONATE</a></li>
-                    <li class="navbar-item" title="Some useful resources and links!"><a class="navbar-link" href="/homies">HOMIES</a></li>
-                </ul>
-                </div>
-            </nav>
+            <a class="navbar-link" href="/">HOME</a>
+            <a class="navbar-link" href="/about">ABOUT</a>
+            <a class="navbar-link" href="/blog">BLOG</a>
+            <a class="navbar-link" href="/contact">CONTACT</a>
+            <a class="navbar-link" href="/donate/">DONATE</a>
+            <a class="navbar-link" href="/homies">HOMIES</a>
+            <a class="navbar-link" href="/programs">PROGRAMS</a>
+            <a class="navbar-link" href="/others">OTHERS</a>
         </header>
         <div class="main" id="main">
             <div class="threecols">
@@ -118,9 +111,7 @@
                     <img src="/assets/images/avatar/avatar.jpg" alt="author logo" class="authorlogo">
                     <h3 class="author">Castor</h3>
                     <p class="about">A Linux enthusiast, FOSS/FLOSS advocate, digital privacy and freedom proponent, and self-taught frontend designer and developer.</p>
-                    <p>Do you like nerd stuff?<br>Checkout my <a href="https://whoisYoges.eu.org" target="_blank" rel="noopener nofollow noreferrer">terminal-like website</a>!</p>
                     <p>Now since you are here, <br>how about you <a href="https://whoisYoges.123Guestbook.com/" target="_blank" rel="noopener nofollow noreferrer">sign my guestbook</a>?</p>
-                    <p>Checkout my <a href="/programs/">preference and recommendation of programs</a></p>
                 </div>
                 <div class="maincol">
                     {% block content %}{% endblock %}
@@ -128,35 +119,25 @@
                 <div class="thirdcol">
                     {% if page.extra.toc %}
                     <div class="fixedinthird">
-                    <h3>Table of Contents</h3>
-                    <hr>
-                    {{ page.extra.toc | safe }}
+                        <h3>Table of Contents</h3>
+                        <hr>
+                        {{ page.extra.toc | safe }}
                     </div>
-                    {% else %}
-                    <h3>Quick Links</h3>
-                    <hr>
-                    <p><a href="https://github.com/whoisYoges/lhmpage" target="_blank" rel="noopener nofollow noreferrer">Best startpage for a browser in the world.</a></p>
-                    <p><a href="https://github.com/casualsnek/onthespot" target="_blank" rel="noopener nofollow noreferrer">onthespot - Best open source spotify downloader.</a></p>
-                    <p><a href="https://github.com/whoisYoges/local-arch-wiki" target="_blank" rel="noopener nofollow noreferrer">Fully offline arch linux wiki.</a></p>
-                    <p><a href="https://wallpaper.castorIsDead.xyz" target="_blank" rel="noopener nofollow noreferrer">Collection of about 900 unique desktop wallpapers.</a></p>
                     {% endif %}
                 </div>
             </div>
         </div>
     </div>
     <footer>
-        <div class="footer">
-                <hr>
-                <div class="sociallinks">
-                    <a title="Follow me on Mastodon" href="https://fosstodon.org/@whoisYoges" target="_blank" rel="noopener nofollow noreferrer" class="eachsociallinks"><img src="/assets/images/social-icons/mastodon.png" alt="Mastodon"></a>
-                    <a title="Follow me on Twitter" href="https://twitter.com/whoisYoges" target="_blank" rel="noopener nofollow noreferrer" class="eachsociallinks"><img src="/assets/images/social-icons/twitter.png" alt="Twitter"></a>
-                    <a title="Check my codes on GitHub" href="https://github.com/whoisYoges" target="_blank" rel="noopener nofollow noreferrer" class="eachsociallinks"><img src="/assets/images/social-icons/github.png" alt="GitHub"></a>
-                    <a href="/atom.xml" target="_blank" rel="noopener nofollow noreferrer" class="eachsociallinks" title="My Rss Feed"><img src="/assets/images/social-icons/rssfeed.png" alt="RSS Feed"></a>
-                </div>
-                <p>Made with &#128153; in <a href="https://wikiless.org/wiki/Nepal" target="_blank" rel="noopener nofollow noreferrer">Nepal</a> | Powered by <a href="https://getzola.org" target="_blank" rel="noopener nofollow noreferrer">zola</a>.</p>
+        <hr>
+        <div class="sociallinks">
+            <a title="Follow me on Mastodon" href="https://fosstodon.org/@whoisYoges" target="_blank" rel="noopener nofollow noreferrer" class="eachsociallinks"><img src="/assets/images/social-icons/mastodon.png" alt="Mastodon"></a>
+            <a title="Follow me on Twitter" href="https://twitter.com/whoisYoges" target="_blank" rel="noopener nofollow noreferrer" class="eachsociallinks"><img src="/assets/images/social-icons/twitter.png" alt="Twitter"></a>
+            <a title="Check my codes on GitHub" href="https://github.com/whoisYoges" target="_blank" rel="noopener nofollow noreferrer" class="eachsociallinks"><img src="/assets/images/social-icons/github.png" alt="GitHub"></a>
+            <a href="/atom.xml" target="_blank" rel="noopener nofollow noreferrer" class="eachsociallinks" title="My Rss Feed"><img src="/assets/images/social-icons/rssfeed.png" alt="RSS Feed"></a>
         </div>
+        <p>Made with &#128153; in <a href="https://wikiless.org/wiki/Nepal" target="_blank" rel="noopener nofollow noreferrer">Nepal</a> | Powered by <a href="https://getzola.org" target="_blank" rel="noopener nofollow noreferrer">zola</a>.</p>
     </footer>
-    <script src="/assets/js/menu.js"></script>
     {% if page.extra.gotoTop %}
     <div class="gototop">
         <a class="gototoplink" href="#"> ^ </a>
@@ -175,5 +156,6 @@
     <script src="/assets/js/copy.js"></script>
     {% endif %}
     {% endif %}
-    </body>
+</body>
+
 </html>
