@@ -5,32 +5,16 @@ template = "comparison.html"
 page_template = "page.html"
 +++
 
-# Free Frontends and Alternatives To:
-
-### My Preference of Programs and Softwares.
-
-- #### Youtube: Use one of the instances of [invidious](https://docs.invidious.io/instances/). (I am currently using [cloudtube](https://sr.ht/~cadence/tube/)).
+# My Preference of Programs and Softwares
 
 - #### Search engine: [LibreX](https://github.com/hnhx/librex) ([Checkout search engines comparison here](/programs/search-engines "Search Engines Comparison")).  
 Checkout my instance at <https://librex.yogeshlamichhane.com.np>.
 
-- #### Web browser: [librewolf](https://librewolf.net/) or [GNU Icecat](https://www.gnu.org/software/gnuzilla/) ([Checkout browsers comparison here](/programs/browsers))
+- #### Web browser: [librewolf](https://librewolf.net/) ([Checkout browsers comparison here](/programs/browsers))
 
-- #### Git services: [cgit](https://git.zx2c4.com/cgit) for self hosting else [sourcehut](https://sr.ht). ([Checkout git services comparison here](/programs/git-services "Git Services Comparison"))
+- #### Git services: [sourcehut](https://sr.ht)  ([cgit](https://git.zx2c4.com/cgit) for self hosting). ([Checkout git services comparison here](/programs/git-services "Git Services Comparison"))
 
-- #### Reddit: Use one of the instances of [libreddit](https://github.com/libreddit/libreddit-instances/blob/master/instances.md).
-
-- #### Twitter: Use one of the instances of [nitter](https://github.com/zedeus/nitter/wiki/Instances).
-
-- #### Wikipedia: Use [wikiless](https://wikiless.org).
-
-- #### Quora: Use one of the instances of [quetre](https://github.com/zyachel/quetre).
-
-- #### IMDb: Use one of the instances of [libremdb](https://github.com/zyachel/libremdb).
-
-- #### Tiktok: Use one of the instances of [ProxiTok](https://github.com/pablouser1/ProxiTok/wiki/Public-instances).
-
-- #### Operating System/Distribution: [Artix Linux](https://artixlinux.org/)
+- #### Operating System/Distribution: [Hyperbola](https://www.hyperbola.info/)
 
 - #### Terminal: [alacritty](https://github.com/alacritty/alacritty)
 
@@ -38,17 +22,17 @@ Checkout my instance at <https://librex.yogeshlamichhane.com.np>.
 
 - #### Window Manager/Desktop Environment: [dwm](https://dwm.suckless.org)
 
-- #### Text editing and programming: [neovim](https://neovim.io/) and [code-oss](https://github.com/microsoft/vscode)(*Remember: Not vscode but The Open Source build of Visual Studio Code*)
+- #### Text editing and programming: [neovim](https://neovim.io/)
 
 - #### Mail client/RSS reader: [thunderbird](https://www.thunderbird.net)
 
 - #### Video player: [mpv](https://mpv.io/)
 
-- #### Download utility + torrent downloader: [aria2](https://aria2.github.io/)
+- #### Download + torrent utility: [aria2](https://aria2.github.io/)
 
 - #### Video and Audio: [kdenlive](https://kdenlive.org/en/) and [ffmpeg](https://ffmpeg.org/)
 
-- #### Presentations: [sent](https://tools.suckless.org/sent/)
+- #### Presentation: [sent](https://tools.suckless.org/sent/)
 
 - #### PDF viewer: [zathura](https://pwmt.org/projects/zathura/)
 
@@ -59,3 +43,59 @@ Checkout my instance at <https://librex.yogeshlamichhane.com.np>.
 - #### Bitcoin: [Electrum](https://electrum.org/)
 
 - #### Monero: [The standard Monero GUI Wallet](https://www.getmonero.org/)
+
+## Better Frontends and Alternatives To:
+
+- #### Youtube: [invidious](https://docs.invidious.io/instances/)
+
+- #### Reddit: [libreddit](https://github.com/libreddit/libreddit-instances/blob/master/instances.md)
+
+- #### Twitter: [nitter](https://github.com/zedeus/nitter/wiki/Instances)
+
+- #### Wikipedia: [wikiless](https://wikiless.org)
+
+- #### Quora: [quetre](https://github.com/zyachel/quetre)
+
+- #### IMDb: [libremdb](https://github.com/zyachel/libremdb)
+
+- #### Tiktok: [ProxiTok](https://github.com/pablouser1/ProxiTok/wiki/Public-instances)
+
+- #### Medium: [Scribe](https://sr.ht/~edwardloveall/Scribe/)
+
+- #### Maps: [OpenStreetMaps](https://www.openstreetmap.org/)
+
+- #### Imgur: [rimgo](https://codeberg.org/video-prize-ranch/rimgo#instances)
+
+## Better Android Clients To:
+
+- #### Play Store: [F-Droid](https://f-droid.org/en/packages/org.fdroid.fdroid/)
+
+- #### Youtube: [SkyTube](https://github.com/SkyTubeTeam/SkyTube)
+
+- #### Reddit: [Infinity](https://github.com/Docile-Alligator/Infinity-For-Reddit)
+
+- #### Twitter: [Nitter for Android](https://gitlab.com/Plexer0/Nitter-Android)
+
+- #### Gmail: [K-9 Mail](https://github.com/thundernest/k-9)
+
+- #### Keyboard: [Simple Keyboard](https://github.com/rkkr/simple-keyboard)
+
+- #### Home/Launcher: [KISS Launcher](https://github.com/Neamar/KISS)
+
+## Others
+
+### My other sites, instances and random important links
+
+- #### My terminal-like website: <https://whoisyoges.eu.org> *(alert: js required)*
+
+- #### My instance of [librex](https://github.com/hnhx/librex/) search engine: <https://librex.yogeshlamichhane.com.np>
+
+- #### My wallpaper collection: <https://wallpaper.castorisdead.xyz>
+
+- #### My custom build of browser home/start page: <https://github.com/whoisYoges/lhmpage>
+
+- #### My corner in tilde: <https://whoisyoges.tildevarsh.in>
+
+- #### GUI based best spotify downloader: <https://github.com/casualsnek/onthespot>
+
+- #### Fully offline version of arch linux wiki: <https://github.com/whoisYoges/local-arch-wiki>

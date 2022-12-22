@@ -56,10 +56,10 @@
     <meta name="description" content="{{ section.description }}">
     <meta name="dc.description" content="{{ section.description }}">
     {% else %}
-    <meta name="og:description" content="A Linux enthusiast, FOSS/FLOSS advocate, digital privacy and freedom proponent, and a self-taught frontend designer and developer.">
-    <meta name="twitter:description" content="A Linux enthusiast, FOSS/FLOSS advocate, digital privacy and freedom proponent, and a self-taught frontend designer and developer.">
-    <meta name="description" content="A Linux enthusiast, FOSS/FLOSS advocate, digital privacy and freedom proponent, and a self-taught frontend designer and developer.">
-    <meta name="dc.description" content="A Linux enthusiast, FOSS/FLOSS advocate, digital privacy and freedom proponent, and a self-taught frontend designer and developer.">
+    <meta name="og:description" content="Castor - A Linux enthusiast, FOSS/FLOSS advocate, digital privacy and freedom proponent, and a self-taught frontend designer and developer.">
+    <meta name="twitter:description" content="Castor - A Linux enthusiast, FOSS/FLOSS advocate, digital privacy and freedom proponent, and a self-taught frontend designer and developer.">
+    <meta name="description" content="Castor - A Linux enthusiast, FOSS/FLOSS advocate, digital privacy and freedom proponent, and a self-taught frontend designer and developer.">
+    <meta name="dc.description" content="Castor - A Linux enthusiast, FOSS/FLOSS advocate, digital privacy and freedom proponent, and a self-taught frontend designer and developer.">
     {% endif %}
     {% endif %}
     {% if page.permalink %}
@@ -103,7 +103,6 @@
             <a class="navbar-link" href="/donate/">DONATE</a>
             <a class="navbar-link" href="/homies">HOMIES</a>
             <a class="navbar-link" href="/programs">PROGRAMS</a>
-            <a class="navbar-link" href="/others">OTHERS</a>
         </header>
         <div class="main" id="main">
             <div class="threecols">
@@ -140,15 +139,10 @@
     </footer>
     {% if page.extra.gotoTop %}
     <div class="gototop">
-        <a class="gototoplink" href="#"> ^ </a>
-    </div>
-    {% else %}
-    {% if section.extra.gotoTop %}
-    <div class="gototop">
-        <a class="gototoplink" href="#"> ^ </a>
+        <a class="gototoplink" href="#">^</a>
     </div>
     {% endif %}
-    {% endif %}
+
     {% if page.extra.copy_code %}
     <script src="/assets/js/copy.js"></script>
     {% else %}

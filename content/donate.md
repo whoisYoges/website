@@ -6,7 +6,7 @@ page_template = "page.html"
 
 ## Donations
 
-Since I'm a jobless college dropout and don't have any particular source of income, donate and help me setup and maintain a personal home server space for hosting libre software instances. ([Checkout my preference of programs!](/programs))
+Donate and help me setup and maintain a personal home server space for hosting libre software instances. ([Checkout my preference of programs!](/programs))
 
 I currently only take donations in BTC and XMR.
 

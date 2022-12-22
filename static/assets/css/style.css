@@ -56,13 +56,16 @@ h6 {
 
 .main {
     padding: 30px 0;
-    word-wrap: break-word
 }
 
 a {
     color: #deb887;
     font-family: pointfree;
     text-decoration: none
+}
+
+a:hover {
+    color: #f70
 }
 
 .threecols {
@@ -95,6 +98,7 @@ p.about {
 
 .maincol {
     width: 82%;
+    word-wrap: break-word;
     display: inline-block
 }
 
@@ -135,7 +139,7 @@ div.highlight button {
     border-radius: 0 .18rem;
     color: #ee82ee;
     cursor: pointer;
-    float: right;
+    float: left;
     font-size: .8em;
     padding: 5px 10px;
     transition: .2s ease-out;
@@ -199,7 +203,7 @@ img {
 
 footer {
     text-align: center;
-    margin: 0 22% 3% 18%
+    margin: 0 17% 3% 19%
 }
 
 hr,
@@ -275,8 +279,8 @@ footer p a.social {
     background-color: #08356c;
     color: #fff;
     cursor: pointer;
-    padding: 11px 16px;
-    border-radius: 12px;
+    padding: 6px 12px;
+    border-radius: 5px;
     font-size: 20px;
     font-weight: bold
 }
@@ -340,7 +344,12 @@ footer p a.social {
 
 @media screen and (max-width: 600px) {
     .gototop {
+        right: 1rem;
         bottom: 8rem
+    }
+
+    .gototoplink {
+        top: 85vh
     }
 }
 
