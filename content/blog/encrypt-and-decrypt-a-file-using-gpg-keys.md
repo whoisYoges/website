@@ -10,7 +10,6 @@ opengraph = "/assets/images/blogs/encrypt-and-decrypt-a-file-using-GPG-keys/encr
 gotoTop = true
 copy_code = true
 shareable = true
-commentable = true
 keywords = "encrypt file using gpg key, encrypt file with gpg key, encrypt file with gpg public key, encrypt using gpg key, encrypt a file using public key, encrypt and decrypt a file in linux, encrypt a file with gpg key, encrypt a file using a public key, use gpg to encrypt a file, encrypt and decrypt a file using gpg key pair authentication , use gpg key to encrypt file, use gpg key to encrypt text, gpg encrypt file, encrypt and decrypt a file using gpg key pair bash, encrypt and decrypt a file using gpg key pair command, encrypt and decrypt a file using gpg key pair cli, encrypt and decrypt a file using gpg key pair centos, encrypt and decrypt a file using gpg key pair download, encrypt and decrypt a file using gpg key pair denied, encrypt and decrypt a file using gpg key pair directory, decrypt gpg key with passphrase, encrypt and decrypt a file using gpg key pair example, encrypt and decrypt a file using gpg key pair empty, encrypt and decrypt a file using gpg key pair file, encrypt and decrypt a file using gpg key pair github, encrypt and decrypt a file using gpg key pair generation, encrypt with gpg key, encrypt and decrypt a file using gpg key pair name, encrypt and decrypt a file using gpg key pair openssl, encrypt and decrypt a file using gpg key pair password, encrypt and decrypt a file using gpg key pair passphrase, encrypt and decrypt a file using gpg key pair paths, encrypt and decrypt a file using gpg key pair pgp, encrypt and decrypt a file using gpg key pair private, encrypt and decrypt a file using gpg key pair public/private, pgp encrypt a file with public key, how to decrypt a file with a public key	, encrypt and decrypt a file using gpg key pair query, encrypt and decrypt a file using gpg key pair question, encrypt and decrypt a file using gpg key pair remote, encrypt and decrypt a file using gpg key pair rhel, encrypt and decrypt a file using gpg key pair redhat, encrypt and decrypt a file using gpg key pair rsa, decrypt gpg rsa key, encrypt and decrypt a file using gpg key pair gpg, encrypt and decrypt a file using gpg key pair script, encrypt and decrypt a file using gpg key pair setup"
 toc = "<p><a href='#how-does-gpg-work'>How does GPG work?</a></p><p><a href='#prerequisite'>Prerequisite</a></p><p><a href='#encryption-using-a-public-gpg-key'>Encryption</a></p><p><a href='#decrypting-using-private-gpg-key'>Decrypting</a></p><p><a href='#deleting-public-keys-from-keyring'>Removal of Public Key</a></p><h3>Also Read</h3><hr><p><a href='/blog/create-and-delete-gpg-key-pair'>How to encrypt and decrypt any message and files using gpg key pair?</a></p>"
 +++
@@ -110,7 +109,8 @@ igXd7Kt4qERYzmc1NLbHG7/H/DV6KyxuJ4dJ
 ### Add the public GPG key to your keyring
 
 <div class="highlight">
-<pre><code id="addpubgpgkey">gpg --import yoges_pubgpg.asc</code>
+<pre><code id="addpubgpgkey">gpg --import yoges_pubgpg.asc
+</code>
 <button id="addpubgpgkeybtn" type="button" onclick="copyCode('addpubgpgkey','addpubgpgkeybtn')" value="click">Copy</button>
 </pre>
 </div>
@@ -128,7 +128,8 @@ If you want to keep a file away from prying eyes and ensure that it comes from t
 #### Check recipient's public key
 
 <div class="highlight">
-<pre><code id="chkpubgpgkey">gpg --list-public-keys</code>
+<pre><code id="chkpubgpgkey">gpg --list-public-keys
+</code>
 <button id="chkpubgpgkeybtn" type="button" onclick="copyCode('chkpubgpgkey','chkpubgpgkeybtn')" value="click">Copy</button>
 </pre>
 </div>
@@ -151,7 +152,8 @@ The `[ultimate]` one is your personal key. And the other `[unknown]` is the publ
 #### Sign the public key with your GPG key
 
 <div class="highlight">
-<pre><code id="signpubgpgkey">gpg --sign-key &lt;id&gt;</code>
+<pre><code id="signpubgpgkey">gpg --sign-key &lt;id&gt;
+</code>
 <button id="signpubgpgkeybtn" type="button" onclick="copyCode('signpubgpgkey','signpubgpgkeybtn')" value="click">Copy</button>
 </pre>
 </div>
@@ -193,7 +195,8 @@ sub   rsa4096 2022-10-30 [E] [expires: 2022-11-01]
 In this example `message.txt` is the secret text message, `message.txt.gpg` is the encrypted file and `castor@whoisYoges.eu.org` is the email address from the receiver's public key. The encrypted file can be named whatever you like.
 
 <div class="highlight">
-<pre><code id="secmsgpgpinc">gpg --encrypt --output message.txt.gpg --recipient castor@whoisYoges.eu.org message.txt</code>
+<pre><code id="secmsgpgpinc">gpg --encrypt --output message.txt.gpg --recipient castor@whoisYoges.eu.org message.txt
+</code>
 <button id="secmsgpgpincbtn" type="button" onclick="copyCode('secmsgpgpinc','secmsgpgpincbtn')" value="click">Copy</button>
 </pre>
 </div>

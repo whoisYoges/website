@@ -226,8 +226,7 @@ footer p a.social {
     margin: 10px
 }
 
-.shareable .shareon,
-.commentable .comments {
+.shareable .shareon {
     margin: 40px 0 0 0;
     color: #7fffd4
 }

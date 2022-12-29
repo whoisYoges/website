@@ -8,6 +8,9 @@
     <link rel="shortcut icon" href="/assets/images/avatar/avatar.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/assets/images/avatar/avatar.png">
     <link rel="stylesheet" href="/assets/css/style.css">
+    {% if page.extra.comparison %}
+    <link rel="stylesheet" href="/assets/css/comparison.css">
+    {% endif %}
     <meta name="author" content="Castor, whoisyoges@castorisdead.xyz">
     <meta name="msapplication-TileColor" content="#141414">
     <meta name="theme-color" content="#141414">
@@ -87,10 +90,6 @@
     <meta name="og:image" content="/assets/images/avatar/avatar.jpg">
     <meta name="twitter:image:src" content="/assets/images/avatar/avatar.jpg">
     {% endif %}
-    {% if page.extra.comparison %}
-    <link rel="stylesheet" href="/assets/css/comparison.css">
-    {% endif %}
-
 </head>
 
 <body>
@@ -133,7 +132,7 @@
             <a title="Follow me on Mastodon" href="https://fosstodon.org/@whoisYoges" target="_blank" rel="noopener nofollow noreferrer" class="eachsociallinks"><img src="/assets/images/social-icons/mastodon.png" alt="Mastodon"></a>
             <a title="Follow me on Twitter" href="https://twitter.com/whoisYoges" target="_blank" rel="noopener nofollow noreferrer" class="eachsociallinks"><img src="/assets/images/social-icons/twitter.png" alt="Twitter"></a>
             <a title="Check my codes on GitHub" href="https://github.com/whoisYoges" target="_blank" rel="noopener nofollow noreferrer" class="eachsociallinks"><img src="/assets/images/social-icons/github.png" alt="GitHub"></a>
-            <a href="/atom.xml" target="_blank" rel="noopener nofollow noreferrer" class="eachsociallinks" title="My Rss Feed"><img src="/assets/images/social-icons/rssfeed.png" alt="RSS Feed"></a>
+            <a href="/atom.xml" target="_blank" rel="noopener nofollow noreferrer" class="eachsociallinks" title="My Atom Feed"><img src="/assets/images/social-icons/rssfeed.png" alt="Atom Feed"></a>
         </div>
         <p>Made with &#128153; in <a href="https://wikiless.org/wiki/Nepal" target="_blank" rel="noopener nofollow noreferrer">Nepal</a> | Powered by <a href="https://getzola.org" target="_blank" rel="noopener nofollow noreferrer">zola</a>.</p>
     </footer>
@@ -142,7 +141,6 @@
         <a class="gototoplink" href="#">^</a>
     </div>
     {% endif %}
-
     {% if page.extra.copy_code %}
     <script src="/assets/js/copy.js"></script>
     {% else %}

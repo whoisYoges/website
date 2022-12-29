@@ -1,2 +1,2 @@
 # website
-My personal website built using zola and utterances
+My personal website built using zola.
