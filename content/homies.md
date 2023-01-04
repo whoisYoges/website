@@ -23,6 +23,7 @@ Resources and Sites That I find useful, interesting, unique or cool.
 <a href="https://elpengu.com/" target="_blank" rel="noopener nofollow noreferrer"><img src="/assets/images/homies/elpengu.png" alt="elpengu"></a>
 <a href="https://denshi.org/" target="_blank" rel="noopener nofollow noreferrer"><img src="/assets/images/homies/denshi.png" alt=""></a>
 <a href="https://easypeasymethod.org/" target="_blank" rel="noopener nofollow noreferrer"><img src="/assets/images/homies/easypeasymethod.gif" alt="easy peasy method"></a>
+<a href="https://pussthecat.org/" target="_blank" rel="noopener nofollow noreferrer"><img src="/assets/images/homies/pussthecat.png" alt="easy peasy method"></a>
 <a href="https://beparanoid.de" target="_blank" rel="noopener nofollow noreferrer"><img src="/assets/images/homies/beparanoid.gif" alt="beparanoid"></a>
 <a href="https://sadgrl.online/" target="_blank" rel="noopener nofollow noreferrer"><img src="/assets/images/homies/sadgrl.gif" alt="sadgrl.online"></a>
 <a href="https://landchad.net" target="_blank" rel="noopener nofollow noreferrer"><img src="/assets/images/homies/landchad.gif" target="_blank" alt="landchad"></a>
