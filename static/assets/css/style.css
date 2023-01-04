@@ -130,6 +130,8 @@ pre {
     white-space: pre-wrap;
     word-wrap: break-word;
     padding: 10px 15px;
+    border-radius: 5px 15px;
+    background-color: #242526;
     margin: 8px 0
 }
 
@@ -155,7 +157,6 @@ code,
 pre {
     font-family: pointfree;
     font-size: 15.5px;
-    background-color: #242526;
     color: #ee82ee
 }
 
@@ -215,6 +216,11 @@ footer p,
 footer p a.social {
     margin: 0 5px;
     font-size: 23px
+}
+
+.heart {
+    max-width: 16px;
+    vertical-align: middle
 }
 
 .social img {
