@@ -90,6 +90,8 @@ Checkout my instance at <https://librex.yogeshlamichhane.com.np>.
 
 - #### My instance of [librex](https://github.com/hnhx/librex/) search engine: <https://librex.yogeshlamichhane.com.np>
 
+- #### Instance of my [simple-guestbook](https://github.com/whoisyoges/simple-guestbook/): <https://guestbook.yogeshlamichhane.com.np>
+
 - #### My online diary journal: <https://mukoisdead.eu.org>
 
 - #### My wallpaper collection: <https://wallpaper.castorisdead.xyz>
