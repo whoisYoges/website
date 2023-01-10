@@ -115,6 +115,8 @@ Here is a list of better open-source frontend-and alternatives for some popular 
 - [CanvasBlocker](https://github.com/kkapsner/CanvasBlocker)
 - [LibRedirect](https://codeberg.org/LibRedirect/libredirect)
 
+Pro Tip: Use Container Tabs feature available in the [librewolf](https://librewolf.net) browser. Keep every logins separate. Simply, use different containers for different website logins. Use one container for normal browing and one separate for random and suspicious links.
+
 ## Others
 
 ### My other sites, instances and random important links
