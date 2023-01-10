@@ -140,6 +140,12 @@
     <div class="gototop">
         <a class="gototoplink" href="#">^</a>
     </div>
+    {% else %}
+    {% if section.extra.gotoTop %}
+    <div class="gototop">
+        <a class="gototoplink" href="#">^</a>
+    </div>
+    {% endif %}
     {% endif %}
     {% if page.extra.copy_code %}
     <script src="/assets/js/copy.js"></script>
