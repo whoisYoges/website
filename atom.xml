@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Castor&#x27;s Shit Posts</title>
+	<subtitle>Just Some Normal Blog Posts by Castor</subtitle>
+	<link href="https://castorisdead.xyz/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://castorisdead.xyz"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2023-01-10T00:00:00+00:00</updated>
+	<id>https://castorisdead.xyz/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Internet is a spyware.</title>
+		<published>2023-01-10T00:00:00+00:00</published>
+		<updated>2023-01-10T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://castorisdead.xyz/blog/internet-is-a-spyware/" type="text/html"/>
+		<id>https://castorisdead.xyz/blog/internet-is-a-spyware/</id>
+		<content type="html">&lt;p&gt;The internet, through the collection and storage of personal data by companies and governments, can be used as a tool for surveillance.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;div class=&quot;blogcontents&quot;&gt;
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;&#x2F;h2&gt;
+&lt;p&gt;As a general principle, it&#x27;s important to be aware that any time you use the internet, you&#x27;re potentially sharing information about yourself. That being said, some companies are certainly better known for collecting and using large amounts of data about their users than others. When we talk about &amp;quot;big tech companies,&amp;quot; we&#x27;re typically talking about a few large corporations like Google, Facebook, Amazon, and Apple. This doesn&#x27;t mean &amp;quot;just big tech companies collect your data&amp;quot; but also includes many smaller websites and apps that you might use.&lt;&#x2F;p&gt;
+&lt;p&gt;These companies collect a lot of data about you when you use their services. For example, when you use Google to search for something, they collect information about what you searched for, as well as your location and other information about your device. Similarly, when you use Facebook, they collect information about what you post, who you interact with, and so on.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;assets&#x2F;images&#x2F;blogs&#x2F;internet-is-a-spyware&#x2F;bigbrotheriswatchingyou.jpg&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;concern&quot;&gt;Concern&lt;&#x2F;h2&gt;
+&lt;p&gt;People like us should be concerned that these companies use this data to spy on us or to target us with advertising. Another concern is that these companies share our data with governments or other third parties. While companies generally have privacy policies that prohibit them from sharing our data without our consent, it&#x27;s possible that they could be compelled to share your data with governments or other organizations through legal means, such as a court order.&lt;&#x2F;p&gt;
+&lt;p&gt;It&#x27;s also important to remember that other parties could also be collecting data about you. For example, your internet service provider (ISP) could be collecting information about the websites you visit, and advertisers could be using cookies and other tracking technologies to collect information about your browsing history.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;keep-in-mind&quot;&gt;Keep in mind&lt;&#x2F;h2&gt;
+&lt;p&gt;In terms of internet privacy and freedom, the main take away is you should be aware of what data you&#x27;re sharing and with whom, and to be cautious about giving out too much personal information online. You should also look for ways to protect your privacy, such as using privacy-protecting browser extensions, virtual private networks (VPNs), and encryption to protect your information from being intercepted by third parties and using privacy friendly front-ends and alternatives.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;&#x2F;h2&gt;
+&lt;p&gt;The internet is a tool that can be used for a wide range of purposes, both positive and negative. And in this modern era of technology, it is true that most of the individuals or organizations use the internet for nefarious purposes, such as surveillance and data collection mostly without user&#x27;s awareness. So I recommend everyone to look for and use the privacy-protecting open source programs and softwares. You can take a look at the &lt;a href=&quot;&#x2F;programs&quot;&gt;programs&lt;&#x2F;a&gt; that I use to not share any data or share fake date to these spywares.&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Understanding and working with git remotes</title>
+		<published>2023-01-04T00:00:00+00:00</published>
+		<updated>2023-01-04T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://castorisdead.xyz/blog/understanding-and-working-with-git-remotes/" type="text/html"/>
+		<id>https://castorisdead.xyz/blog/understanding-and-working-with-git-remotes/</id>
+		<content type="html">&lt;p&gt;Do you have same git repository over different platforms? Are you searching for the convenient way to manage them all at once within a single local repository?&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;div class=&quot;blogcontents&quot;&gt;
+&lt;h2 id=&quot;introduction-to-git-remote&quot;&gt;Introduction to git remote?&lt;&#x2F;h2&gt;
+&lt;p&gt;A remote in Git is a version of your repository that is hosted on the Internet or network somewhere. Remotes make it easy to collaborate with others, as you can fetch and push changes. You can also use them to create backups of your repository.&lt;&#x2F;p&gt;
+&lt;p&gt;It&#x27;s common to have a single remote, called &lt;code&gt;origin&lt;&#x2F;code&gt;, but you can have multiple remotes. This can be useful in a few different scenarios. For example, you might want to contribute to someone else&#x27;s repository and have a remote for their repository. Or, you might want to set up a &lt;code&gt;mirror&lt;&#x2F;code&gt; of your repository on a different hosting service.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;how-does-a-git-remote-work&quot;&gt;How does a git remote work?&lt;&#x2F;h3&gt;
+&lt;p&gt;There are two link urls for a remote git repository.&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;fetch url: to perform operations like fetch and pull from remote server to local computer.&lt;&#x2F;li&gt;
+&lt;li&gt;push url: to perform push operations from local computer to remote server.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;To check the all the remotes within a repository, you can use the git remote command.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;$ git remote -v
+origin	git@github.com:whoisYoges&amp;#x2F;website.git (fetch)
+origin	git@github.com:whoisYoges&amp;#x2F;website.git (push)
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Here, for a remote named &lt;code&gt;origin&lt;&#x2F;code&gt;, we have the same urls for both fetch and push operations cause we&#x27;re fetching&#x2F;pulling from and pushing to the same remote repository. If you fetch&#x2F;pull from one repository and push to other the urls can be different even in same remote.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;adding-a-new-remote&quot;&gt;Adding a new remote&lt;&#x2F;h2&gt;
+&lt;p&gt;To add a new remote to your repository, use the git remote add command. The basic syntax is:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;git remote add &amp;lt;name&amp;gt; &amp;lt;url&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Replace &amp;lt;name&amp;gt; with a short, memorable name for the remote, and &amp;lt;url&amp;gt; with the URL of the remote repository. For example, if you want to add a remote for a repository of this website hosted on GitHub, you might use a command like this:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;git remote add github git@github.com:whoisYoges&amp;#x2F;website.git
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This will add a remote called &lt;code&gt;github&lt;&#x2F;code&gt; that points to the specified repository. You can then use this remote like any other. For example, to fetch changes from the remote, you can use the git fetch command:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;git fetch github
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Again, if you want to add another remote for the same repository hosted on sourcehut, you might use a command like this:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;git remote add sourcehut git@git.sr.ht:~whoisyoges&amp;#x2F;website
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This will add a remote called &lt;code&gt;sourcehut&lt;&#x2F;code&gt; that points to the specified repository and then you can use this remote like any other. For example, to push changes to the remote, you can use the git push command.&lt;br &#x2F;&gt;
+For example, to push your local &lt;code&gt;master&lt;&#x2F;code&gt; branch to the &lt;code&gt;sourcehut&lt;&#x2F;code&gt; remote, you can use a command like this:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;git push sourcehut master
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This can be useful for collaborating with others, as you can push your work-in-progress to a branch on the remote and ask for feedback before merging it into the main branch.&lt;&#x2F;p&gt;
+&lt;p&gt;You can view a list of your remotes at any time by running the git remote command with no arguments. This will list the names of all your remotes.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;$ git remote
+github
+sourcehut
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To see more information about a specific remote, use the git remote show command, followed by the name of the remote. This will display information about the &lt;code&gt;sourcehut&lt;&#x2F;code&gt; remote, including the URL and the branches that are being tracked. For example:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;$ git remote show sourcehut
+* remote sourcehut
+  Fetch URL: git@git.sr.ht:~whoisyoges&amp;#x2F;website
+  Push  URL: git@git.sr.ht:~whoisyoges&amp;#x2F;website
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local ref configured for &amp;#x27;git push&amp;#x27;:
+    master pushes to master (fast-forwardable)
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;multiple-push-urls-in-a-single-remote&quot;&gt;Multiple push urls in a single remote&lt;&#x2F;h2&gt;
+&lt;p&gt;The above method allows us to add multiple remotes and push the local repository to the them one by one, but we cannot push our local repository to all of the remotes at once.&lt;&#x2F;p&gt;
+&lt;p&gt;So, Follow the procedure below for adding multiple push urls in a single remote to push a local repository to all of the remotes at once using a single command.&lt;&#x2F;p&gt;
+&lt;p&gt;Define a git remote which will point to multiple git remotes, we call it &lt;code&gt;all&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;git remote add all REMOTE-URL-1&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;This REMOTE-URL-1 will be used to perform fetch&#x2F;pull operations.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;git remote add all git@git.sr.ht:~whoisyoges&amp;#x2F;website
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now, add all the push urls one by one in the remote &lt;code&gt;all&lt;&#x2F;code&gt;.&lt;br &#x2F;&gt;
+Here, I&#x27;m adding the remote repositories of this website available in sourcehut, github, and codeberg.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;git remote set-url --add --push all git@git.sr.ht:~whoisyoges&amp;#x2F;website
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre&gt;&lt;code&gt;git remote set-url --add --push all git@github.com:whoisYoges&amp;#x2F;website.git
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre&gt;&lt;code&gt;git remote set-url --add --push all git@codeberg.org:whoisYoges&amp;#x2F;website.git
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Confirm the addition of remote urls by using git remote command.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;$ git remote -v
+all	git@git.sr.ht:~whoisyoges&amp;#x2F;website (fetch)
+all	git@git.sr.ht:~whoisyoges&amp;#x2F;website (push)
+all	git@codeberg.org:whoisYoges&amp;#x2F;website.git (push)
+all	git@github.com:whoisYoges&amp;#x2F;website.git (push)
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Push a branch to all the remotes with &lt;code&gt;git push all BRANCH&lt;&#x2F;code&gt; – replace BRANCH with a real branch name.
+You cannot fetch updates from multiple remotes in this method.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;&lt;code&gt;Note: The branch name of all the remote repositories must be same.&lt;&#x2F;code&gt;&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;&#x2F;h2&gt;
+&lt;p&gt;In summary, adding and using multiple remotes in a Git repository can be a useful way to collaborate with others and make backups of your work. By using the git remote and git push commands, you can easily work with multiple remotes and push and fetch changes as needed.&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>I rejoined college and my first day experience!</title>
+		<published>2022-12-27T00:00:00+00:00</published>
+		<updated>2022-12-27T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://castorisdead.xyz/blog/my-first-day-experience-in-college/" type="text/html"/>
+		<id>https://castorisdead.xyz/blog/my-first-day-experience-in-college/</id>
+		<content type="html">&lt;p&gt;So if you didn&#x27;t know, I had dropped out of computer science in 4th semester and recently joined &lt;em&gt;Bachelor of Arts in psychology and social work&lt;&#x2F;em&gt; just before Christmas on 2022-Dec-21.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;My college isn&#x27;t far from my place, just about a 10 minutes walk, and it starts at 6:15 in the morning till 10 a.m.&lt;br &#x2F;&gt;
+It&#x27;s December, and it was freezing cold outside with the temperature of 5° Celsius.&lt;br &#x2F;&gt;
+The gatekeeper stopped me for a while in the gate, saying not to wear grunge jeans in the first day of college. Funny, isn&#x27;t it? I just said okay and went in.&lt;&#x2F;p&gt;
+&lt;p&gt;Being an introvert, it was not easy for me to spend 4 hours for the first day.
+I had checked the number of students admitted to my class in the administration during my admission, but not even the half of them were present. There were about 10 students and all of them were female except me. Most of the desks were empty, and I sat on the third bench in the second row all alone. It was a damn moment for me because I didn&#x27;t even have anyone to talk to, but who cares...? First class went like a fly listening to the lecture. Two boys came in the second class after 45 minutes, and I was relieved, at least a little. But they just stayed that one class for 45 minutes. And I was all alone the rest of the classes. But I didn&#x27;t care that, either.&lt;&#x2F;p&gt;
+&lt;p&gt;There was a leisure and I just played Blockinger (a Tetris game) and minesweeper in my mobile phone. Other classes were good. I enjoyed the lectures. One of the professor (IDK the name yet; the one who gave the lecture of psychology) has piqued my curiosity. He was quite my type, I mean, he gives examples about technology and internet privacy relating with psychology.
+The class ended at 10 a.m and I just returned back to my place without giving a shit about anybody.&lt;&#x2F;p&gt;
+&lt;p&gt;So, yeah It was quiet a experience. Overall, it was fun and I kinda liked it.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Disk encryption in linux installation</title>
+		<published>2022-12-22T00:00:00+00:00</published>
+		<updated>2022-12-22T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://castorisdead.xyz/blog/disk-encryption-in-linux-installation/" type="text/html"/>
+		<id>https://castorisdead.xyz/blog/disk-encryption-in-linux-installation/</id>
+		<content type="html">&lt;p&gt;Disk encryption in linux prevents a disk drive, like a hard drive or a portable USB storage device or laptop, from booting up unless the user inputs the correct authentication data. And here I&#x27;m going to talk about my preferred method of disk encryption while installing linux and see how it works?&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;assets&#x2F;images&#x2F;blogs&#x2F;disk-encryption-in-linux-installation&#x2F;disk-encryption-in-linux-installation.jpg&quot; alt=&quot;disk-encryption-in-linux-installation&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;div class=&quot;blogcontents&quot;&gt;
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;&#x2F;h2&gt;
+&lt;p&gt;The booting up process for an operating system involves the first section of the disk — the master boot record — informing the system of where to read the first file, which initiates the loading of the operating system. Without encryption, no special instructions are required to interpret the contents of the disk. By default, files are written in plain text.&lt;&#x2F;p&gt;
+&lt;p&gt;When you use disk encryption, this process is modified. The contents of the disk (except for the master boot record) are encrypted using a modern symmetric cipher accessible via a secret key. The master boot record is modified so that it loads this system, which validates the authentication data from the user. If the authentication process is successful, the encryption key is unlocked.&lt;&#x2F;p&gt;
+&lt;p&gt;This system, which varies between different implementations, stores the master key for the device. Authentication information might be a password, a public key-based token, or a fingerprint scan. Once the valid authentication data is read, the master key is decrypted. The master key then remains in the computer’s memory while it’s powered-on. This allows the operating system to first read the disk to boot up, as well as read any other disk contents the user requests while using the computer.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;who-uses-disk-encryption&quot;&gt;Who Uses Disk Encryption&lt;&#x2F;h2&gt;
+&lt;p&gt;The main motive of encryption is to keep your data and personal information safe from others. So If anyone other than you has any access to your computer, then in should be encrypted. Also, I highly recommend encrypting the portable devices like laptops and raspberry-pi that has a chance of getting lost, stolen or access by others.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;my-preferred-method-of-disk-encryption&quot;&gt;My preferred method of disk encryption&lt;&#x2F;h2&gt;
+&lt;p&gt;So I do have a sigle hard drive in my computer so, I use &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.archlinux.org&#x2F;title&#x2F;LVM&quot;&gt;LVM&lt;&#x2F;a&gt; on &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.archlinux.org&#x2F;title&#x2F;Dm-crypt&quot;&gt;LUKS&lt;&#x2F;a&gt; encrypting all the filesystem and partitions excluding &#x2F;boot partiton of grub bootloader. If you have multiple hard drives you may want to setup &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.archlinux.org&#x2F;title&#x2F;RAID&quot;&gt;RAID&lt;&#x2F;a&gt; I guess. Checkout &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.archlinux.org&#x2F;title&#x2F;dm-crypt&#x2F;Encrypting_an_entire_system&quot;&gt;arch wiki&lt;&#x2F;a&gt; for more details about encryption types.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;how-to-set-up-lvm-on-luks&quot;&gt;How to Set-up LVM on LUKS&lt;&#x2F;h3&gt;
+&lt;p&gt;Okay Let&#x27;s directly talk about how we can setup my preferred encryption type for single storage device computers.&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Partition your storage into two using &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.archlinux.org&#x2F;title&#x2F;Partitioning#GUID_Partition_Table&quot;&gt;GPT&lt;&#x2F;a&gt;; First one is the boot partition of about 500MB and remaining the second.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Let&#x27;s say &lt;strong&gt;&#x2F;dev&#x2F;sda2&lt;&#x2F;strong&gt; is the second partition, then setup LUKS in &lt;strong&gt;&#x2F;dev&#x2F;sda2&lt;&#x2F;strong&gt;.&lt;br &#x2F;&gt;
+a. &lt;code&gt;cryptsetup luksFormat &#x2F;dev&#x2F;sda2&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+b. &lt;code&gt;cryptsetup open &#x2F;dev&#x2F;sda1 cryptlvm&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+It can be mapped to any name in place of &lt;code&gt;cryptlvm&lt;&#x2F;code&gt;.&lt;br &#x2F;&gt;
+The decrypted container is now available at &#x2F;dev&#x2F;mapper&#x2F;cryptlvm&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Prepare the logical volumes
+a. Create a physical volume on top of the opened LUKS container:&lt;br &#x2F;&gt;
+&lt;code&gt;pvcreate &#x2F;dev&#x2F;mapper&#x2F;cryptlvm&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+b. Create a volume group (in this example named &lt;code&gt;groot&lt;&#x2F;code&gt;, but it can be whatever you want) and add the previously created physical volume to it:&lt;br &#x2F;&gt;
+&lt;code&gt;vgcreate groot &#x2F;dev&#x2F;mapper&#x2F;cryptlvm&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+c. Create all your logical volumes for root, home, swap and others as per your requirements on the volume group:&lt;br &#x2F;&gt;
+&lt;code&gt;lvcreate -L 8G groot -n swap&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+&lt;code&gt;lvcreate -L 100G groot -n root&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+&lt;code&gt;lvcreate -l 100%FREE groot -n home&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Format your file systems&lt;br &#x2F;&gt;
+&lt;code&gt;mkfs.ext4 &#x2F;dev&#x2F;groot&#x2F;root&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+&lt;code&gt;mkfs.ext4 &#x2F;dev&#x2F;groot&#x2F;home&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+&lt;code&gt;mkswap &#x2F;dev&#x2F;groot&#x2F;swap&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+&lt;code&gt;mkfs.fat -F 32 &#x2F;dev&#x2F;sda1&lt;&#x2F;code&gt; (for your bootloader(boot partition))&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Mount your filesystems:&lt;br &#x2F;&gt;
+&lt;code&gt;mount &#x2F;dev&#x2F;groot&#x2F;root &#x2F;mnt&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+&lt;code&gt;mount --mkdir &#x2F;dev&#x2F;groot&#x2F;home &#x2F;mnt&#x2F;home&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+&lt;code&gt;swapon &#x2F;dev&#x2F;groot&#x2F;swap&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+&lt;code&gt;mount --mkdir &#x2F;dev&#x2F;sdb1 &#x2F;mnt&#x2F;boot&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Now install the OS as you do normally and chroot into the newly installed system.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Configuring mkinitcpio:&lt;br &#x2F;&gt;
+a. Make sure you have installed &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;archlinux.org&#x2F;packages&#x2F;core&#x2F;x86_64&#x2F;cryptsetup&#x2F;&quot;&gt;cryptsetup&lt;&#x2F;a&gt; and &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;archlinux.org&#x2F;packages&#x2F;core&#x2F;x86_64&#x2F;lvm2&#x2F;&quot;&gt;lvm2&lt;&#x2F;a&gt;.&lt;br &#x2F;&gt;
+b. Add the &lt;code&gt;keyboard&lt;&#x2F;code&gt;, &lt;code&gt;keymap&lt;&#x2F;code&gt;, &lt;code&gt;encrypt&lt;&#x2F;code&gt; and &lt;code&gt;lvm2&lt;&#x2F;code&gt; hooks to &#x2F;etc&#x2F;mkinitcpio.conf&lt;br &#x2F;&gt;
+&lt;code&gt;HOOKS=(base udev autodetect modconf kms keyboard keymap consolefont block encrypt lvm2 filesystems fsck)&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Configuring the boot loader&lt;br &#x2F;&gt;
+a. Get the UUID of &#x2F;dev&#x2F;sda2 (your LUKS partition) using blkid command.&lt;br &#x2F;&gt;
+&lt;code&gt;# blkid&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+The Output should seem like following:&lt;br &#x2F;&gt;
+&lt;code&gt;&#x2F;dev&#x2F;sda2: UUID=&amp;quot;27da5fec-b1f2-4b54-b2af-a2832d2c4522&amp;quot; TYPE=&amp;quot;crypto_LUKS&amp;quot; PARTUUID=&amp;quot;eeef0000-db63-5749-90d4-55c978558643&amp;quot;&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+b. Set the kernel parameter in boot loader (grub) in &#x2F;etc&#x2F;default&#x2F;grub&lt;br &#x2F;&gt;
+&lt;code&gt;cryptdevice=UUID=Your-UUID:cryptlvm root=&#x2F;dev&#x2F;groot&#x2F;root&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+It should seem like following:&lt;br &#x2F;&gt;
+&lt;code&gt;GRUB_CMDLINE_LINUX=&amp;quot;cryptdevice=UUID=27da5fec-b1f2-4b54-b2af-a2832d2c4522:cryptlvm root=&#x2F;dev&#x2F;groot&#x2F;root&amp;quot;&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Regenerate the initramfs&lt;br &#x2F;&gt;
+&lt;code&gt;mkinitcpio -P&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Regenerate grub config&lt;br &#x2F;&gt;
+&lt;code&gt;grub-mkconfig -o &#x2F;boot&#x2F;grub&#x2F;grub.cfg&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;&#x2F;div&gt;</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Create and delete GPG keypair | Introduction to GnuPG </title>
+		<published>2022-10-30T00:00:00+00:00</published>
+		<updated>2022-12-07T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://castorisdead.xyz/blog/create-and-delete-gpg-key-pair/" type="text/html"/>
+		<id>https://castorisdead.xyz/blog/create-and-delete-gpg-key-pair/</id>
+		<content type="html">&lt;p&gt;GnuPG, popularly known as GPG, is an extremely versatile tool, being widely used as the industry standard for encryption of things like emails, messages, files, or just anything you need to send to someone securely.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;assets&#x2F;images&#x2F;blogs&#x2F;create-and-delete-gpg-key-pair&#x2F;Gnupg.png&quot; alt=&quot;Encrypt and decrypt a file using gpg keys&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;div class=&quot;blogcontents&quot;&gt;
+&lt;h2 id=&quot;introduction-to-gnupg&quot;&gt;Introduction to GnuPG&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gnupg.org&quot;&gt;GnuPG&lt;&#x2F;a&gt; is a hybrid encryption software module that uses &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.openpgp.org&quot;&gt;OpenPGP&lt;&#x2F;a&gt; at its core. PGP stands for Pretty Good Privacy. It is a tool for secure communication that provides authentication and cryptographic privacy for data communication.&lt;&#x2F;p&gt;
+&lt;p&gt;GPG uses public key encryption wherein you create a key pair: one private or secret key you keep to yourself and one public key you share with your correspondents or the world. The important part of this two-key system is that neither key can be calculated by having the other. They are each an independent and necessary part of the system and are based upon solid mathematical foundations.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;prerequisite&quot;&gt;Prerequisite&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A computer with &lt;code&gt;gnupg&lt;&#x2F;code&gt; installed on it.&lt;br &#x2F;&gt;
+Download and install the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gnupg.org&#x2F;download&#x2F;index.html&quot;&gt;latest version of the GPG command line tools&lt;&#x2F;a&gt; for your operating system if you haven&#x27;t yet.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;generating-a-gpg-key-pair&quot;&gt;Generating a GPG key pair&lt;&#x2F;h2&gt;
+&lt;p&gt;To start working with GPG you need to create a key pair for yourself.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use gpg with the --full-generate-key option to create a key pair.&lt;&#x2F;li&gt;
+&lt;li&gt;With this option, gpg creates and populates the ~&#x2F;.gnupg directory if it does not exist.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;gengpgkeypair&quot;&gt;gpg --full-generate-key
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;gengpgkeypairbtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;gengpgkeypair&#x27;,&#x27;gengpgkeypairbtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;overflowy imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --full-generate-key
+gpg (GnuPG) 2.2.39; Copyright (C) 2022 g10 Code GmbH
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.&lt;br&gt;
+gpg: directory &#x27;&#x2F;home&#x2F;castor&#x2F;.gnupg&#x27; created
+gpg: keybox &#x27;&#x2F;home&#x2F;castor&#x2F;.gnupg&#x2F;pubring.kbx&#x27; created
+Please select what kind of key you want:
+   (1) RSA and RSA (default)
+   (2) DSA and Elgamal
+   (3) DSA (sign only)
+   (4) RSA (sign only)
+  (14) Existing key from card
+Your selection? 1
+RSA keys may be between 1024 and 4096 bits long.
+What keysize do you want? (3072) 4096
+Requested keysize is 4096 bits
+Please specify how long the key should be valid.
+         0 = key does not expire
+      &amp;lt;n&amp;gt;  = key expires in n days
+      &amp;lt;n&amp;gt;w = key expires in n weeks
+      &amp;lt;n&amp;gt;m = key expires in n months
+      &amp;lt;n&amp;gt;y = key expires in n years
+Key is valid for? (0) 2
+Key expires at Tue 01 Nov 2022 09:29:11 AM +0545
+Is this correct? (y&#x2F;N) y&lt;br&gt;
+GnuPG needs to construct a user ID to identify your key.&lt;br&gt;
+Real name: yogesh
+Email address: castor@whoisyoges.eu.org
+Comment: just a test key
+You selected this USER-ID:
+    &quot;yogesh (just a test key) &amp;lt;castor@whoisyoges.eu.org&amp;gt;&quot;&lt;br&gt;
+Change (N)ame, (C)omment, (E)mail or (O)kay&#x2F;(Q)uit? O
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+gpg: &#x2F;home&#x2F;castor&#x2F;.gnupg&#x2F;trustdb.gpg: trustdb created
+gpg: directory &#x27;&#x2F;home&#x2F;castor&#x2F;.gnupg&#x2F;openpgp-revocs.d&#x27; created
+gpg: revocation certificate stored as &#x27;&#x2F;home&#x2F;castor&#x2F;.gnupg&#x2F;openpgp-revocs.d&#x2F;036A752DE9DF5516B33E87BE33C05B4624890348.rev&#x27;
+public and secret key created and signed.&lt;br&gt;
+pub   rsa4096 2022-10-30 [SC] [expires: 2022-11-01]
+      036A752DE9DF5516B33E87BE33C05B4624890348
+uid                      yogesh (just a test key) &amp;lt;castor@whoisyoges.eu.org&amp;gt;
+sub   rsa4096 2022-10-30 [E] [expires: 2022-11-01]
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;sharing-your-public-key&quot;&gt;Sharing your public key&lt;&#x2F;h2&gt;
+&lt;p&gt;You need to share your public key so that people can encrypt and send any message and files to you which can be decrypted using only your private key.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;list-the-key-pair&quot;&gt;List the key pair&lt;&#x2F;h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;listurpubkeytoshare&quot;&gt;gpg --list-keys
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;listurpubkeytosharebtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;listurpubkeytoshare&#x27;,&#x27;listurpubkeytosharebtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --list-keys
+&#x2F;home&#x2F;castor&#x2F;.gnupg&#x2F;pubring.kbx
+--------------------------------
+pub   rsa4096 2022-10-30 [SC] [expires: 2022-11-01]
+      036A752DE9DF5516B33E87BE33C05B4624890348
+uid           [ultimate] yogesh (just a test key) &amp;lt;castor@whoisyoges.eu.org&amp;gt;
+sub   rsa4096 2022-10-30 [E] [expires: 2022-11-01]
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;getting-your-public-key&quot;&gt;Getting your public key&lt;&#x2F;h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;shareurpubkey&quot;&gt;gpg --armor --export &amp;lt;id&amp;gt;
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;shareurpubkeybtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;shareurpubkey&#x27;,&#x27;shareurpubkeybtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;overflowy imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --armor --export 036A752DE9DF5516B33E87BE33C05B4624890348
+-----BEGIN PGP PUBLIC KEY BLOCK-----&lt;br&gt;
+mQINBGNd8zcBEACpJLknkdJmlJ9FWnyc6W&#x2F;mMBuv&#x2F;DD9ECF4DB45+2mFhPc21bYW
+nKHZosvtmwBIYHArU6xlHkaOlL2K3Rda7zzwRXB+LzQNqWv0GxN2ukzbS3yixGBg
+s8yDTa4SM1KFBXuLe6j+x0t0&#x2F;M7p4yD0tTtK1zCIheel2pkWZ8djHqzvboj34ZN9
+5nlxTKSTDbsPOOrrD9Y9nM&#x2F;RVKdkklHT1esWc25i9rSHwJ0ds0F3F17mCIt+rRpl
+tm2vTD7Ml5Le5cR8FAz&#x2F;VBhSltDANtWjr4PtUncuwlUU9wFu6zUGMxzsoxLUXkZp
+bB+geMhnbE8Sk1kyYILExaoLcQZ9GmsmBwYc7n1lgWCCNdwuVh26CgQu2Y96VTaC
+&#x2F;lJMe+j&#x2F;HlkZKgZwPJd8JL7kxCvL3zYCsnJ4KPTMxUpgSp5JaUOGm5+mNsR2O98u
+EC8LGU5TplfE7TEsr7IvNH5Dq+XQHaTv54iOJyUDICZMmQyp32nhc7LAvWzRsxDU
+Axsx2lsJzrZC&#x2F;SkD7Kd7gZPGyA0i3KHNDWqq8YbGFIAv3uv+pvw26WKjvTLgm1d5
+5oKEYOGEJa&#x2F;LZAco3O2Mbl7sKMB7bpFcV4Q3Ff26rsp7oSCxU4C66pSdZdpAEQSY
+nnoCsmTtNUIVbyNU9S5lwOwQrWX7IOcfTuGALNq1yW7LnOZimKoGblCBxQARAQAB
+tDN5b2dlc2ggKGp1c3QgYSB0ZXN0IGtleSkgPGNhc3RvckB3aG9pc3lvZ2VzLmV1
+Lm9yZz6JAlQEEwEIAD4WIQQDanUt6d9VFrM+h74zwFtGJIkDSAUCY13zNwIbAwUJ
+AAKjAAULCQgHAgYVCgkICwIEFgIDAQIeAQIXgAAKCRAzwFtGJIkDSLgsEACRqvg6
+2Bcglte32vQNz5tHWqqKmmtSuJsXaxgIYjg+eKvkJrRW3QLK+YpiHYvyTDZLjq0&#x2F;
+VCFbCL3We9CFr3fgdXP1t0svhkidzHyyoe9WihMvxSVqnNKz1kU2NSldsoNmn32p
+VeXOFRI84uCbWFa&#x2F;XMwMryJkOagQQkveK4uTbULjzcSaOGILJEQY6kjo9cQAoPHX
+G9gdfva4Ik8cITVRvS6jISEDPF4atHsiOJ&#x2F;RDUlVhPLdoWpgfmaJgAybLHbOEfJb
+i&#x2F;jxz4TCvR&#x2F;q9z7yT5Znc9R8yHgrU2EKoK5rj0bmmCpYH&#x2F;eYDkehId07on8&#x2F;XXxh
+VC15ydz1RqQzLcEx8ZUMRZ4nqW+6TfIrv4lyvVi2eJbodc0iKqTL7blFaWA3bvHu
+X6ZPm+C3MzUP2tt3gvWrkfDJrn536Xrjt8r2P0W4BFT7tBiFFp4UNUxeS+ghVlJl
+zkMvvgccpEpn2HHHU8BLMgdtPHKtLmJXNLK44cgXBb&#x2F;lhS8DCusnzKB9dSFUliTS
+WuC&#x2F;ZUMgUFjL2TrnLbsUdQiSIwYsascqoCArcAd2++FBYTrD2yswv6ir+FzEUqjW
+KPa76oCrDgD34aG4nJa67xjXWVnahg87SljxP3d3S&#x2F;6q0+4RYC+I7uMmGeTxzdnZ
+WAVL&#x2F;7vFq7Hbmgvpx3YJj9LRJwQYUiQZpK+rDrkCDQRjXfM3ARAAo0Mlc25OPWJE
+lQr&#x2F;rEmCRTh5z8GejVPN4JL7rv2sqe+rctHxbjvofwH35ThInGfuq6Noq4l6r40F
+yHIUuib0MZZLTAifgZGS5YyNlB54x258JdcY5C6eENaV9G5Gqz3UpMdXOs&#x2F;jxzmh
+h3sPKLhFiDhRAylj2o78BZdIPsxGa7xNn0&#x2F;HLkdJ7zwyUGaoMwM+Ps3xHEA8kfA7
+daCHhkzCx4G8PGs2LXNkSMW51Km0ZCE9gyk1COL2TxCaniCy9PxcIbGd&#x2F;SZYUf89
+5RAXz7aBtPIYt1OhXAItvM+b00XLBxxGtRIb1Nyo7pwbqT72dIPXiMPBf0OK7Vbq
+JDUFiCIRsKTolUm2MCOcboGhgBxfR6uIUMOKXY2d3aer&#x2F;7UkWHe&#x2F;6y7+sGHkWBaf
+MUjqbAMPDBjKk2b6OodalQr8oyxZ79d5z2D4gBooxKpJA2NS5UOUaLBPtB83POfw
+5otQJk2RlnlWmV6MVQolwg+IXiRZQVkzJ0mazZ6eEwP&#x2F;EcZPpXur8LT6W2mo+rN2
+g8qC2nCRZUQ842PoNi9L5ug1fRsaiTYhC4pXUppBbY3Sp8GFuTxP9FhWhK2j2sX2
+xdDRmqDWePjimPZ4tzBBQalCLj0kuO8PtfChuWXk2Ro&#x2F;hEg59mPxOTR9uyLtZrPF
+wOM7KIgPondEa&#x2F;lYP9JFoaTCm3ktGi8AEQEAAYkCPAQYAQgAJhYhBANqdS3p31UW
+sz6HvjPAW0YkiQNIBQJjXfM3AhsMBQkAAqMAAAoJEDPAW0YkiQNIYl4P&#x2F;0yIj7WK
+hNyJtgKHv5QMEtbD3lL6IPNcUnEddbrCDuQD+&#x2F;CCb02Af9IG5wwuPlSIpBa2Nh4r
+NZrTkcPVitqaRdNPVTAeCFXGNnY+vMzbGBYHh+ajX6&#x2F;b1YCmNKtTC37FH8G6GAOl
+Hvi1xYhP&#x2F;jFNoX5ftkVNU6MJi2bfJx98jRSYk&#x2F;fhjAc&#x2F;bG7YpLR&#x2F;4B&#x2F;U7&#x2F;4Q4YAF
+u+OrrJOeYRz7OfuBaFBIO2E34nDyd6hxdjR6fOThidlyzPOgkOEc6OB3R&#x2F;IeKN69
+i0ASLp&#x2F;SJSpL25FE2r1olrxR8FMZnnAMe10T8fE5oRtKR5crmq58SdKQSW6DFh6O
+FcL&#x2F;2LOLDJn7Dazto&#x2F;pvgFVF9kJ89bZhcJdyVaUkP5T6W3qW7nSNvkKCfBI+shUT
+gvSue&#x2F;AqzhCTh4pXR9xO7SYNbXku9J1h0VXNpmH3U2z4GODhYzeeq1+e1QmOFVCR
+zRb&#x2F;45&#x2F;Tf4WT&#x2F;rHMfFzCOzmLW9IsH8k8yfi6gxmOEdRHOIqLqmf9Dgc2+KKnPWhO
+NodtiJD3ZN1f3krdy22bAIzOlfm5cb7hWoUBcRWqk76ZWcmIndffl2cc8MFaFcV3
+GNyVJ+vbeBq1mCC&#x2F;pQPqxwmkvwOmywdu9dDUoXH7+S4EXtwPDSlbS3bQBU1KqSMr
+igXd7Kt4qERYzmc1NLbHG7&#x2F;H&#x2F;DV6KyxuJ4dJ
+=oYnT
+-----END PGP PUBLIC KEY BLOCK-----
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Just copy the output starting from &lt;code&gt;-----BEGIN PGP PUBLIC KEY BLOCK-----&lt;&#x2F;code&gt; to &lt;code&gt;-----END PGP PUBLIC KEY BLOCK-----&lt;&#x2F;code&gt; and send it to anyone who need to send you an encrypted message.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;deleting-the-needless-key&quot;&gt;Deleting the needless key&lt;&#x2F;h2&gt;
+&lt;p&gt;Assuming you don&#x27;t need the keys anymore or if the key has been expired and you wish to delete it, here&#x27;s the procedure:&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;delete-secret-private-key&quot;&gt;Delete secret&#x2F;private key&lt;&#x2F;h3&gt;
+&lt;p&gt;First we should list if there are any secret keys available for the respective user and delete it if exists before deleting the public key.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;checking-private-secret-key&quot;&gt;Checking private&#x2F;secret key&lt;&#x2F;h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;listseckeyfordel&quot;&gt;gpg --list-secret-keys
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;listseckeyfordelbtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;listseckeyfordel&#x27;,&#x27;listseckeyfordelbtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --list-secret-keys
+&#x2F;home&#x2F;castor&#x2F;.gnupg&#x2F;pubring.kbx
+--------------------------------
+sec   rsa4096 2022-10-30 [SC] [expires: 2022-11-01]
+      036A752DE9DF5516B33E87BE33C05B4624890348
+uid           [ultimate] yogesh (just a test key) &amp;lt;castor@whoisyoges.eu.org&amp;gt;
+ssb   rsa4096 2022-10-30 [E] [expires: 2022-11-01]
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;deleting-private-secret-key&quot;&gt;Deleting private&#x2F;secret key&lt;&#x2F;h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;delsecgpgkey&quot;&gt;gpg --batch --delete-secret-keys --yes &amp;lt;id&amp;gt;
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;delsecgpgkeybtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;delsecgpgkey&#x27;,&#x27;delsecgpgkeybtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --batch --delete-secret-keys --yes 036A752DE9DF5516B33E87BE33C05B4624890348
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;verify-the-private-key-deletion&quot;&gt;Verify the private key deletion&lt;&#x2F;h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;verifysecgpgkeydln&quot;&gt;gpg --list-secret-keys
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;verifysecgpgkeydlnbtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;verifysecgpgkeydln&#x27;,&#x27;verifysecgpgkeydlnbtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;The deleted secret key shouldn&#x27;t exist anymore.&lt;&#x2F;p&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --list-secret-keys
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;delete-public-key&quot;&gt;Delete public key&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;checking-available-public-key-s&quot;&gt;Checking available public key&#x2F;s&lt;&#x2F;h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;listpubgpgkeytodel&quot;&gt;gpg --list-keys
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;listpubgpgkeytodelbtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;listpubgpgkeytodel&#x27;,&#x27;listpubgpgkeytodelbtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --list-keys
+&#x2F;home&#x2F;castor&#x2F;.gnupg&#x2F;pubring.kbx
+--------------------------------
+pub   rsa4096 2022-10-30 [SC] [expires: 2022-11-01]
+      036A752DE9DF5516B33E87BE33C05B4624890348
+uid           [ultimate] yogesh (just a test key) &amp;lt;castor@whoisyoges.eu.org&amp;gt;
+sub   rsa4096 2022-10-30 [E] [expires: 2022-11-01]
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;deleting-public-key&quot;&gt;Deleting public key&lt;&#x2F;h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;delpubgpgkey&quot;&gt;gpg --batch --delete-keys --yes &amp;lt;id&amp;gt;
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;delpubgpgkeybtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;delpubgpgkey&#x27;,&#x27;delpubgpgkeybtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --batch --delete-keys --yes 036A752DE9DF5516B33E87BE33C05B4624890348
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;verify-the-public-key-deletion&quot;&gt;Verify the public key deletion&lt;&#x2F;h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;verifypubgpgkeydln&quot;&gt;gpg --list-keys
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;verifypubgpgkeydlnbtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;verifypubgpgkeydln&#x27;,&#x27;verifypubgpgkeydlnbtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;The deleted public key shouldn&#x27;t exist anymore. If you have more than one key, the remaining keys will be shown.&lt;&#x2F;p&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --list-keys
+gpg: checking the trustdb
+gpg: no ultimately trusted keys found
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Encrypt and decrypt a file using GPG keys</title>
+		<published>2022-10-29T00:00:00+00:00</published>
+		<updated>2022-12-07T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://castorisdead.xyz/blog/encrypt-and-decrypt-a-file-using-gpg-keys/" type="text/html"/>
+		<id>https://castorisdead.xyz/blog/encrypt-and-decrypt-a-file-using-gpg-keys/</id>
+		<content type="html">&lt;p&gt;If you have someone&#x27;s public gpg key, you can use gnupg to safely encrypt a file and send it to them over an insecure connection (i.e. the internet). They can then use their private key to decrypt the file you sent.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;assets&#x2F;images&#x2F;blogs&#x2F;encrypt-and-decrypt-a-file-using-GPG-keys&#x2F;encrypt-and-decrypt-a-file-using-GPG-keys.jpg&quot; alt=&quot;Encrypt and decrypt a file using gpg keys&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;div class=&quot;blogcontents&quot;&gt;
+&lt;h2 id=&quot;how-does-gpg-work&quot;&gt;How does GPG work?&lt;&#x2F;h2&gt;
+&lt;p&gt;To start using GPG, you’ll first need to have a GPG key.&lt;&#x2F;p&gt;
+&lt;p&gt;A GPG key is what you’ll use to encrypt or decrypt files. It’s also what is used to identity you, with things like your name and email being tied to the key as well.&lt;&#x2F;p&gt;
+&lt;br&gt;
+&lt;p&gt;GPG keys work by using two files, a private key and a public key. These two keys are tied to each other, and are both needed to use all of GPG’s functionality, notably encrypting and decrypting files.&lt;&#x2F;p&gt;
+&lt;br&gt;
+&lt;p&gt;When you encrypt a file with GPG, it uses either the private key or the public key. The new, encrypted file can then only be decrypted with the paired alternate public or private key.&lt;br &#x2F;&gt;
+Generally public key is used for encryption and private one for decryption.&lt;&#x2F;p&gt;
+&lt;br&gt;
+&lt;p&gt;The private key is meant to be stored in a fashion stated directly in its name – privately, and not given out to anyone.&lt;&#x2F;p&gt;
+&lt;p&gt;The public key on the other hand is meant to be given to others, or anyone you want to be able to encrypt files to send to you securely.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;prerequisite&quot;&gt;Prerequisite&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A computer with &lt;code&gt;gnupg&lt;&#x2F;code&gt; installed on it.&lt;&#x2F;li&gt;
+&lt;li&gt;A GPG key pair&lt;br &#x2F;&gt;
+&lt;a href=&quot;&#x2F;blog&#x2F;create-your-gpg-key-pair&quot;&gt;Don&#x27;t know how to create one? Read this first.&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;encryption-using-a-public-gpg-key&quot;&gt;Encryption using a public GPG key&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;save-the-public-key-in-a-file-say-yoges-pubgpg-asc&quot;&gt;Save the public key in a file, say &lt;code&gt;yoges_pubgpg.asc&lt;&#x2F;code&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Contents inside &lt;code&gt;yoges_pubgpg.asc&lt;&#x2F;code&gt; should seem something like below:&lt;&#x2F;p&gt;
+&lt;pre class=&quot;overflowy imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;-----BEGIN PGP PUBLIC KEY BLOCK-----&lt;br&gt;
+mQINBGNd8zcBEACpJLknkdJmlJ9FWnyc6W&#x2F;mMBuv&#x2F;DD9ECF4DB45+2mFhPc21bYW
+nKHZosvtmwBIYHArU6xlHkaOlL2K3Rda7zzwRXB+LzQNqWv0GxN2ukzbS3yixGBg
+s8yDTa4SM1KFBXuLe6j+x0t0&#x2F;M7p4yD0tTtK1zCIheel2pkWZ8djHqzvboj34ZN9
+5nlxTKSTDbsPOOrrD9Y9nM&#x2F;RVKdkklHT1esWc25i9rSHwJ0ds0F3F17mCIt+rRpl
+tm2vTD7Ml5Le5cR8FAz&#x2F;VBhSltDANtWjr4PtUncuwlUU9wFu6zUGMxzsoxLUXkZp
+bB+geMhnbE8Sk1kyYILExaoLcQZ9GmsmBwYc7n1lgWCCNdwuVh26CgQu2Y96VTaC
+&#x2F;lJMe+j&#x2F;HlkZKgZwPJd8JL7kxCvL3zYCsnJ4KPTMxUpgSp5JaUOGm5+mNsR2O98u
+EC8LGU5TplfE7TEsr7IvNH5Dq+XQHaTv54iOJyUDICZMmQyp32nhc7LAvWzRsxDU
+Axsx2lsJzrZC&#x2F;SkD7Kd7gZPGyA0i3KHNDWqq8YbGFIAv3uv+pvw26WKjvTLgm1d5
+5oKEYOGEJa&#x2F;LZAco3O2Mbl7sKMB7bpFcV4Q3Ff26rsp7oSCxU4C66pSdZdpAEQSY
+nnoCsmTtNUIVbyNU9S5lwOwQrWX7IOcfTuGALNq1yW7LnOZimKoGblCBxQARAQAB
+tDN5b2dlc2ggKGp1c3QgYSB0ZXN0IGtleSkgPGNhc3RvckB3aG9pc3lvZ2VzLmV1
+Lm9yZz6JAlQEEwEIAD4WIQQDanUt6d9VFrM+h74zwFtGJIkDSAUCY13zNwIbAwUJ
+AAKjAAULCQgHAgYVCgkICwIEFgIDAQIeAQIXgAAKCRAzwFtGJIkDSLgsEACRqvg6
+2Bcglte32vQNz5tHWqqKmmtSuJsXaxgIYjg+eKvkJrRW3QLK+YpiHYvyTDZLjq0&#x2F;
+VCFbCL3We9CFr3fgdXP1t0svhkidzHyyoe9WihMvxSVqnNKz1kU2NSldsoNmn32p
+VeXOFRI84uCbWFa&#x2F;XMwMryJkOagQQkveK4uTbULjzcSaOGILJEQY6kjo9cQAoPHX
+G9gdfva4Ik8cITVRvS6jISEDPF4atHsiOJ&#x2F;RDUlVhPLdoWpgfmaJgAybLHbOEfJb
+i&#x2F;jxz4TCvR&#x2F;q9z7yT5Znc9R8yHgrU2EKoK5rj0bmmCpYH&#x2F;eYDkehId07on8&#x2F;XXxh
+VC15ydz1RqQzLcEx8ZUMRZ4nqW+6TfIrv4lyvVi2eJbodc0iKqTL7blFaWA3bvHu
+X6ZPm+C3MzUP2tt3gvWrkfDJrn536Xrjt8r2P0W4BFT7tBiFFp4UNUxeS+ghVlJl
+zkMvvgccpEpn2HHHU8BLMgdtPHKtLmJXNLK44cgXBb&#x2F;lhS8DCusnzKB9dSFUliTS
+WuC&#x2F;ZUMgUFjL2TrnLbsUdQiSIwYsascqoCArcAd2++FBYTrD2yswv6ir+FzEUqjW
+KPa76oCrDgD34aG4nJa67xjXWVnahg87SljxP3d3S&#x2F;6q0+4RYC+I7uMmGeTxzdnZ
+WAVL&#x2F;7vFq7Hbmgvpx3YJj9LRJwQYUiQZpK+rDrkCDQRjXfM3ARAAo0Mlc25OPWJE
+lQr&#x2F;rEmCRTh5z8GejVPN4JL7rv2sqe+rctHxbjvofwH35ThInGfuq6Noq4l6r40F
+yHIUuib0MZZLTAifgZGS5YyNlB54x258JdcY5C6eENaV9G5Gqz3UpMdXOs&#x2F;jxzmh
+h3sPKLhFiDhRAylj2o78BZdIPsxGa7xNn0&#x2F;HLkdJ7zwyUGaoMwM+Ps3xHEA8kfA7
+daCHhkzCx4G8PGs2LXNkSMW51Km0ZCE9gyk1COL2TxCaniCy9PxcIbGd&#x2F;SZYUf89
+5RAXz7aBtPIYt1OhXAItvM+b00XLBxxGtRIb1Nyo7pwbqT72dIPXiMPBf0OK7Vbq
+JDUFiCIRsKTolUm2MCOcboGhgBxfR6uIUMOKXY2d3aer&#x2F;7UkWHe&#x2F;6y7+sGHkWBaf
+MUjqbAMPDBjKk2b6OodalQr8oyxZ79d5z2D4gBooxKpJA2NS5UOUaLBPtB83POfw
+5otQJk2RlnlWmV6MVQolwg+IXiRZQVkzJ0mazZ6eEwP&#x2F;EcZPpXur8LT6W2mo+rN2
+g8qC2nCRZUQ842PoNi9L5ug1fRsaiTYhC4pXUppBbY3Sp8GFuTxP9FhWhK2j2sX2
+xdDRmqDWePjimPZ4tzBBQalCLj0kuO8PtfChuWXk2Ro&#x2F;hEg59mPxOTR9uyLtZrPF
+wOM7KIgPondEa&#x2F;lYP9JFoaTCm3ktGi8AEQEAAYkCPAQYAQgAJhYhBANqdS3p31UW
+sz6HvjPAW0YkiQNIBQJjXfM3AhsMBQkAAqMAAAoJEDPAW0YkiQNIYl4P&#x2F;0yIj7WK
+hNyJtgKHv5QMEtbD3lL6IPNcUnEddbrCDuQD+&#x2F;CCb02Af9IG5wwuPlSIpBa2Nh4r
+NZrTkcPVitqaRdNPVTAeCFXGNnY+vMzbGBYHh+ajX6&#x2F;b1YCmNKtTC37FH8G6GAOl
+Hvi1xYhP&#x2F;jFNoX5ftkVNU6MJi2bfJx98jRSYk&#x2F;fhjAc&#x2F;bG7YpLR&#x2F;4B&#x2F;U7&#x2F;4Q4YAF
+u+OrrJOeYRz7OfuBaFBIO2E34nDyd6hxdjR6fOThidlyzPOgkOEc6OB3R&#x2F;IeKN69
+i0ASLp&#x2F;SJSpL25FE2r1olrxR8FMZnnAMe10T8fE5oRtKR5crmq58SdKQSW6DFh6O
+FcL&#x2F;2LOLDJn7Dazto&#x2F;pvgFVF9kJ89bZhcJdyVaUkP5T6W3qW7nSNvkKCfBI+shUT
+gvSue&#x2F;AqzhCTh4pXR9xO7SYNbXku9J1h0VXNpmH3U2z4GODhYzeeq1+e1QmOFVCR
+zRb&#x2F;45&#x2F;Tf4WT&#x2F;rHMfFzCOzmLW9IsH8k8yfi6gxmOEdRHOIqLqmf9Dgc2+KKnPWhO
+NodtiJD3ZN1f3krdy22bAIzOlfm5cb7hWoUBcRWqk76ZWcmIndffl2cc8MFaFcV3
+GNyVJ+vbeBq1mCC&#x2F;pQPqxwmkvwOmywdu9dDUoXH7+S4EXtwPDSlbS3bQBU1KqSMr
+igXd7Kt4qERYzmc1NLbHG7&#x2F;H&#x2F;DV6KyxuJ4dJ
+=oYnT
+-----END PGP PUBLIC KEY BLOCK-----
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;add-the-public-gpg-key-to-your-keyring&quot;&gt;Add the public GPG key to your keyring&lt;&#x2F;h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;addpubgpgkey&quot;&gt;gpg --import yoges_pubgpg.asc
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;addpubgpgkeybtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;addpubgpgkey&#x27;,&#x27;addpubgpgkeybtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --import yoges_pubgpg.asc
+gpg: key 33C05B4624890348: public key &quot;yogesh (just a test key) &amp;lt;castor@whoisyoges.eu.org&amp;gt;&quot; imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;signing-a-public-key&quot;&gt;Signing a Public Key&lt;&#x2F;h3&gt;
+&lt;p&gt;If you want to keep a file away from prying eyes and ensure that it comes from the person it says it comes from and that it has not be altered, you can sign the file using your private key and encrypt it using the recipient’s public key. The recipient can then decrypt it using his private key and verify the signature using the sender’s public key.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;check-recipient-s-public-key&quot;&gt;Check recipient&#x27;s public key&lt;&#x2F;h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;chkpubgpgkey&quot;&gt;gpg --list-public-keys
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;chkpubgpgkeybtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;chkpubgpgkey&#x27;,&#x27;chkpubgpgkeybtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --list-public-keys
+&#x2F;home&#x2F;useless&#x2F;.gnupg&#x2F;pubring.kbx
+--------------------------------------------
+pub   rsa4096 2022-10-29 [SC]
+      D8C96133251FFDCC8ACFE645AC5C5F04930D8ACF
+uid           [ultimate] Castor (Trusted GPG Key of Castor from https:&#x2F;&#x2F;castorIsDead.xyz; send map of hidden treasure to castor!) &amp;lt;whoisYoges@castorIsDead.xyz&amp;gt;
+sub   rsa4096 2022-10-29 [E]&lt;br&gt;
+pub   rsa4096 2022-10-30 [SC] [expires: 2022-11-01]
+      036A752DE9DF5516B33E87BE33C05B4624890348
+uid           [ unknown] yogesh (just a test key) &amp;lt;castor@whoisyoges.eu.org&amp;gt;
+sub   rsa4096 2022-10-30 [E] [expires: 2022-11-01]
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The &lt;code&gt;[ultimate]&lt;&#x2F;code&gt; one is your personal key. And the other &lt;code&gt;[unknown]&lt;&#x2F;code&gt; is the public key you just added.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;sign-the-public-key-with-your-gpg-key&quot;&gt;Sign the public key with your GPG key&lt;&#x2F;h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;signpubgpgkey&quot;&gt;gpg --sign-key &amp;lt;id&amp;gt;
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;signpubgpgkeybtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;signpubgpgkey&#x27;,&#x27;signpubgpgkeybtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --sign-key 036A752DE9DF5516B33E87BE33C05B4624890348&lt;br&gt;
+pub  rsa4096&#x2F;33C05B4624890348
+     created: 2022-10-30  expires: 2022-11-01  usage: SC
+     trust: unknown       validity: unknown
+sub  rsa4096&#x2F;58A64F87EEA58B99
+     created: 2022-10-30  expires: 2022-11-01  usage: E
+[ unknown] (1). yogesh (just a test key) &amp;lt;castor@whoisyoges.eu.org&amp;gt;&lt;br&gt;&lt;br&gt;
+pub  rsa4096&#x2F;33C05B4624890348
+     created: 2022-10-30  expires: 2022-11-01  usage: SC
+     trust: unknown       validity: unknown
+ Primary key fingerprint: 036A 752D E9DF 5516 B33E  87BE 33C0 5B46 2489 0348&lt;br&gt;
+     yogesh (just a test key) &amp;lt;castor@whoisyoges.eu.org&amp;gt;&lt;br&gt;
+This key is due to expire on 2022-11-01.
+Are you sure that you want to sign this key with your
+key &quot;Castor (Trusted GPG Key of Castor from https:&#x2F;&#x2F;castorIsDead.xyz; send map of hidden treasure to castor!) &amp;lt;whoisYoges@castorIsDead.xyz&amp;gt;&quot; (AC5C5F04930D8ACF)&lt;br&gt;
+Really sign? (y&#x2F;N) y
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;And then you&#x27;ll be prompted to enter your GPG key password, enter that and the key is signed.&lt;br &#x2F;&gt;
+After signing the public key, the &lt;code&gt;[unknown]&lt;&#x2F;code&gt; key is signed and shown as &lt;code&gt;[ full ]&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --list-public-keys
+pub   rsa4096 2022-10-29 [SC]
+      D8C96133251FFDCC8ACFE645AC5C5F04930D8ACF
+uid           [ultimate] Castor (Trusted GPG Key of Castor from https:&#x2F;&#x2F;castorIsDead.xyz; send map of hidden treasure to castor!) &amp;lt;whoisYoges@castorIsDead.xyz&amp;gt;
+sub   rsa4096 2022-10-29 [E]&lt;br&gt;
+pub   rsa4096 2022-10-30 [SC] [expires: 2022-11-01]
+      036A752DE9DF5516B33E87BE33C05B4624890348
+uid           [  full  ] yogesh (just a test key) &amp;lt;castor@whoisyoges.eu.org&amp;gt;
+sub   rsa4096 2022-10-30 [E] [expires: 2022-11-01]
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;encrypt-the-file-you-re-sending-using-the-public-gpg-key&quot;&gt;Encrypt the file you&#x27;re sending, using the public GPG key:&lt;&#x2F;h3&gt;
+&lt;p&gt;In this example &lt;code&gt;message.txt&lt;&#x2F;code&gt; is the secret text message, &lt;code&gt;message.txt.gpg&lt;&#x2F;code&gt; is the encrypted file and &lt;code&gt;castor@whoisYoges.eu.org&lt;&#x2F;code&gt; is the email address from the receiver&#x27;s public key. The encrypted file can be named whatever you like.&lt;&#x2F;p&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;secmsgpgpinc&quot;&gt;gpg --encrypt --output message.txt.gpg --recipient castor@whoisYoges.eu.org message.txt
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;secmsgpgpincbtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;secmsgpgpinc&#x27;,&#x27;secmsgpgpincbtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --encrypt --output message.txt.gpg --recipient castor@whoisYoges.eu.org message.txt
+gpg: checking the trustdb
+gpg: marginals needed: 3  completes needed: 1  trust model: pgp
+gpg: depth: 0  valid:   1  signed:   1  trust: 0-, 0q, 0n, 0m, 0f, 1u
+gpg: depth: 1  valid:   1  signed:   0  trust: 1-, 0q, 0n, 0m, 0f, 0u
+gpg: next trustdb check due at 2022-11-01
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now you can send the encrypted file (&lt;code&gt;message.txt.pgp&lt;&#x2F;code&gt;) to the recipient. It is even safe to upload the file&#x2F;s to a public file sharing service and tell the recipient to download them from there.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;decrypting-using-private-gpg-key&quot;&gt;Decrypting using private GPG key&lt;&#x2F;h2&gt;
+&lt;p&gt;Here the encrypted file is message.txt.pgp and the decrypted file will be named message.txt&lt;&#x2F;p&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;decpgpkey&quot;&gt;gpg --decrypt --output message.txt message.txt.pgp
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;decpgpkeybtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;decpgpkey&#x27;,&#x27;decpgpkeybtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --decrypt --output message.txt message.txt.gpg 
+gpg: encrypted with 4096-bit RSA key, ID 58A64F87EEA58B99, created 2022-10-30
+      &quot;yogesh (just a test key) &amp;lt;castor@whoisyoges.eu.org&amp;gt;&quot;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;deleting-public-keys-from-keyring&quot;&gt;Deleting public keys from keyring&lt;&#x2F;h2&gt;
+&lt;p&gt;Assuming you don&#x27;t need the key any more and wish to delete it:&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;list-the-available-keys-for-the-respective-user&quot;&gt;list the available keys for the respective user&lt;&#x2F;h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;listpubgpgkeytodel&quot;&gt;gpg --list-public-keys
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;listpubgpgkeytodelbtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;listpubgpgkeytodel&#x27;,&#x27;listpubgpgkeytodelbtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --list-public-keys
+pub   rsa4096 2022-10-29 [SC]
+      D8C96133251FFDCC8ACFE645AC5C5F04930D8ACF
+uid           [ultimate] Castor (Trusted GPG Key of Castor from https:&#x2F;&#x2F;castorIsDead.xyz; send map of hidden treasure to castor!) &amp;lt;whoisYoges@castorIsDead.xyz&amp;gt;
+sub   rsa4096 2022-10-29 [E]&lt;br&gt;
+pub   rsa4096 2022-10-30 [SC] [expires: 2022-11-01]
+      036A752DE9DF5516B33E87BE33C05B4624890348
+uid           [  full  ] yogesh (just a test key) &amp;lt;castor@whoisyoges.eu.org&amp;gt;
+sub   rsa4096 2022-10-30 [E] [expires: 2022-11-01]
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;delete-the-unrequired-key&quot;&gt;Delete the unrequired key&lt;&#x2F;h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;delunrequiredpgpkey&quot;&gt;gpg --batch --delete-keys --yes &amp;lt;id&amp;gt;
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;delunrequiredpgpkeybtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;delunrequiredpgpkey&#x27;,&#x27;delunrequiredpgpkeybtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --batch --delete-keys --yes 036A752DE9DF5516B33E87BE33C05B4624890348
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;verify-the-deletion&quot;&gt;Verify the deletion&lt;&#x2F;h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;verifygpgkeydelition&quot;&gt;gpg --list-public-keys
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;verifygpgkeydelitionbtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;verifygpgkeydelition&#x27;,&#x27;verifygpgkeydelitionbtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --list-public-keys
+pub   rsa4096 2022-10-29 [SC]
+      D8C96133251FFDCC8ACFE645AC5C5F04930D8ACF
+uid           [ultimate] Castor (Trusted GPG Key of Castor from https:&#x2F;&#x2F;castorIsDead.xyz; send map of hidden treasure to castor!) &amp;lt;whoisYoges@castorIsDead.xyz&amp;gt;
+sub   rsa4096 2022-10-29 [E]
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;</content>
+	</entry>
+</feed>
