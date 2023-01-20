@@ -259,6 +259,10 @@ footer p a.social {
     margin: 30px auto
 }
 
+.webrings p {
+    text-align: left
+}
+
 .webrings a {
     display: inline-block;
     margin: 5px
@@ -291,7 +295,8 @@ footer p a.social {
 }
 
 .gototoplink:hover {
-    background-color: #555
+    background-color: #555;
+    color: #fff
 }
 
 ::-webkit-scrollbar {
