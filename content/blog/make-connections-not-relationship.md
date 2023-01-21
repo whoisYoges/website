@@ -11,8 +11,6 @@ shareable = true
 Connections allow us to be more open, present, and flexible in our interactions with others, without any pressure, expectation and compromization, which leads to greater fulfillment and satisfaction.
 <!-- more -->
 
-<div class="blogcontents">
-
 In today's fast-paced world, it's easy to get caught up in the idea of building relationships. We're taught from a young age that having a significant other, a group of friends, or a close-knit family is the key to happiness. But what if there was a different way to approach social interactions that could lead to even greater fulfillment and satisfaction?
 
 Enter the concept of making connections instead of relationships.
@@ -26,5 +24,3 @@ Making connections also allows for a level of flexibility and freedom that may n
 Another advantage of making connections is that it allows us to build a diverse network of people from different backgrounds, experiences, and perspectives. This diversity can bring a wealth of knowledge, inspiration, and opportunities into our lives.
 
 In short, making connections is about being open, present, and flexible in our interactions with others, which can lead to greater fulfillment and satisfaction. It's about embracing the potential for a connection without any pressure or expectation. By focusing on making connections, we open ourselves up to a world of possibilities and potential for growth and fulfillment.
-
-</div>

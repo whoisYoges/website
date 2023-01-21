@@ -7,12 +7,9 @@ description = "Understanding and working with git remote. Do you have same git r
 gotoTop = true
 shareable = true
 keywords = "Working with Git remotes and pushing to multiple Git repositories, Git, Version control, Remote repository, Fetch, Push, Pull, Branch, Merge, Git hosting service, GitHub, GitLab, Bitbucket, Remote tracking branch, Upstream repository, Collaboration, Git workflows, CLI (Command Line Interface), GUI (Graphical User Interface), SSH (Secure Shell), HTTPS (Hypertext Transfer Protocol Secure)"
-toc = "<p><a href='#introduction-to-git-remote'>Introduction to git remote</a></p><p><a href='#adding-a-new-remote'>Adding a new remote</a></p><p><a href='#multiple-push-urls-in-a-single-remote'>Multiple push urls in a single remote</a></p><p><a href='#conclusion'>Conclusion</a></p><h3>Also Read</h3><hr><p><a href='/blog/disk-encryption-in-linux-installation/'>Disk encryption in linux installation</a></p>"
 +++
 Do you have same git repository over different platforms? Are you searching for the convenient way to manage them all at once within a single local repository?
 <!-- more -->
-
-<div class="blogcontents">
 
 ## Introduction to git remote?
 
@@ -142,5 +139,3 @@ You cannot fetch updates from multiple remotes in this method.
 ## Conclusion
 
 In summary, adding and using multiple remotes in a Git repository can be a useful way to collaborate with others and make backups of your work. By using the git remote and git push commands, you can easily work with multiple remotes and push and fetch changes as needed.
-
-</div>

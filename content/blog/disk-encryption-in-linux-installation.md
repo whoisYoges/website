@@ -7,14 +7,11 @@ description = "Disk encryption in linux prevents a disk drive, like a hard drive
 opengraph = "/assets/images/blogs/disk-encryption-in-linux-installation/disk-encryption-in-linux-installation.jpg"
 shareable = true
 keywords = "Encrypt,Encryption key,Disk encryption software,Full disk encryption, File encryption, Hard drive encryption, BitLocker, VeraCrypt, Disk encryption algorithms, Data encryption, lvmonluks, luks encryption"
-toc = "<p><a href='#introduction'>Introduction</a></p><p><a href='#who-uses-disk-encryption'>Who Uses Disk Encryption</a></p><p><a href='#my-preferred-method-of-disk-encryption'>My preferred method of disk encryption</a></P><h3>Also Read</h3><hr><p><a href='/blog/understanding-and-working-with-git-remotes/'>Understanding and working with git remotes</a></p>"
 +++
 Disk encryption in linux prevents a disk drive, like a hard drive or a portable USB storage device or laptop, from booting up unless the user inputs the correct authentication data. And here I'm going to talk about my preferred method of disk encryption while installing linux and see how it works?
 <!-- more -->
 
 ![disk-encryption-in-linux-installation](/assets/images/blogs/disk-encryption-in-linux-installation/disk-encryption-in-linux-installation.jpg)
-
-<div class="blogcontents">
 
 ## Introduction
 
@@ -88,5 +85,3 @@ Okay Let's directly talk about how we can setup my preferred encryption type for
 
 10. Regenerate grub config  
     `grub-mkconfig -o /boot/grub/grub.cfg`
-
-</div>
