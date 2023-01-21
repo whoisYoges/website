@@ -1,16 +1,11 @@
-@font-face {
-    font-family:"FreePixel";
-    size-adjust:115%;
-    src:url("/assets/fonts/freepixel/FreePixel.eot?#iefix") format("embedded-opentype"),url("/assets/fonts/freepixel/FreePixel.woff2") format("woff2"),url("/assets/fonts/freepixel/FreePixel.woff") format("woff"),url("/assets/fonts/freepixel/FreePixel.ttf") format("truetype"),url("/assets/fonts/freepixel/FreePixel.svg") format("svg");
-}
-
 html {
     scroll-behavior: smooth
 }
 
 body {
-    background: radial-gradient(circle, #39382d, #000000);
+    background: radial-gradient(circle, #39382d, #000);
     color: #fff;
+    font-display: fallback;
     font-family: "FreePixel", monospace;
     font-size: 16px;
     position: relative
@@ -34,12 +29,14 @@ h6 {
     color: #d8774a
 }
 
-a, summary {
+a,
+summary {
     color: #ddad6f;
     text-decoration: none
 }
 
-a:hover, summary:hover {
+a:hover,
+summary:hover {
     color: #f70;
     cursor: pointer
 }
@@ -239,10 +236,6 @@ footer {
     border-radius: 10px
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: #49db1c
-}
-
 @media screen and (max-width: 768px) {
 
     .contents {
@@ -278,9 +271,6 @@ footer {
         width: 100%
     }
 
-}
-
-@media screen and (max-width: 600px) {
     .gototop {
         right: 1rem;
         bottom: 8rem
@@ -289,4 +279,14 @@ footer {
     .gototoplink {
         top: 85vh
     }
+
+}
+
+@font-face {
+    font-family: 'FreePixel';
+    size-adjust: 115%;
+
+    src: url('/assets/fonts/FreePixel/FreePixel.woff') format('woff'),
+        url('/assets/fonts/FreePixel/FreePixel.woff2') format('woff2'),
+        url('/assets/fonts/FreePixel/FreePixel.ttf') format('truetype');
 }
