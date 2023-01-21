@@ -1,66 +1,41 @@
+@font-face {
+    font-family:"FreePixel";
+    size-adjust:115%;
+    src:url("/assets/fonts/freepixel/FreePixel.eot?#iefix") format("embedded-opentype"),url("/assets/fonts/freepixel/FreePixel.woff2") format("woff2"),url("/assets/fonts/freepixel/FreePixel.woff") format("woff"),url("/assets/fonts/freepixel/FreePixel.ttf") format("truetype"),url("/assets/fonts/freepixel/FreePixel.svg") format("svg");
+}
+
 html {
     scroll-behavior: smooth
 }
 
 body {
-    background-color: #181a1b;
+    background: radial-gradient(circle, #39382d, #000000);
     color: #fff;
-    font-family: "JetBrains Mono", "courier new", monospace;
-    margin: 0;
+    font-family: "FreePixel", monospace;
+    font-size: 16px;
     position: relative
 }
 
-#navbar {
-    position: fixed;
-    height: auto;
-    background-color: #161616;
-    left: 0;
-    right: 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
-    z-index: 1;
-    text-align: center
-}
-
-#navbar a {
-    margin: auto 10px;
-    display: inline;
-    font-weight: bold
-}
-
 h1 {
-    color: #ff7f50;
-    font-family: "kingthings foundation";
-    letter-spacing: 1px;
-    margin: 12px 0
+    color: #ff7f50
 }
 
 h2 {
-    color: #7ecc52;
-    font-family: pointfree;
-    margin: 10px 0
+    color: #7ecc52
 }
 
 h3 {
-    color: #8cc3c5;
-    font-family: pointfree;
-    margin: 10px 0
+    color: #8cc3c5
 }
 
 h4,
 h5,
 h6 {
-    color: #d8774a;
-    font-family: pointfree;
-    margin: 10px 0
-}
-
-.main {
-    padding: 30px 0;
+    color: #d8774a
 }
 
 a {
-    color: #deb887;
-    font-family: pointfree;
+    color: #ddad6f;
     text-decoration: none
 }
 
@@ -68,71 +43,63 @@ a:hover {
     color: #f70
 }
 
-.threecols {
+.twocols {
     display: flex;
-    margin: 0 auto;
-    width: 100%;
-    margin-top: 20px
+    width: 100%
 }
 
-.authorcol {
+.navcol {
     float: left;
-    width: 18%;
+    list-style: none;
     margin-left: 3%;
-    margin-right: 2%
+    margin-right: 2%;
+    min-width: 120px;
+    width: 12%
 }
 
-.authorcol p {
-    font-size: 90%;
-    padding: 5px 0
+.arrow {
+    border: solid rgb(180, 126, 126);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg)
 }
 
-p.about {
-    font-family: pointfree
-}
-
-.authorlogo {
-    max-width: 110px;
-    border-radius: 150px
+.fixedcol {
+    position: fixed
 }
 
 .maincol {
-    width: 82%;
-    word-wrap: break-word;
-    display: inline-block
+    margin-right: 10%;
+    width: 73%;
+    word-wrap: break-word
 }
 
-.maincol p {
-    margin: 10px 0
+.author {
+    margin-top: 20px;
+    min-height: 120px;
+    width: 100%
 }
 
-.thirdcol {
-    width: 20%;
-    float: right;
-    margin: 15px
-}
-
-.fixedinthird {
-    position: fixed;
-    overflow-y: scroll;
-    width: 16%;
-    height: 80vh
+.author img {
+    border-radius: 150px;
+    float: left;
+    margin: auto 15px 10px auto;
+    max-width: 110px
 }
 
 blockquote {
-    font-family: pointfree;
-    text-align: center;
-    color: #7fffd4;
-    font-style: oblique
+    color: #7fffd4
 }
 
 pre {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    padding: 10px 15px;
-    border-radius: 5px 15px;
     background-color: #242526;
-    margin: 8px 0
+    border-radius: 5px 15px;
+    margin: 8px 0;
+    padding: 10px 15px;
+    white-space: pre-wrap;
+    word-wrap: break-word
 }
 
 div.highlight button {
@@ -155,7 +122,6 @@ div.highlight button:hover {
 
 code,
 pre {
-    font-family: pointfree;
     font-size: 15.5px;
     color: #ee82ee
 }
@@ -163,7 +129,6 @@ pre {
 .imagecode {
     background: #181a22;
     color: #4eb330;
-    font-family: "JetBrains Mono"
 }
 
 .overflowy {
@@ -171,51 +136,16 @@ pre {
     overflow-y: scroll
 }
 
-ul {
-    padding: 0 20px
-}
-
-#blog p {
-    margin: 10px auto
-}
-
-#blog p img {
-    display: block;
-    margin: 10px auto
-}
-
 img {
     max-width: 100%
 }
 
-.blogcontents h2 {
-    padding-top: 35px
-}
-
-.donate {
-    text-align: center
-}
-
-.donate p {
-    max-width: 600px;
-    white-space: pre-wrap;
-    word-wrap: break-word
+.center {
+    text-align: center;
 }
 
 footer {
-    text-align: center;
-    margin: 0 17% 3% 19%
-}
-
-hr,
-footer p,
-.shareable p {
-    margin: 15px 0
-}
-
-footer p a.social {
-    margin: 0 5px;
-    font-size: 23px
+    margin: 5% auto;
 }
 
 .heart {
@@ -232,12 +162,7 @@ footer p a.social {
     margin: 10px
 }
 
-.shareable .shareon {
-    margin: 40px 0 0 0;
-    color: #7fffd4
-}
-
-.sociallinks {
+.shareon {
     color: #7fffd4
 }
 
@@ -288,7 +213,7 @@ footer p a.social {
     background-color: #08356c;
     color: #fff;
     cursor: pointer;
-    padding: 6px 12px;
+    padding: 7px 12px;
     border-radius: 5px;
     font-size: 20px;
     font-weight: bold
@@ -317,18 +242,34 @@ footer p a.social {
     background: #49db1c
 }
 
-@media screen and (max-width: 968px) {
-    .main {
-        padding: 40px 3% 0 3%
+@media screen and (max-width: 768px) {
+
+    .contents {
+        margin: 5%;
     }
 
-    .threecols {
+    .twocols {
         flex-direction: column
     }
 
-    .authorcol {
+    .navcol {
         float: none;
-        display: none
+        text-align: center;
+        display: contents
+    }
+
+    .fixedcol {
+        position: relative;
+    }
+
+    .navcol li {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .arrow,
+    .fixedcol h3 {
+        display: none;
     }
 
     .maincol {
@@ -336,20 +277,6 @@ footer p a.social {
         width: 100%
     }
 
-    .thirdcol {
-        display: block;
-        width: auto
-    }
-
-    .fixedinthird {
-        position: relative;
-        width: 100%;
-        height: auto
-    }
-
-    footer {
-        margin: 3%
-    }
 }
 
 @media screen and (max-width: 600px) {
@@ -361,25 +288,4 @@ footer p a.social {
     .gototoplink {
         top: 85vh
     }
-}
-
-@font-face {
-    font-family: "kingthings foundation";
-    font-style: normal;
-    font-weight: 500;
-    src: url(/assets/fonts/kingthings_foundation/kingthings_foundation.ttf) format(truetype)
-}
-
-@font-face {
-    font-family: "pointfree";
-    font-style: normal;
-    font-weight: 500;
-    src: url(/assets/fonts/pointfree/pointfree.ttf) format(truetype),
-        url(/assets/fonts/pointfree/pointfree.woff) format(woff)
-}
-
-@font-face {
-    font-family: "JetBrains Mono";
-    src: url(/assets/fonts/jetbrains_mono/JetBrainsMono_Medium.woff2) format(woff),
-        url(/assets/fonts/jetbrains_mono/JetBrainsMono_Medium.ttf) format(truetype)
 }

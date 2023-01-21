@@ -12,7 +12,7 @@ I currently only take donations in BTC and XMR.
 
 If you know of another good way to take donations, either in cryptocurrency or traditional banking, please [contact me](/contact/) about adding it.
 
-<div class="donate">
+<div class="center">
 
 ### Bitcoin (BTC):
 
