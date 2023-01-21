@@ -34,13 +34,14 @@ h6 {
     color: #d8774a
 }
 
-a {
+a, summary {
     color: #ddad6f;
     text-decoration: none
 }
 
-a:hover {
-    color: #f70
+a:hover, summary:hover {
+    color: #f70;
+    cursor: pointer
 }
 
 .twocols {

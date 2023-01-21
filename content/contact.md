@@ -4,7 +4,6 @@ description = "Connect and chat with Castor."
 page_template = "page.html"
 [extra]
 copy_code = true
-gotoTop = true
 +++
 <blockquote>
 ❝ Introvert people are actually talkative when they get comfortable with someone. ❞
@@ -15,14 +14,16 @@ gotoTop = true
 Leave a message at any of the following:
 <p>Telegram: <a href="https://t.me/whoisyoges" title="Telegram" class="social" target="_blank" rel="noopener nofollow noreferrer">t.me/whoisyoges</a></p>
 <p>Email: <a href="mailto:whoisyoges@castorisdead.xyz" target="_blank" rel="noopener nofollow noreferrer" class="social">whoisyoges @ castorisdead.xyz</a></p>
+<p>IRC: matrix.to <a href="https://matrix.to/#/@whoisyoges:matrix.org" target="_blank" rel="noopener nofollow noreferrer" class="social">@whoisyoges:matrix.org</a></p>
 
 ### Need to send me a super confidential message?
 
-#### Use my public GNU GPG key
-
-[Need help? How to send an encrypted message using public GPG key?](/blog/encrypt-and-decrypt-a-file-using-gpg-keys)
+<details>
+    <summary>Use my public GNU GPG key</summary>
 
 FRP: 9A4B 7108 57AD F81C 883B  587A 37DB 5BFE 6ED7 9AD5
+
+[Need help? How to send an encrypted message using public GPG key?](/blog/encrypt-and-decrypt-a-file-using-gpg-keys)
 
 <div class="highlight">
 <pre><code id="mypubgpgkey">-----BEGIN PGP PUBLIC KEY BLOCK-----<br>
@@ -82,6 +83,7 @@ dz6LzfvCQA==
 <button id="mypubgpgkeybtn" type="button" onclick="copyCode('mypubgpgkey','mypubgpgkeybtn')" value="click">Copy</button>
 </pre>
 </div>
+</details>
 
 ## How to not be annoying?
 
