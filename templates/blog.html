@@ -1,16 +1,23 @@
 {% extends "base.html" %}
-
 {% block content %}
 <div class="bloglists">
     <h1>Recent Posts</h1>
-    {% for page in section.pages %}
+    {% for page in paginator.pages %}
     <hr>
     <article>
         <h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
-        <p> <small>{{ page.date }}</small> </p>
-        <p>{{ page.summary | safe }}</p>
-        <p><a href="{{ page.permalink | safe }}">continue reading...</a></p>
+        <p><small>{{ page.date }}</small></p>
+        {{ page.summary | safe }}
+        <p><small><a href="{{ page.permalink | safe }}">continue reading...</a></small></p>
     </article>
     {% endfor %}
+</div>
+<div class="pagination center">
+    {% if paginator.previous %}
+    <a class="previous" href="{{ paginator.previous }}">&lt; Prev</a>
+    {% endif %}
+    {% if paginator.next %}
+    <a class="next" href="{{ paginator.next }}">Next &gt;</a>
+    {% endif %}
 </div>
 {% endblock content %}

@@ -19,3 +19,5 @@ There was a leisure and I just played Blockinger (a Tetris game) and minesweeper
 The class ended at 10 a.m and I just returned back to my place without giving a shit about anybody.
 
 So, yeah It was quiet a experience. Overall, it was fun and I kinda liked it.
+
+[VIEW ALL POSTS](/blog/)

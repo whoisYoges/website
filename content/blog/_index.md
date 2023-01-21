@@ -4,4 +4,5 @@ description = "List of blogs written by Castor."
 sort_by = "date"
 template = "blog.html"
 page_template = "page.html"
+paginate_by = 10
 +++

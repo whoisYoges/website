@@ -88,7 +88,8 @@ summary:hover {
 }
 
 blockquote {
-    color: #7fffd4
+    color: #7fffd4;
+    margin: 2px
 }
 
 pre {
@@ -126,7 +127,7 @@ pre {
 
 .imagecode {
     background: #181a22;
-    color: #4eb330;
+    color: #4eb330
 }
 
 .overflowy {
@@ -139,11 +140,11 @@ img {
 }
 
 .center {
-    text-align: center;
+    text-align: center
 }
 
 footer {
-    margin: 5% auto;
+    margin: 5% auto
 }
 
 .heart {
@@ -178,8 +179,7 @@ footer {
 }
 
 .webrings h3 {
-    display: flex;
-    margin: 30px auto
+    display: flex
 }
 
 .webrings p {
@@ -192,34 +192,38 @@ footer {
 }
 
 .webrings img {
-    width: 88px;
+    border: 2px solid #3c3e42;
     height: 31px;
-    border: 2px solid #3c3e42
+    width: 88px
 }
 
 .gototop {
-    position: absolute;
-    top: 120vh;
     bottom: 2rem;
-    right: 2rem
+    position: absolute;
+    right: 2rem;
+    top: 120vh
 }
 
 .gototoplink {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 90vh;
     background-color: #08356c;
+    border-radius: 5px;
     color: #fff;
     cursor: pointer;
-    padding: 7px 12px;
-    border-radius: 5px;
     font-size: 20px;
-    font-weight: bold
+    font-weight: bold;
+    padding: 7px 12px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 90vh
 }
 
 .gototoplink:hover {
     background-color: #555;
     color: #fff
+}
+
+.pagination {
+    margin: 3%
 }
 
 ::-webkit-scrollbar {
@@ -239,7 +243,7 @@ footer {
 @media screen and (max-width: 768px) {
 
     .contents {
-        margin: 5%;
+        margin: 5%
     }
 
     .twocols {
@@ -247,23 +251,23 @@ footer {
     }
 
     .navcol {
+        display: contents;
         float: none;
-        text-align: center;
-        display: contents
+        text-align: center
     }
 
     .fixedcol {
-        position: relative;
+        position: relative
     }
 
     .navcol li {
         display: inline-block;
-        margin: 5px;
+        margin: 5px
     }
 
     .arrow,
     .fixedcol h3 {
-        display: none;
+        display: none
     }
 
     .maincol {
@@ -272,8 +276,8 @@ footer {
     }
 
     .gototop {
-        right: 1rem;
-        bottom: 8rem
+        bottom: 8rem;
+        right: 1rem
     }
 
     .gototoplink {
@@ -283,10 +287,9 @@ footer {
 }
 
 @font-face {
-    font-family: 'FreePixel';
+    font-family: "FreePixel";
     size-adjust: 115%;
-
-    src: url('/assets/fonts/FreePixel/FreePixel.woff') format('woff'),
-        url('/assets/fonts/FreePixel/FreePixel.woff2') format('woff2'),
-        url('/assets/fonts/FreePixel/FreePixel.ttf') format('truetype');
+    src: url("/assets/fonts/FreePixel/FreePixel.woff") format("woff"),
+        url("/assets/fonts/FreePixel/FreePixel.woff2") format("woff2"),
+        url("/assets/fonts/FreePixel/FreePixel.ttf") format("truetype")
 }
