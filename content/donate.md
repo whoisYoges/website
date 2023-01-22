@@ -6,7 +6,9 @@ page_template = "page.html"
 
 ## Donations
 
-Donate and help me setup and maintain a personal home server space for hosting libre software instances. ([Checkout my preference of programs!](/programs))
+If you would like to support my work please consider donating.
+I'll be utilizing it to setup and maintain a personal home server space for hosting privacy respecting libre software instances. ([Checkout my preference of programs!](/programs))  
+I truly appreciate your support and engagement.
 
 I currently only take donations in BTC and XMR.
 
@@ -16,13 +18,13 @@ If you know of another good way to take donations, either in cryptocurrency or t
 
 ### Bitcoin (BTC):
 
-<p><a href="bitcoin:bc1qx6lcdeas39r79xfss9dpxarm4r208fwnwe6h68">bc1qx6lcdeas39r79xfss9dpxarm4r208fwnwe6h68</a></p>
+[bc1qx6lcdeas39r79xfss9dpxarm4r208fwnwe6h68](bitcoin:bc1qx6lcdeas39r79xfss9dpxarm4r208fwnwe6h68)
 
 ![BitcoinAddress](/assets/images/donate/btc.png)
 
 ### Monero (XMR):
 
-<p><a href="monero:49UZEtc5pCGQhUkwQfMhn43m8DLuGTwtp99RfE1CGSwv8BAx36vapmoLnvkbJ4W8VjSsksJFuhxyd9N5VpqtH8VpQvuF9fp">49UZEtc5pCGQhUkwQfMhn43m8DLuGTwtp99RfE1CGSwv8BAx36vapmoLnvkbJ4W8VjSsksJFuhxyd9N5VpqtH8VpQvuF9fp</a></p>
+[49UZEtc5pCGQhUkwQfMhn43m8DLuGTwtp99RfE1CGSwv8BAx36vapmoLnvkbJ4W8VjSsksJFuhxyd9N5VpqtH8VpQvuF9fp](monero:49UZEtc5pCGQhUkwQfMhn43m8DLuGTwtp99RfE1CGSwv8BAx36vapmoLnvkbJ4W8VjSsksJFuhxyd9N5VpqtH8VpQvuF9fp)
 
 ![BitcoinAddress](/assets/images/donate/xmr.png)
 
