@@ -14,7 +14,7 @@ copy_code = true
 Leave a message at any of the following:
 <p>Telegram: <a href="https://t.me/whoisyoges" title="Telegram" class="social" target="_blank" rel="noopener nofollow noreferrer">t.me/whoisyoges</a></p>
 <p>Email: <a href="mailto:whoisyoges@castorisdead.xyz" target="_blank" rel="noopener nofollow noreferrer" class="social">whoisyoges @ castorisdead.xyz</a></p>
-<p>IRC: matrix.to <a href="https://matrix.to/#/@whoisyoges:matrix.org" target="_blank" rel="noopener nofollow noreferrer" class="social">@whoisyoges:matrix.org</a></p>
+<p>Matrix: matrix.to <a href="https://matrix.to/#/@whoisyoges:matrix.org" target="_blank" rel="noopener nofollow noreferrer" class="social">@whoisyoges:matrix.org</a></p>
 
 ### Need to send me a super confidential message?
 

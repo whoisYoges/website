@@ -152,6 +152,12 @@ footer {
     margin: 5% auto
 }
 
+.copyleft {
+    display: inline-block;
+    transform: rotate(180deg);
+    vertical-align: middle
+}
+
 .heart {
     max-width: 16px;
     vertical-align: middle
