@@ -6,6 +6,7 @@ description = "Disk encryption in linux prevents a disk drive, like a hard drive
 [extra]
 opengraph = "/assets/images/blogs/disk-encryption-in-linux-installation/disk-encryption-in-linux-installation.jpg"
 shareable = true
+gotoTop = true
 keywords = "Encrypt,Encryption key,Disk encryption software,Full disk encryption, File encryption, Hard drive encryption, BitLocker, VeraCrypt, Disk encryption algorithms, Data encryption, lvmonluks, luks encryption"
 +++
 Disk encryption in linux prevents a disk drive, like a hard drive or a portable USB storage device or laptop, from booting up unless the user inputs the correct authentication data. And here I'm going to talk about my preferred method of disk encryption while installing linux and see how it works?
@@ -68,7 +69,9 @@ Okay Let's directly talk about how we can setup my preferred encryption type for
 7. Configuring mkinitcpio:  
     a. Make sure you have installed [cryptsetup](https://archlinux.org/packages/core/x86_64/cryptsetup/) and [lvm2](https://archlinux.org/packages/core/x86_64/lvm2/).  
     b. Add the `keyboard`, `keymap`, `encrypt` and `lvm2` hooks to /etc/mkinitcpio.conf  
-    `HOOKS=(base udev autodetect modconf kms keyboard keymap consolefont block encrypt lvm2 filesystems fsck)`
+    ```
+    HOOKS=(base udev autodetect modconf kms keyboard keymap consolefont block encrypt lvm2 filesystems fsck shutdown)
+    ```
 
 8. Configuring the boot loader  
     a. Get the UUID of /dev/sda2 (your LUKS partition) using blkid command.  
@@ -78,7 +81,9 @@ Okay Let's directly talk about how we can setup my preferred encryption type for
     b. Set the kernel parameter in boot loader (grub) in /etc/default/grub  
     `cryptdevice=UUID=Your-UUID:cryptlvm root=/dev/groot/root`  
     It should seem like following:  
-    `GRUB_CMDLINE_LINUX="cryptdevice=UUID=27da5fec-b1f2-4b54-b2af-a2832d2c4522:cryptlvm root=/dev/groot/root"`
+    ```
+    GRUB_CMDLINE_LINUX="cryptdevice=UUID=27da5fec-b1f2-4b54-b2af-a2832d2c4522:cryptlvm root=/dev/groot/root"
+    ```
 
 9. Regenerate the initramfs  
     `mkinitcpio -P`

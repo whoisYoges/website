@@ -304,7 +304,7 @@ footer {
 }
 
 @font-face {
-    font-display: fallback;
+    font-display: swap;
     font-family: "FreePixel";
     size-adjust: 115%;
     src: url("/assets/fonts/FreePixel/FreePixel.woff") format("woff"),
