@@ -9,7 +9,7 @@ gotoTop = true
 This was my first interview, and it was a hell of an amazing experience.
 <!-- more -->
 
-So, it was Thursday, January 26, 2023, and I went for an interview at a reputed hosting company. I was told to come to a certain building, and you know what? I went to a similar-looking structure in someone else's backyard. Fu*k me, I am so dumb that I was a step away from getting into some serious trouble.
+So, it was Thursday, January 26, 2023, and I went for an interview at a reputed cloud services providing company. I was told to come to a certain building, and you know what? I went to a similar-looking structure in someone else's backyard. Fu*k me, I am so dumb that I was a step away from getting into some serious trouble.
 
 Both the HR director and the CEO were out for some business meetings, so I had to wait for about 2 and a half hours, I guess. But the other team members were so friendly that I didn't feel like I was there for the first time. When they arrived, I had already been introduced to what I should do by the team members and had already eaten some delicious lunch. The environment is so friendly, with such amazing members and a working place with scenic mountain views.
 
