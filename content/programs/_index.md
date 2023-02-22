@@ -80,7 +80,6 @@ Pro Tip: Use Container Tabs feature available in the [librewolf](https://librewo
 
 ### My other sites, instances and random important links
 
-- My online diary journal: <https://mukoisdead.eu.org>
 - My corner in tilde: <https://whoisyoges.tildevarsh.in>
 - My wallpaper collection: <https://wallpaper.castorisdead.xyz>
 - My terminal-like website: <https://whoisyoges.eu.org> *(alert: js required)*

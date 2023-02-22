@@ -5,6 +5,8 @@ title = "Castor's Shit Posts"
 description = "Just Some Normal Blog Posts by Castor"
 default_language = "en"
 
+author = "whoisyoges@castorisdead.xyz (Castor)"
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
 

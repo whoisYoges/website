@@ -3,7 +3,6 @@ title = "Create and delete GPG keypair | Introduction to GnuPG "
 date = "2022-10-30"
 updated = "2022-12-07"
 page_template = "page.html"
-draft = false
 description = "GnuPG, popularly known as GPG, is an extremely versatile tool, being widely used as the industry standard for encryption of things like emails, messages, files, or just anything you need to send to someone securely."
 [extra]
 opengraph = "/assets/images/blogs/create-and-delete-gpg-key-pair/Gnupg.png"
