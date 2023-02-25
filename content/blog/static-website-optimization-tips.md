@@ -15,7 +15,6 @@ Learn some html, css tips and tricks to optimize your static website for speed a
 Static websites are those that are built using only HTML, CSS, and JavaScript, and do not rely on server-side scripting or databases. These types of websites are fast, secure, and easy to maintain, but they can still benefit from optimization to improve their load times and overall performance.
 
 ## Optimization Tips
-for static websites include using a content delivery network (CDN), minifying HTML, CSS, and JavaScript, and compressing images. Additionally, it is important to make sure your website is mobile-friendly and uses responsive design so that it can be easily viewed on any device.
 
 ### Minimize HTTP requests
 Use less number of files as possible as you can; Combine and minify CSS and JavaScript files, and use [CSS sprites](https://www.w3schools.com/css/css_image_sprites.asp) to reduce the number of images that need to be loaded.
@@ -78,3 +77,5 @@ You may use following tool/s to test the performance and speed of your website a
 - [Pingdom](https://tools.pingdom.com)
 - [GTmetrix](https://gtmetrix.com)
 - [DebugBear](https://www.debugbear.com/test/website-speed)
+
+Additionally, it is important to make sure your website is mobile-friendly and uses responsive design so that it can be easily viewed on any device.

@@ -47,8 +47,8 @@ summary:hover {
 
 .navcol {
     float: left;
-    margin-left: 3%;
-    margin-right: 2%;
+    padding-left: 3%;
+    padding-right: 2%;
     min-width: 120px;
     width: 12%
 }
@@ -72,7 +72,7 @@ summary:hover {
 }
 
 .maincol {
-    margin-right: 10%;
+    padding-right: 10%;
     width: 73%;
     word-wrap: break-word
 }
