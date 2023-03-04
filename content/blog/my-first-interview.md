@@ -5,6 +5,7 @@ page_template = "page.html"
 description = "I am castor and this is my first interview experience."
 [extra]
 gotoTop = true
+shareable = true
 +++
 This was my first interview, and it was a hell of an amazing experience.
 <!-- more -->
@@ -27,5 +28,3 @@ So, the attacker was using his own domain to attack the server. Yes, you read it
 What we had to do to stop the attack was identify the IPs causing high CPU usage and block that specific IP range. It was two sets of IP ranges coming from Australia and China.
 
 It's obvious that I wasn't able to answer or solve some of the questions or tasks. But yeah, the experience was amazing, and I got a golden opportunity to learn from and work with them.
-
-[VIEW ALL POSTS](/blog/)

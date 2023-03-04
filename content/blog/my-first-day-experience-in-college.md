@@ -4,6 +4,8 @@ date = "2022-12-27"
 page_template = "page.html"
 draft = false
 description = "I rejoined college and I've had quiet a experience in first day."
+[extra]
+shareable = true
 +++
 So if you didn't know, I had dropped out of computer science in 4th semester and recently joined *Bachelor of Arts in psychology and social work* just before Christmas on 2022-Dec-21.
 <!-- more -->
@@ -19,5 +21,3 @@ There was a leisure and I just played Blockinger (a Tetris game) and minesweeper
 The class ended at 10 a.m and I just returned back to my place without giving a shit about anybody.
 
 So, yeah It was quiet a experience. Overall, it was fun and I kinda liked it.
-
-[VIEW ALL POSTS](/blog/)
