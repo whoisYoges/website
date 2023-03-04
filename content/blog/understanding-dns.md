@@ -8,7 +8,7 @@ gotoTop = true
 shareable = true
 comparison = true
 +++
-Let try to understand about DNS as ddep as we can?
+Trying to understand the concept of Domain Name System?
 <!-- more -->
 
 ## The concept of DNS
