@@ -6,7 +6,11 @@
     <hr>
     <article>
         <h2><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h2>
+        {% if page.updated %}
+        <p><small class="blog-date">{{ page.updated }}</small></p>
+        {% else %}
         <p><small>{{ page.date }}</small></p>
+        {% endif %}
         {{ page.summary | safe }}
         <p><small><a href="{{ page.permalink | safe }}">continue reading...</a></small></p>
     </article>

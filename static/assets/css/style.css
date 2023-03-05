@@ -58,6 +58,10 @@ summary:hover {
     padding: 0
 }
 
+ul {
+    padding: 0;
+}
+
 .arrow {
     border: solid rgb(180, 126, 126);
     border-width: 0 3px 3px 0;
@@ -296,7 +300,8 @@ footer {
 
     .maincol {
         display: block;
-        width: 90%
+        padding-right: 0;
+        width: 100%
     }
 
     .gototop {

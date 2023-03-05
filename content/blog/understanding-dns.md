@@ -1,17 +1,20 @@
 +++
 title = "Understanding DNS"
 date = "2023-02-28"
+updated = "2023-03-05"
 page_template = "page.html"
-description = "Understanding about dns clustering and how it works?"
+description = "Understanding about dns clustering, anycast DNS and how they work?"
 [extra]
 gotoTop = true
 shareable = true
 comparison = true
+opengraph = "/assets/images/blogs/concept-of-dns/DNS.jpg"
+keywords = "DNS, Domain Name System, IP, Internet Protocol, DNS server, DNS resolution, DNS query, DNS cache, DNS zone, DNS record, Anycast, Anycast DNS, Load balancing, Network latency, Redundancy, High availability, Failover"
 +++
-Trying to understand the concept of Domain Name System?
+Trying to understand the concept of Domain Name System; dns clustering, anycast DNS and how they work?
 <!-- more -->
 
-## The concept of DNS
+## Understanding the basics
 Before diving deep into DNS, we need to understand some of the following basic concepts and terminologies.
 
 ### IP Address
@@ -97,7 +100,7 @@ DNS queries and responses are usually sent using UDP, which is faster and more e
 
 DNS servers also use a variety of mechanisms to discover and communicate with each other, including recursive queries, zone transfers, and forwarding. These mechanisms allow DNS servers to share information and collaborate to provide reliable and accurate name resolution for clients.
 
-#### How DNS Servers Resolve a DNS Query
+### How DNS Servers Resolve a DNS Query
 
 When you enter a website address into your browsers address bar, a DNS server goes to work to find the address that you want to visit. It does this by sending a DNS query to several servers, each of which translates a different part of the domain name you entered. The different servers queried are:
 
@@ -134,11 +137,22 @@ It uses a one-to-many association, where datagrams are routed from a single send
 
 ![Broadcast](/assets/images/blogs/concept-of-dns/broadcast.png)
 
-### Why Anycast?
-- Performance improvement
-- Service reliability
-- Load balancing
-- Reduces impact of DoS attacks
+## Anycast VPS
+Anycast VPS is a type of virtual private server (VPS) that uses anycast networking to improve its performance and availability. Anycast VPS hosting is based on the anycast routing technology that allows multiple servers to share the same IP address, making it possible for users to access the same service from different locations.
+
+An anycast VPS provider typically operates multiple data centers located in different regions or countries, and assigns the same IP address to each of the VPS instances hosted in these data centers. When a user sends a request to the anycast IP address, the network infrastructure routes the traffic to the nearest data center based on network topology, latency, and other factors.
+
+This approach provides several benefits for VPS hosting, including:
+
+1. Improved performance: Anycast VPS hosting can help reduce latency and increase the speed of access to VPS instances by directing traffic to the nearest data center.
+
+2. Increased availability: By distributing VPS instances across multiple data centers, anycast VPS hosting can provide better resilience and availability in case of hardware failures, network outages, or other disruptions.
+
+3. Scalability: Anycast VPS providers can easily add more capacity by deploying additional VPS instances in different data centers as demand grows.
+
+4. Reduces impact of DoS attacks: Anycast allows traffic to be distributed across multiple servers, reducing the amount of traffic any one server has to handle. This means that if one server is overwhelmed by a DoS attack, traffic can be automatically redirected to other servers in the anycast group. Since all the servers in an anycast group share the same IP address, it can be more difficult for attackers to determine the exact location of the targeted server.
+
+Overall, anycast VPS hosting can be an effective way to enhance the performance and reliability of VPS hosting, especially for applications that require low latency and high availability.
 
 ## Anycast DNS
 Anycast DNS is a method of distributing DNS (Domain Name System) queries across multiple servers located in different geographic locations. This is done by configuring multiple servers with the same IP address, allowing clients to connect to the nearest available server, thus reducing latency and improving response times.
@@ -181,7 +195,7 @@ In this way, the DNS cluster ensures that users can always access the website, r
 
 5. Service Level Agreement (SLA): Anycast DNS typically offers a higher SLA than DNS clustering because it provides better resilience against network outages and hardware failures.
 
-## cPanel
+### cPanel
 cPanel is a popular web hosting control panel that allows website owners to manage various aspects of their hosting account.
 
 ## cPanel Only DNS
@@ -196,18 +210,3 @@ One benefit of using cPanel only DNS is that it can simplify DNS management for 
 
 ### Downsides of cPanel only DNS
 However, there are also some potential downsides to using cPanel only DNS. One is that it may limit flexibility and customization options for users who need more advanced DNS management capabilities. Additionally, if there are issues with cPanel's DNS service, it can affect the availability and performance of the domain's website and email services.
-
-## Anycast VPS
-Anycast VPS is a type of virtual private server (VPS) that uses anycast networking to improve its performance and availability. Anycast VPS hosting is based on the anycast routing technology that allows multiple servers to share the same IP address, making it possible for users to access the same service from different locations.
-
-An anycast VPS provider typically operates multiple data centers located in different regions or countries, and assigns the same IP address to each of the VPS instances hosted in these data centers. When a user sends a request to the anycast IP address, the network infrastructure routes the traffic to the nearest data center based on network topology, latency, and other factors.
-
-This approach provides several benefits for VPS hosting, including:
-
-1. Improved performance: Anycast VPS hosting can help reduce latency and increase the speed of access to VPS instances by directing traffic to the nearest data center.
-
-2. Increased availability: By distributing VPS instances across multiple data centers, anycast VPS hosting can provide better resilience and availability in case of hardware failures, network outages, or other disruptions.
-
-3. Scalability: Anycast VPS providers can easily add more capacity by deploying additional VPS instances in different data centers as demand grows.
-
-Overall, anycast VPS hosting can be an effective way to enhance the performance and reliability of VPS hosting, especially for applications that require low latency and high availability.
