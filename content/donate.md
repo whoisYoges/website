@@ -6,8 +6,8 @@ page_template = "page.html"
 
 ## Donations
 
-If you would like to support my work please consider donating.
-I'll be utilizing it to setup and maintain a personal home server space for hosting privacy respecting libre software instances. ([Checkout my preference of programs!](/programs))  
+If you enjoy my projects or content, please consider making a donation to support me. &lt;3  
+Your contribution will go towards covering the costs of maintaining my domains, servers, and privacy-respecting libre software instances. Thank you for your support! ([Checkout my preference of programs!](/programs))  
 I truly appreciate your support and engagement.
 
 I currently only take donations in BTC and XMR.
