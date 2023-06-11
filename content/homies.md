@@ -39,7 +39,6 @@ Resources and Sites That I find useful, interesting, unique or cool.
 <a href="https://based.coom.tech" target="_blank" rel="noopener nofollow noreferrer" title="Collection of awesome website urls." target="_blank"><img src="/assets/images/homies/based.png" alt="based.coom.tech"></a>
 <a href="https://tildevarsh.in" target="_blank" rel="noopener nofollow noreferrer" title="Tildevarsh~" target="_blank"><img src="/assets/images/homies/tildevarshin.png" alt="tildevarsh.in"></a>
 <a href="https://shortpixel.com" target="_blank" rel="noopener nofollow noreferrer" title="Compress and optimize images for web." target="_blank"><img src="/assets/images/homies/shortpixel.png" alt="shortpixel.com"></a>
-<a href="https://femboy.hu" target="_blank" rel="noopener nofollow noreferrer" title="Another website that provides privacy respecting services."><img src="/assets/images/homies/femboy.png" alt="femboy.hu"></a>
 <a href="https://articexploit.xyz:8443" target="_blank" rel="noopener nofollow noreferrer" title="One of the coolest websites."><img src="/assets/images/homies/thearcade.png" alt="articexploit.xyz:8443"></a>
 <a href="https://yero.dev" target="_blank" rel="noopener nofollow noreferrer" title="Another simple and cool site I adore."><img src="/assets/images/homies/yerodev.png" alt="yero.dev"></a>
 <a href="https://links.yesterweb.org" target="_blank" rel="noopener nofollow noreferrer" title="User-curated directory of interesting off-the-beaten path websites."><img src="/assets/images/homies/yesterlinks.png" alt="links.yesterweb.org"></a>
