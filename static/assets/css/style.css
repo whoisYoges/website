@@ -195,7 +195,7 @@ footer {
     max-width: 25px
 }
 
-.webrings {
+.webrings, .skills {
     text-align: center
 }
 
@@ -215,7 +215,7 @@ footer {
 .webrings img {
     border: 2px solid #3c3e42;
     height: 31px;
-    margin: 2px;
+    margin: 8px;
     width: 88px
 }
 
@@ -251,7 +251,14 @@ footer {
 .guestbook {
     border: 2px dashed #7ecc52;
     max-width: 50rem;
-    padding: 5px;
+    padding: 5px
+}
+
+.skills img {
+    display: inline-block;
+    margin: 5px;
+    max-height: 100px;
+    max-width: 200px
 }
 
 ::-webkit-scrollbar {
