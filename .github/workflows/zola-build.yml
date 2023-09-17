@@ -1,19 +1,41 @@
-# On every push this script is executed
-name: Zola on GitHub Pages
+# On every push and  pull request, this script is executed
+name: Zola Build and Deploy
 
-on: 
- push:
-  branches:
-   - master
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+permissions:
+  contents: write
 
 jobs:
-  build:
-    name: Publish site
+  build-and-deploy:
     runs-on: ubuntu-latest
+
+    env:
+      ZOLA_VERSION: 'v0.17.2'
+
     steps:
-    - name: Checkout master
-      uses: actions/checkout@v3.0.0
-    - name: Build and deploy
-      uses: shalzz/zola-deploy-action@v0.17.2
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Zola
+        run: |
+          curl -sSL -o /tmp/zola.tar.gz https://github.com/getzola/zola/releases/latest/download/zola-${{ env.ZOLA_VERSION }}-x86_64-unknown-linux-gnu.tar.gz
+          tar -xf /tmp/zola.tar.gz -C /usr/local/bin
+          zola --version
+
+      - name: Build the site
+        run: |
+          zola build
+
+
+      - name: Deploy build to public branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: public
+          build_dir: public
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
