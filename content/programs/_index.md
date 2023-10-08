@@ -18,7 +18,7 @@ gotoTop = true
 - Image Viewer: [nsxiv](https://github.com/nsxiv/nsxiv)
 - Audio/Video player: [mpv](https://mpv.io)
 - Image modification: [GIMP](https://www.gimp.org)
-- Operating System: [Artix Linux](https://artixlinux.org)
+- Operating System: [Arch Linux](https://archlinux.org)
 - Download + torrent utility: [aria2](https://aria2.github.io)
 - Mail client/RSS reader: [thunderbird](https://www.thunderbird.net)
 - Monero: [The standard Monero GUI Wallet](https://www.getmonero.org)
@@ -80,7 +80,6 @@ Pro Tip: Use Container Tabs feature available in the [librewolf](https://librewo
 
 ### My other sites, instances and random important links
 
-- My corner in tilde: <https://whoisyoges.tildevarsh.in>
 - My wallpaper collection: <https://wallpaper.castorisdead.xyz>
 - My terminal-like website: <https://whoisyoges.eu.org> *(alert: js required)*
 - Instance of my [simple-guestbook](https://github.com/whoisyoges/simple-guestbook): <https://guestbook.yogeshlamichhane.com.np>

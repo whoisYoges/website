@@ -89,4 +89,4 @@ dz6LzfvCQA==
 
 - Don't ask issues you are getting in your system.
 - If you don't want conversation just use email.
-- Don't call me, just text or email me. I prefer text and mails rather than calls until I get comfortable.
+- Don't call me, just text or email me. I prefer text or email for communication rather than phone calls, unless the situation is professional or we've developed a closer friendship.
