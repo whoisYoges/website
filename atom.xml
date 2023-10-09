@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Castor&#x27;s Shit Posts</title>
+    <subtitle>Just Some Normal Blog Posts by Castor</subtitle>
+    <link href="https://castorisdead.xyz/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://castorisdead.xyz"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-09-17T00:00:00+00:00</updated>
+    <id>https://castorisdead.xyz/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Life is a Collection of Conditions and Loops</title>
+        <published>2023-09-17T00:00:00+00:00</published>
+        <updated>2023-09-17T00:00:00+00:00</updated>
+        <author>
+          <name>whoisyoges@castorisdead.xyz (Castor)</name>
+        </author>
+        <link rel="alternate" href="https://castorisdead.xyz/blog/life-is-a-collection-of-conditions-and-loops/" type="text/html"/>
+        <id>https://castorisdead.xyz/blog/life-is-a-collection-of-conditions-and-loops/</id>
+        
+        <summary type="html">&lt;p&gt;Life is a collection of conditions and progressive loops. Just like in programming, we navigate through decisions and cycles, adapting to ever-changing circumstances and recurring patterns in the dynamic journey of life.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Why did I switch back to Arch from Artix Linux?</title>
+        <published>2023-07-17T00:00:00+00:00</published>
+        <updated>2023-07-17T00:00:00+00:00</updated>
+        <author>
+          <name>whoisyoges@castorisdead.xyz (Castor)</name>
+        </author>
+        <link rel="alternate" href="https://castorisdead.xyz/blog/why-did-i-switch-back-to-arch-from-artix/" type="text/html"/>
+        <id>https://castorisdead.xyz/blog/why-did-i-switch-back-to-arch-from-artix/</id>
+        
+        <summary type="html">&lt;p&gt;Arch is my favourite distro and openrc being my favourite init system, I was using Artix Linux for more than a year and now, for few reasons I switched back to Arch Linux.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Understanding DNS</title>
+        <published>2023-02-28T00:00:00+00:00</published>
+        <updated>2023-03-05T00:00:00+00:00</updated>
+        <author>
+          <name>whoisyoges@castorisdead.xyz (Castor)</name>
+        </author>
+        <link rel="alternate" href="https://castorisdead.xyz/blog/understanding-dns/" type="text/html"/>
+        <id>https://castorisdead.xyz/blog/understanding-dns/</id>
+        
+        <summary type="html">&lt;p&gt;Trying to understand the concept of Domain Name System; dns clustering, anycast DNS and how they work?&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>My first interview</title>
+        <published>2023-01-27T00:00:00+00:00</published>
+        <updated>2023-01-27T00:00:00+00:00</updated>
+        <author>
+          <name>whoisyoges@castorisdead.xyz (Castor)</name>
+        </author>
+        <link rel="alternate" href="https://castorisdead.xyz/blog/my-first-interview/" type="text/html"/>
+        <id>https://castorisdead.xyz/blog/my-first-interview/</id>
+        
+        <summary type="html">&lt;p&gt;This was my first interview, and it was a hell of an amazing experience.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Static website optimization tips</title>
+        <published>2023-01-24T00:00:00+00:00</published>
+        <updated>2023-01-24T00:00:00+00:00</updated>
+        <author>
+          <name>whoisyoges@castorisdead.xyz (Castor)</name>
+        </author>
+        <link rel="alternate" href="https://castorisdead.xyz/blog/static-website-optimization-tips/" type="text/html"/>
+        <id>https://castorisdead.xyz/blog/static-website-optimization-tips/</id>
+        
+        <summary type="html">&lt;p&gt;Learn some html, css tips and tricks to optimize your static website for speed and performance that anyone rarely tells you.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Make connections rather than relationships</title>
+        <published>2023-01-19T00:00:00+00:00</published>
+        <updated>2023-01-19T00:00:00+00:00</updated>
+        <author>
+          <name>whoisyoges@castorisdead.xyz (Castor)</name>
+        </author>
+        <link rel="alternate" href="https://castorisdead.xyz/blog/make-connections-not-relationship/" type="text/html"/>
+        <id>https://castorisdead.xyz/blog/make-connections-not-relationship/</id>
+        
+        <summary type="html">&lt;p&gt;Connections allow us to be more open, present, and flexible in our interactions with others, without any pressure, expectation and compromization, which leads to greater fulfillment and satisfaction.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Internet is a spyware.</title>
+        <published>2023-01-10T00:00:00+00:00</published>
+        <updated>2023-01-10T00:00:00+00:00</updated>
+        <author>
+          <name>whoisyoges@castorisdead.xyz (Castor)</name>
+        </author>
+        <link rel="alternate" href="https://castorisdead.xyz/blog/internet-is-a-spyware/" type="text/html"/>
+        <id>https://castorisdead.xyz/blog/internet-is-a-spyware/</id>
+        
+        <summary type="html">&lt;p&gt;The internet, through the collection and storage of personal data by companies and governments, can be used as a tool for surveillance.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Understanding and working with git remotes</title>
+        <published>2023-01-04T00:00:00+00:00</published>
+        <updated>2023-01-04T00:00:00+00:00</updated>
+        <author>
+          <name>whoisyoges@castorisdead.xyz (Castor)</name>
+        </author>
+        <link rel="alternate" href="https://castorisdead.xyz/blog/understanding-and-working-with-git-remotes/" type="text/html"/>
+        <id>https://castorisdead.xyz/blog/understanding-and-working-with-git-remotes/</id>
+        
+        <summary type="html">&lt;p&gt;Do you have same git repository over different platforms? Are you searching for the convenient way to manage them all at once within a single local repository?&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>I rejoined college and my first day experience!</title>
+        <published>2022-12-27T00:00:00+00:00</published>
+        <updated>2022-12-27T00:00:00+00:00</updated>
+        <author>
+          <name>whoisyoges@castorisdead.xyz (Castor)</name>
+        </author>
+        <link rel="alternate" href="https://castorisdead.xyz/blog/my-first-day-experience-in-college/" type="text/html"/>
+        <id>https://castorisdead.xyz/blog/my-first-day-experience-in-college/</id>
+        
+        <summary type="html">&lt;p&gt;So if you didn&#x27;t know, I had dropped out of computer science in 4th semester and recently joined &lt;em&gt;Bachelor of Arts in psychology and social work&lt;&#x2F;em&gt; just before Christmas on 2022-Dec-21.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Disk encryption in linux installation</title>
+        <published>2022-12-22T00:00:00+00:00</published>
+        <updated>2022-12-22T00:00:00+00:00</updated>
+        <author>
+          <name>whoisyoges@castorisdead.xyz (Castor)</name>
+        </author>
+        <link rel="alternate" href="https://castorisdead.xyz/blog/disk-encryption-in-linux-installation/" type="text/html"/>
+        <id>https://castorisdead.xyz/blog/disk-encryption-in-linux-installation/</id>
+        
+        <summary type="html">&lt;p&gt;Disk encryption in linux prevents a disk drive, like a hard drive or a portable USB storage device or laptop, from booting up unless the user inputs the correct authentication data. And here I&#x27;m going to talk about my preferred method of disk encryption while installing linux and see how it works?&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Create and delete GPG keypair | Introduction to GnuPG </title>
+        <published>2022-10-30T00:00:00+00:00</published>
+        <updated>2022-12-07T00:00:00+00:00</updated>
+        <author>
+          <name>whoisyoges@castorisdead.xyz (Castor)</name>
+        </author>
+        <link rel="alternate" href="https://castorisdead.xyz/blog/create-and-delete-gpg-key-pair/" type="text/html"/>
+        <id>https://castorisdead.xyz/blog/create-and-delete-gpg-key-pair/</id>
+        
+        <summary type="html">&lt;p&gt;GnuPG, popularly known as GPG, is an extremely versatile tool, being widely used as the industry standard for encryption of things like emails, messages, files, or just anything you need to send to someone securely.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Encrypt and decrypt a file using GPG keys</title>
+        <published>2022-10-29T00:00:00+00:00</published>
+        <updated>2022-12-07T00:00:00+00:00</updated>
+        <author>
+          <name>whoisyoges@castorisdead.xyz (Castor)</name>
+        </author>
+        <link rel="alternate" href="https://castorisdead.xyz/blog/encrypt-and-decrypt-a-file-using-gpg-keys/" type="text/html"/>
+        <id>https://castorisdead.xyz/blog/encrypt-and-decrypt-a-file-using-gpg-keys/</id>
+        
+        <summary type="html">&lt;p&gt;If you have someone&#x27;s public gpg key, you can use gnupg to safely encrypt a file and send it to them over an insecure connection (i.e. the internet). They can then use their private key to decrypt the file you sent.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+</feed>
