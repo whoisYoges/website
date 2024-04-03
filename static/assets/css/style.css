@@ -91,7 +91,14 @@ ul {
     border-radius: 150px;
     float: left;
     margin: auto 15px 10px auto;
+    transition: transform .3s;
     max-width: 110px
+}
+
+.author img:hover {
+    -ms-transform: scale(2.5);
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5); 
 }
 
 blockquote {
@@ -159,9 +166,8 @@ footer {
     margin: 5% auto
 }
 
-.copyleft {
+.copyright {
     display: inline-block;
-    transform: rotate(180deg);
     vertical-align: middle
 }
 
