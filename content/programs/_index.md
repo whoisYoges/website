@@ -13,7 +13,7 @@ gotoTop = true
 - Matrix: [element](https://element.io)
 - Bitcoin: [Electrum](https://electrum.org)
 - Presentation: [sent](https://tools.suckless.org/sent)
-- Terminal: [alacritty](https://github.com/alacritty/alacritty)
+- Terminal: [kitty](https://github.com/kovidgoyal/kitty)
 - PDF viewer: [zathura](https://pwmt.org/projects/zathura)
 - Image Viewer: [nsxiv](https://github.com/nsxiv/nsxiv)
 - Audio/Video player: [mpv](https://mpv.io)
