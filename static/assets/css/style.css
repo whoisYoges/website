@@ -280,6 +280,18 @@ footer {
     background: #b7eb8d;
     border-radius: 10px
 }
+.grid-container {
+    display: grid;
+    gap: 20px;
+    /* grid-template-columns: 1fr 1fr */
+    grid-template-columns: 60% 40%
+}
+
+@media screen and (max-width: 922px) {
+    .grid-container {
+        grid-template-columns: 1fr
+    }
+}
 
 @media screen and (max-width: 768px) {
 
