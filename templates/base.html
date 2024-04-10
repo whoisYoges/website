@@ -95,7 +95,7 @@
     {% endif %}
 </head>
 
-<body>
+<body id="top">
     <div class="contents">
         <div class="twocols">
             <div class="navcol">
@@ -133,12 +133,12 @@
     </div>
     {% if page.extra.gotoTop %}
     <div class="gototop">
-        <a class="gototoplink" href="#">^</a>
+        <a class="gototoplink" href="#top">^</a>
     </div>
     {% else %}
     {% if section.extra.gotoTop %}
     <div class="gototop">
-        <a class="gototoplink" href="#">^</a>
+        <a class="gototoplink" href="#top">^</a>
     </div>
     {% endif %}
     {% endif %}
