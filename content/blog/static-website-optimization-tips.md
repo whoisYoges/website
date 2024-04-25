@@ -7,6 +7,7 @@ description = ""
 [extra]
 gotoTop = true
 shareable = true
+viewallblogs = true
 +++
 Learn some html, css tips and tricks to optimize your static website for speed and performance that anyone rarely tells you.
 <!-- more -->

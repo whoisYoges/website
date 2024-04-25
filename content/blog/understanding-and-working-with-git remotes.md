@@ -6,6 +6,7 @@ description = "Understanding and working with git remote. Do you have same git r
 [extra]
 gotoTop = true
 shareable = true
+viewallblogs = true
 keywords = "Working with Git remotes and pushing to multiple Git repositories, Git, Version control, Remote repository, Fetch, Push, Pull, Branch, Merge, Git hosting service, GitHub, GitLab, Bitbucket, Remote tracking branch, Upstream repository, Collaboration, Git workflows, CLI (Command Line Interface), GUI (Graphical User Interface), SSH (Secure Shell), HTTPS (Hypertext Transfer Protocol Secure)"
 +++
 Do you have same git repository over different platforms? Are you searching for the convenient way to manage them all at once within a single local repository?

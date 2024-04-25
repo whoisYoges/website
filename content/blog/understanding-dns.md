@@ -8,6 +8,7 @@ description = "Understanding about dns clustering, anycast DNS and how they work
 gotoTop = true
 shareable = true
 comparison = true
+viewallblogs = true
 opengraph = "/assets/images/blogs/concept-of-dns/DNS.jpg"
 keywords = "DNS, Domain Name System, IP, Internet Protocol, DNS server, DNS resolution, DNS query, DNS cache, DNS zone, DNS record, Anycast, Anycast DNS, Load balancing, Network latency, Redundancy, High availability, Failover"
 +++

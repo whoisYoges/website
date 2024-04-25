@@ -6,6 +6,7 @@ description = "Arch is my favourite distro and openrc being my favourite init sy
 [extra]
 opengraph = "/assets/images/blogs/why-did-i-switch-back-to-arch-from-artix/linux-is-linux.jpg"
 gotoTop = true
+viewallblogs = true
 keywords = "castor, castorIsDead, castor is dead, zero to noob linux, whoisYoges, Yogesh Lamichhane, metis linux, open source, FOSS, linux, geek, Arch, Artix, archlinux, arch linux, artix linux"
 +++
 Arch is my favourite distro and openrc being my favourite init system, I was using Artix Linux for more than a year and now, for few reasons I switched back to Arch Linux.

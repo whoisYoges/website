@@ -4,6 +4,7 @@ description = "Comparison, my preference and recommendation of programs"
 page_template = "page.html"
 [extra]
 comparison = true
+gotoTop = true
 +++
 
 <table>

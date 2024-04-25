@@ -6,6 +6,7 @@ description = "Life is a collection of conditions and progressive loops. Just li
 [extra]
 gotoTop = true
 shareable = true
+viewallblogs = true
 keywords = "castor, castorIsDead, castorisdead, castor is dead, zero to noob linux, whoisYoges, Yogesh Lamichhane, open source, FOSS, linux, geek, Arch, Artix, archlinux, arch linux, artix linux"
 +++
 Life is a collection of conditions and progressive loops. Just like in programming, we navigate through decisions and cycles, adapting to ever-changing circumstances and recurring patterns in the dynamic journey of life.
