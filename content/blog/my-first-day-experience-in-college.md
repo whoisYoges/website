@@ -6,6 +6,8 @@ draft = false
 description = "I rejoined college and I've had quiet a experience in first day."
 [extra]
 shareable = true
+gotoTop = true
+viewallblogs = true
 +++
 So if you didn't know, I had dropped out of computer science in 4th semester and recently joined *Bachelor of Arts in psychology and social work* just before Christmas on 2022-Dec-21.
 <!-- more -->

@@ -7,6 +7,7 @@ description = "Disk encryption in linux prevents a disk drive, like a hard drive
 opengraph = "/assets/images/blogs/disk-encryption-in-linux-installation/disk-encryption-in-linux-installation.jpg"
 shareable = true
 gotoTop = true
+viewallblogs = true
 keywords = "Encrypt,Encryption key,Disk encryption software,Full disk encryption, File encryption, Hard drive encryption, BitLocker, VeraCrypt, Disk encryption algorithms, Data encryption, lvmonluks, luks encryption"
 +++
 Disk encryption in linux prevents a disk drive, like a hard drive or a portable USB storage device or laptop, from booting up unless the user inputs the correct authentication data. And here I'm going to talk about my preferred method of disk encryption while installing linux and see how it works?

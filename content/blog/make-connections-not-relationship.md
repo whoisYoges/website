@@ -7,6 +7,7 @@ description = "Connections allow us to be more open, present, and flexible in ou
 [extra]
 gotoTop = true
 shareable = true
+viewallblogs = true
 +++
 Connections allow us to be more open, present, and flexible in our interactions with others, without any pressure, expectation and compromization, which leads to greater fulfillment and satisfaction.
 <!-- more -->

@@ -2,12 +2,12 @@
 title = "My first interview"
 date = "2023-01-27"
 page_template = "page.html"
-description = "I am castor and this is my first interview experience."
+description = "I am castor and this is my first job interview experience."
 [extra]
 gotoTop = true
-shareable = true
+viewallblogs = true
 +++
-This was my first interview, and it was a hell of an amazing experience.
+This was my first job interview, and it was a hell of an amazing experience.
 <!-- more -->
 
 So, it was Thursday, January 26, 2023, and I went for an interview at a reputed cloud services providing company. I was told to come to a certain building, and you know what? I went to a similar-looking structure in someone else's backyard. Fu*k me, I am so dumb that I was a step away from getting into some serious trouble.

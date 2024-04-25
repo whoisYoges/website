@@ -7,6 +7,7 @@ description = "The internet, through the collection and storage of personal data
 [extra]
 gotoTop = true
 shareable = true
+viewallblogs = true
 opengraph = "/assets/images/blogs/internet-is-a-spyware/bigbrotheriswatchingyou.jpg"
 keywords = "Data privacy, Internet surveillance, Big tech companies, Privacy policy, Data collection, Privacy concerns, Personal data, Internet security, Government surveillance, Data protection, Third-party data sharing, Online privacy, Privacy laws, Data breaches, Encryption, Data mining, Consumer privacy, Privacy rights, Data sharing, Online tracking"
 +++
