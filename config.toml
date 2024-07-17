@@ -1,8 +1,8 @@
 # The URL the site will be built for
 base_url = "https://castorisdead.xyz"
 
-title = "Castor's Shit Posts"
-description = "Just Some Normal Blog Posts by Castor"
+title = "Castor Writes"
+description = "Just Some random article posts by Castor."
 default_language = "en"
 
 author = "whoisyoges@castorisdead.xyz (Castor)"
@@ -17,12 +17,12 @@ build_search_index = false
 minify_html = false
 
 # When set to "true", a feed is automatically generated.
-generate_feed = true
+generate_feeds = true
 
 # The filename to use for the feed. Used as the template filename, too.
 # Defaults to "atom.xml", which has a built-in template that renders an Atom 1.0 feed.
 # There is also a built-in template "rss.xml" that renders an RSS 2.0 feed.
-feed_filename = "atom.xml"
+feed_filenames = ["atom.xml"]
 
 [markdown]
 # When set to "true", all code blocks are highlighted.

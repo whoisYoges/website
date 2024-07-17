@@ -6,7 +6,7 @@ page_template = "page.html"
 
 ## About Me
 
-Hello! I'm Yogesh Lamichhane, a passionate IT professional with a diverse skill set and a strong focus on Linux server administration, DevOps, and web infrastructure management. With years of experience in the field, I thrive on the challenges of optimizing systems, ensuring seamless deployments, and providing top-notch IT solutions to businesses of all sizes.
+Hello! I'm Yogesh Lamichhane, a passionate IT professional with a diverse skill set and a strong focus on Linux server administration, DevOps, Cloud technologies and web infrastructure management. With 2+ years of experience in the field, I thrive on the challenges of optimizing systems, ensuring seamless deployments, and providing top-notch IT solutions to businesses of all sizes.
 
 ### Expertise
 
