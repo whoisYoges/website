@@ -1,4 +1,3 @@
-# On every push and  pull request, this script is executed
 name: Zola Build and Deploy
 
 on:
@@ -15,11 +14,11 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      ZOLA_VERSION: 'v0.18.0'
+      ZOLA_VERSION: 'v0.19.1'
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install Zola
         run: |
