@@ -123,7 +123,7 @@ gotoTop = true
         <td data-label="Summary" class="yellow-bg"><span>You should avoid it</span></td>
     </tr>
     <tr>
-        <td data-label="Name" scope="row"><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/hnhx/librex/">LibreX</a></td>
+        <td data-label="Name" scope="row"><a rel="noopener nofollow noreferrer" target="_blank" href="https://github.com/Ahwxorg/librey/">LibreY</a></td>
         <td data-label="Javascript is required" class="green-bg"><span>No and doesn't have any JS</span></td>
         <td data-label="Backend" class="green-bg"><span>AGPL-3.0</span></td>
         <td data-label="Manipulated results" class="green-bg"><span>No</span></td>

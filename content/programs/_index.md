@@ -26,9 +26,9 @@ gotoTop = true
 - Text editing and programming: [vscodium](https://vscodium.com), [neovim](https://neovim.io)
 - Video and Audio Manipulation: [kdenlive](https://kdenlive.org/en) and [ffmpeg](https://ffmpeg.org)
 - Web browser: [librewolf](https://librewolf.net) ([Checkout browsers comparison here](/programs/browsers))
-- Search engine: [LibreX](https://github.com/hnhx/librex) ([Checkout search engines comparison here](/programs/search-engines "Search Engines Comparison."))  
-Checkout my instance at <https://librex.yogeshlamichhane.com.np>.
+- Search engine: [LibreY](https://github.com/Ahwxorg/libreY) ([Checkout search engines comparison here](/programs/search-engines "Search Engines Comparison."))
 - Git services: [sourcehut](https://sr.ht), [cgit](https://git.zx2c4.com/cgit) for self hosting ([Checkout git services comparison here](/programs/git-services "Git Services Comparison"))
+- Password manager: [KeePassXC](https://keepassxc.org), [Vaultwarden - (Better Bitwarden)](https://www.vaultwarden.ca/home)
 
 ## Better Frontends and Alternatives To:
 There is a concern that most of the internet, and specifically the big tech companies and the internet service providers collect user data, and are spying on us. This includes tracking our online behavior and using that information to target ads, or even sharing it with third parties without our knowledge or consent. Read the article [Internet is a spyware](/blog/internet-is-a-spyware) to know more.
@@ -83,5 +83,4 @@ Pro Tip: Use Container Tabs feature available in the [librewolf](https://librewo
 - My wallpaper collection: <https://wallpaper.castorisdead.xyz>
 - My terminal-like website: <https://whoisyoges.eu.org> *(alert: js required)*
 - Instance of my [simple-guestbook](https://github.com/whoisyoges/simple-guestbook): <https://guestbook.yogeshlamichhane.com.np>
-- My instance of [librex](https://github.com/hnhx/librex) search engine: <https://librex.yogeshlamichhane.com.np>
-- My custom build of browser home/start page: <https://github.com/whoisYoges/lhmpage>
+- My custom build of browser home/start page: <https://search.castorisdead.xyz>
