@@ -26,7 +26,7 @@ gotoTop = true
 - Text editing and programming: [vscodium](https://vscodium.com), [neovim](https://neovim.io)
 - Video and Audio Manipulation: [kdenlive](https://kdenlive.org/en) and [ffmpeg](https://ffmpeg.org)
 - Web browser: [librewolf](https://librewolf.net) ([Checkout browsers comparison here](/programs/browsers))
-- Search engine: [LibreY](https://github.com/Ahwxorg/libreY) ([Checkout search engines comparison here](/programs/search-engines "Search Engines Comparison."))
+- Search engine: [SearXNG](https://github.com/searxng/searxng) ([Checkout search engines comparison here](/programs/search-engines "Search Engines Comparison."))
 - Git services: [sourcehut](https://sr.ht), [cgit](https://git.zx2c4.com/cgit) for self hosting ([Checkout git services comparison here](/programs/git-services "Git Services Comparison"))
 - Password manager: [KeePassXC](https://keepassxc.org), [Vaultwarden - (Better Bitwarden)](https://www.vaultwarden.ca/home)
 
@@ -35,8 +35,8 @@ There is a concern that most of the internet, and specifically the big tech comp
 
 Here is a list of better open-source frontend-and alternatives for some popular internet spywares.
 
-- Imgur: [rimgo](https://codeberg.org/video-prize-ranch/rimgo#instances)
-- Spotify: [psst](https://github.com/jpochyla/psst)
+- Imgur: [rimgo](https://rimgo.codeberg.page)
+- Spotify: [spotube](https://github.com/KRTirtho/spotube), [psst](https://github.com/jpochyla/psst)
 - Quora: [quetre](https://github.com/zyachel/quetre)
 - Medium: [Scribe](https://sr.ht/~edwardloveall/Scribe)
 - IMDb: [libremdb](https://github.com/zyachel/libremdb)
@@ -61,9 +61,9 @@ Here is a list of better open-source frontend-and alternatives for some popular 
 - Email Client: [K-9 Mail](https://github.com/thundernest/k-9)
 - Email service: [Tutanota](https://github.com/tutao/tutanota)
 - Telegram: [Telegram-FOSS](https://github.com/Telegram-FOSS-Team/Telegram-FOSS)
-- Keyboard: [Simple Keyboard](https://github.com/rkkr/simple-keyboard)
+- Keyboard: [HeliBoard](https://github.com/Helium314/HeliBoard), [Simple Keyboard](https://github.com/rkkr/simple-keyboard)
 - Twitter: [Nitter for Android](https://gitlab.com/Plexer0/Nitter-Android)
-- Youtube: [SkyTube](https://github.com/SkyTubeTeam/SkyTube), [LibreTube](https://github.com/libre-tube/LibreTube)
+- Youtube: [PipePipe](https://github.com/InfinityLoop1308/PipePipe)
 - Home/Launcher: [KISS Launcher](https://github.com/Neamar/KISS)
 - Google Translate: [simplytranslate_mobile](https://github.com/ManeraKai/simplytranslate_mobile)
 

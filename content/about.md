@@ -1,12 +1,12 @@
 +++
 title = "About Castor"
-description = "A short about castor; whois he?"
+description = "Castor - a passionate Linux sysadmin and cPanel WHM expert who thrives on the challenges of optimizing systems, ensuring seamless deployments, and providing top-notch DevSecOps solutions to businesses of all sizes. When I’m not optimizing servers, you’ll find me crafting cool frontend designs for fun!"
 page_template = "page.html"
 +++
 
 ## About Me
 
-Hello! I'm Yogesh Lamichhane, a passionate IT professional with a diverse skill set and a strong focus on Linux server administration, DevOps, Cloud technologies and web infrastructure management. With 2+ years of experience in the field, I thrive on the challenges of optimizing systems, ensuring seamless deployments, and providing top-notch IT solutions to businesses of all sizes.
+Hello! I'm Yogesh Lamichhane, a passionate Linux sysadmin and cPanel WHM expert who thrives on the challenges of optimizing systems, ensuring seamless deployments, and providing top-notch DevSecOps solutions to businesses of all sizes. When I’m not optimizing servers, you’ll find me crafting cool frontend designs for fun!
 
 ### Expertise
 
