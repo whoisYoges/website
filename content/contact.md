@@ -12,7 +12,6 @@ Introvert people are actually talkative when they get comfortable with someone.
 ### So, Let's have a chat.
 
 Leave a message at any of the following:
-<p>Telegram: <a href="https://t.me/whoisyoges" title="Telegram" class="social" target="_blank" rel="noopener nofollow noreferrer">t.me/whoisyoges</a></p>
 <p>Email: <a href="mailto:whoisyoges@castorisdead.xyz" target="_blank" rel="noopener nofollow noreferrer" class="social">whoisyoges @ castorisdead.xyz</a></p>
 <p>Matrix: <a href="https://matrix.to/#/@whoisyoges:matrix.org" target="_blank" rel="noopener nofollow noreferrer" class="social">matrix.to/#/@whoisyoges:matrix.org</a></p>
 
@@ -23,7 +22,16 @@ Leave a message at any of the following:
 
 FRP: 9A4B 7108 57AD F81C 883B  587A 37DB 5BFE 6ED7 9AD5
 
+<div class="highlight">
+<pre><code id="gpgfrp">gpg --keyserver hkp://keyserver.ubuntu.com --search-keys 9A4B710857ADF81C883B587A37DB5BFE6ED79AD5
+</code>
+<button id="gpgfrpbtn" type="button" onclick="copyCode('gpgfrp','gpgfrpbtn')" value="click">Copy</button>
+</pre>
+</div>
+
 [Need help? How to send an encrypted message using public GPG key?](/blog/encrypt-and-decrypt-a-file-using-gpg-keys)
+
+**PUBLIC KEY**
 
 <div class="highlight">
 <pre><code id="mypubgpgkey">-----BEGIN PGP PUBLIC KEY BLOCK-----<br>
