@@ -23,7 +23,7 @@ Leave a message at any of the following:
 FRP: 9A4B 7108 57AD F81C 883B  587A 37DB 5BFE 6ED7 9AD5
 
 <div class="highlight">
-<pre><code id="gpgfrp">gpg --keyserver hkp://keyserver.ubuntu.com --search-keys 9A4B710857ADF81C883B587A37DB5BFE6ED79AD5
+<pre><code id="gpgfrp">gpg --keyserver keys.openpgp.org --search-keys 9A4B710857ADF81C883B587A37DB5BFE6ED79AD5
 </code>
 <button id="gpgfrpbtn" type="button" onclick="copyCode('gpgfrp','gpgfrpbtn')" value="click">Copy</button>
 </pre>

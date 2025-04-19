@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      ZOLA_VERSION: 'v0.19.1'
+      ZOLA_VERSION: 'v0.20.0'
 
     steps:
       - name: Checkout code
@@ -29,7 +29,6 @@ jobs:
       - name: Build the site
         run: |
           zola build
-
 
       - name: Deploy build to gh-pages branch
         uses: crazy-max/ghaction-github-pages@v4
