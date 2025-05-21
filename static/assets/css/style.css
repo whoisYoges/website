@@ -265,8 +265,8 @@ footer {
 .skills img {
     display: inline-block;
     margin: 5px;
-    max-height: 80px;
-    max-width: 150px
+    max-height: 75px;
+    max-width: 140px
 }
 
 ::-webkit-scrollbar {

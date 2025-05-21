@@ -4,42 +4,31 @@ description = "Castor - a passionate Linux sysadmin and cPanel WHM expert who th
 page_template = "page.html"
 +++
 
-## About Me
+Hi, I'm Yogesh Lamichhane, — also known online as <strong>Castor</strong>. I'm a Linux Sysadmin and DevOps Engineer, fascinated by servers, automation, and the beauty of nature.
 
-Hello! I'm Yogesh Lamichhane, a passionate Linux sysadmin and cPanel WHM expert who thrives on the challenges of optimizing systems, ensuring seamless deployments, and providing top-notch DevSecOps solutions to businesses of all sizes. When I’m not optimizing servers, you’ll find me crafting cool frontend designs for fun!
+I've been working with infrastructure and automation since 2022, and I enjoy making systems reliable, secure, and smooth to operate. Whether it's bare-metal servers or cloud-based high availability setups, I thrive on solving real-world problems with clean engineering solutions.
 
-### Expertise
+### Experience
 
-**Linux Server Administration:** I have extensive experience in managing Linux-based servers, ensuring their stability, security, and optimal performance. From configuring server environments to troubleshooting complex issues, I leverage my expertise to keep systems running smoothly.
+#### Freelancer <small>(2022 - present)</small>
 
-**cPanel/WHM Administration:** With proficiency in cPanel and WHM administration, I specialize in setting up and managing web hosting environments. Whether it's configuring DNS settings, managing email accounts, or fine-tuning server configurations, I ensure a seamless hosting experience for clients.
+Worked with multiple individuals and companies to streamline AWS cloud infrastructure, reduce operational costs, set up CI/CD pipelines, migrate servers, and deploy/configure web applications across various environments.
 
-**DevOps:** I'm deeply passionate about DevOps practices and believe in the power of automation, collaboration, and continuous integration. By implementing DevOps methodologies, I streamline workflows, accelerate deployment cycles, and foster a culture of innovation within organizations.
+#### Hyperce <small>(Apr 2024 - Apr 2025)</small>
 
-**Email Setup and Migration:** From setting up email servers to migrating email accounts across platforms, I handle all aspects of email setup and migration with precision and efficiency. Whether it's configuring Google Workspace, Zoho Mail, or Microsoft 365, I ensure a smooth transition without any disruptions.
+As a DevOps Engineer, I set up scalable, high-availability cloud infrastructure on AWS, built CI/CD pipelines for over 30 projects, and streamlined development and deployment workflows across the team.
 
-**Server Setup and Migration:** I specialize in setting up new servers and migrating existing ones to new environments. Whether it's deploying virtual machines, configuring cloud instances, or migrating data between servers, I ensure a seamless transition while minimizing downtime.
 
-**Website Deployments:** I excel in deploying websites and web applications, ensuring they are accessible, secure, and optimized for performance. Whether it's deploying static sites, content management systems, or e-commerce platforms, I leverage industry best practices to deliver reliable solutions.
+#### Nest Nepal <small>(Jan 2023 - Jan 2024)</small>
 
-**Website Optimizations:** I'm committed to optimizing websites for speed, security, and scalability. From optimizing code and assets to implementing caching mechanisms and content delivery networks (CDNs), I strive to enhance the overall user experience and maximize site performance.
+Worked as a Server Administrator handling multiple cPanel and DirectAdmin servers on bare metal. Provided technical support for 5,000+ websites, along with full-stack server configuration and system management.
 
-**Malware Cleanup:** In the unfortunate event of a security breach or malware infection, I conduct thorough malware cleanup and security audits to restore websites to a clean and secure state. I employ advanced security measures to prevent future attacks and safeguard against vulnerabilities.
-
-**IT Consultation:** I provide expert IT consultation services, offering strategic insights and personalized recommendations to help businesses align their technology initiatives with their overall objectives. Whether it's planning IT infrastructure upgrades, evaluating software solutions, or mitigating security risks, I'm here to provide guidance every step of the way.
-
-### Mission
-
-My mission is to empower businesses with robust, reliable, and scalable IT solutions that drive growth, innovation, and success. Whether you're a small startup or a large enterprise, I'm dedicated to delivering exceptional service, personalized attention, and tangible results that exceed your expectations.
 
 ### Let's Connect
 
-I'm always eager to collaborate on new projects, share insights, and explore opportunities for partnership. Whether you're looking to enhance your IT infrastructure, optimize your website performance, or safeguard your digital assets, I'm here to help you achieve your goals.
+If you're looking to optimize your tech stack or just geek out about infrastructure, feel free to [reach out](https://www.shellsecrets.com/contact).
 
-Let's [connect](https://www.shellsecrets.com/contact) and embark on a journey of innovation, efficiency, and success together!
-
-
-### Language, Tools and Technologies I Use
+### Technologies I Commonly Work With
 
 <div class="skills">
 <img loading="lazy" src="/assets/images/skills/html.png" alt="HTML">

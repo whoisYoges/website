@@ -43,7 +43,7 @@ The public key on the other hand is meant to be given to others, or anyone you w
 
 - A computer with `gnupg` installed on it.
 - A GPG key pair  
-[Don't know how to create one? Read this first.](/blog/create-your-gpg-key-pair)
+[Don't know how to create one? Read this first.](/blog/create-and-delete-gpg-key-pair)
 
 ## Encryption using a public GPG key
 
