@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/images/avatar/avatar.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/assets/images/avatar/avatar.png">
+    <link rel="preload" href="/assets/fonts/FreePixel/FreePixel.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="/assets/css/style.css" as="style">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <meta name="author" content="Castor, whoisyoges@castorisdead.xyz">
+    <meta name="msapplication-TileColor" content="#141414">
+    <meta name="theme-color" content="#141414">
+    <meta name="msapplication-TileImage" content="/assets/images/avatar/avatar.png">
+    <meta name="twitter:creator" content="@whoisYoges">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:locale" content="en_US">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large max-video-preview:-1">
+    <meta name="reply-to" content="whoisyoges@castorisdead.xyz">
+    <meta property="og:email" content="whoisyoges@castorisdead.xyz">
+    <meta name="twitter:site" content="@whoisYoges">
+    
+    <meta name="keywords" content="Working with Git remotes and pushing to multiple Git repositories, Git, Version control, Remote repository, Fetch, Push, Pull, Branch, Merge, Git hosting service, GitHub, GitLab, Bitbucket, Remote tracking branch, Upstream repository, Collaboration, Git workflows, CLI (Command Line Interface), GUI (Graphical User Interface), SSH (Secure Shell), HTTPS (Hypertext Transfer Protocol Secure)">
+    
+    
+    <title>Understanding and working with git remotes</title>
+    <meta name="twitter:title" content="Understanding and working with git remotes">
+    <meta property="og:title" content="Understanding and working with git remotes">
+    <meta name="dc.title" content="Understanding and working with git remotes">
+    
+    
+    <meta name="twitter:description" content="Understanding and working with git remote. Do you have same git repository over different platforms? Are you searching for the convenient way to manage them all at once within a single local repository?">
+    <meta property="og:description" content="Understanding and working with git remote. Do you have same git repository over different platforms? Are you searching for the convenient way to manage them all at once within a single local repository?">
+    <meta name="description" content="Understanding and working with git remote. Do you have same git repository over different platforms? Are you searching for the convenient way to manage them all at once within a single local repository?">
+    <meta name="dc.description" content="Understanding and working with git remote. Do you have same git repository over different platforms? Are you searching for the convenient way to manage them all at once within a single local repository?">
+    
+    
+    <meta property="twitter:url" content="https://castorisdead.xyz/blog/understanding-and-working-with-git-remotes/">
+    <meta property="og:url" content="https://castorisdead.xyz/blog/understanding-and-working-with-git-remotes/">
+    <meta property="og:type" content="article">
+    <meta name="dc.relation" content="https://castorisdead.xyz/blog/understanding-and-working-with-git-remotes/">
+    
+    
+    <meta name="og:image" content="/assets/images/avatar/avatar.jpg">
+    <meta name="twitter:image:src" content="/assets/images/avatar/avatar.jpg">
+    
+</head>
+
+<body id="top">
+    <div class="contents">
+        <div class="twocols">
+            <div class="navcol">
+                <nav>
+                    <div class="fixedcol">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li> <a href="/"> <i class="arrow"></i> Home</a></li>
+                            <li> <a href="/about"> <i class="arrow"></i> About</a> </li>
+                            <li> <a href="/blog"> <i class="arrow"></i> Blog</a> </li>
+                            <li> <a href="/contact"> <i class="arrow"></i> Contact</a> </li>
+                            <li> <a href="/donate"> <i class="arrow"></i> Donate</a> </li>
+                            <li> <a href="/homies"> <i class="arrow"></i> Homies</a> </li>
+                            <li> <a href="/programs"> <i class="arrow"></i> Programs</a> </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="maincol">
+                
+<div id="blog">
+    <h1 id="blog-title">Understanding and working with git remotes</h1>
+    <hr>
+    
+    <small class="blog-date"> 2023-01-04 </small>
+    
+    <p>Do you have same git repository over different platforms? Are you searching for the convenient way to manage them all at once within a single local repository?</p>
+<span id="continue-reading"></span><h2 id="introduction-to-git-remote">Introduction to git remote?</h2>
+<p>A remote in Git is a version of your repository that is hosted on the Internet or network somewhere. Remotes make it easy to collaborate with others, as you can fetch and push changes. You can also use them to create backups of your repository.</p>
+<p>It's common to have a single remote, called <code>origin</code>, but you can have multiple remotes. This can be useful in a few different scenarios. For example, you might want to contribute to someone else's repository and have a remote for their repository. Or, you might want to set up a <code>mirror</code> of your repository on a different hosting service.</p>
+<h3 id="how-does-a-git-remote-work">How does a git remote work?</h3>
+<p>There are two link urls for a remote git repository.</p>
+<ol>
+<li>fetch url: to perform operations like fetch and pull from remote server to local computer.</li>
+<li>push url: to perform push operations from local computer to remote server.</li>
+</ol>
+<p>To check the all the remotes within a repository, you can use the git remote command.</p>
+<pre><code>$ git remote -v
+origin	git@github.com:whoisYoges&#x2F;website.git (fetch)
+origin	git@github.com:whoisYoges&#x2F;website.git (push)
+</code></pre>
+<p>Here, for a remote named <code>origin</code>, we have the same urls for both fetch and push operations cause we're fetching/pulling from and pushing to the same remote repository. If you fetch/pull from one repository and push to other the urls can be different even in same remote.</p>
+<h2 id="adding-a-new-remote">Adding a new remote</h2>
+<p>To add a new remote to your repository, use the git remote add command. The basic syntax is:</p>
+<pre><code>git remote add &lt;name&gt; &lt;url&gt;
+</code></pre>
+<p>Replace &lt;name&gt; with a short, memorable name for the remote, and &lt;url&gt; with the URL of the remote repository. For example, if you want to add a remote for a repository of this website hosted on GitHub, you might use a command like this:</p>
+<pre><code>git remote add github git@github.com:whoisYoges&#x2F;website.git
+</code></pre>
+<p>This will add a remote called <code>github</code> that points to the specified repository. You can then use this remote like any other. For example, to fetch changes from the remote, you can use the git fetch command:</p>
+<pre><code>git fetch github
+</code></pre>
+<p>Again, if you want to add another remote for the same repository hosted on sourcehut, you might use a command like this:</p>
+<pre><code>git remote add sourcehut git@git.sr.ht:~whoisyoges&#x2F;website
+</code></pre>
+<p>This will add a remote called <code>sourcehut</code> that points to the specified repository and then you can use this remote like any other. For example, to push changes to the remote, you can use the git push command.<br />
+For example, to push your local <code>master</code> branch to the <code>sourcehut</code> remote, you can use a command like this:</p>
+<pre><code>git push sourcehut master
+</code></pre>
+<p>This can be useful for collaborating with others, as you can push your work-in-progress to a branch on the remote and ask for feedback before merging it into the main branch.</p>
+<p>You can view a list of your remotes at any time by running the git remote command with no arguments. This will list the names of all your remotes.</p>
+<pre><code>$ git remote
+github
+sourcehut
+</code></pre>
+<p>To see more information about a specific remote, use the git remote show command, followed by the name of the remote. This will display information about the <code>sourcehut</code> remote, including the URL and the branches that are being tracked. For example:</p>
+<pre><code>$ git remote show sourcehut
+* remote sourcehut
+  Fetch URL: git@git.sr.ht:~whoisyoges&#x2F;website
+  Push  URL: git@git.sr.ht:~whoisyoges&#x2F;website
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local ref configured for &#x27;git push&#x27;:
+    master pushes to master (fast-forwardable)
+</code></pre>
+<h2 id="multiple-push-urls-in-a-single-remote">Multiple push urls in a single remote</h2>
+<p>The above method allows us to add multiple remotes and push the local repository to the them one by one, but we cannot push our local repository to all of the remotes at once.</p>
+<p>So, Follow the procedure below for adding multiple push urls in a single remote to push a local repository to all of the remotes at once using a single command.</p>
+<p>Define a git remote which will point to multiple git remotes, we call it <code>all</code>.</p>
+<p><code>git remote add all REMOTE-URL-1</code>.</p>
+<p>This REMOTE-URL-1 will be used to perform fetch/pull operations.</p>
+<pre><code>git remote add all git@git.sr.ht:~whoisyoges&#x2F;website
+</code></pre>
+<p>Now, add all the push urls one by one in the remote <code>all</code>.<br />
+Here, I'm adding the remote repositories of this website available in sourcehut, github, and codeberg.</p>
+<pre><code>git remote set-url --add --push all git@git.sr.ht:~whoisyoges&#x2F;website
+</code></pre>
+<pre><code>git remote set-url --add --push all git@github.com:whoisYoges&#x2F;website.git
+</code></pre>
+<pre><code>git remote set-url --add --push all git@codeberg.org:whoisYoges&#x2F;website.git
+</code></pre>
+<p>Confirm the addition of remote urls by using git remote command.</p>
+<pre><code>$ git remote -v
+all	git@git.sr.ht:~whoisyoges&#x2F;website (fetch)
+all	git@git.sr.ht:~whoisyoges&#x2F;website (push)
+all	git@codeberg.org:whoisYoges&#x2F;website.git (push)
+all	git@github.com:whoisYoges&#x2F;website.git (push)
+</code></pre>
+<p>Push a branch to all the remotes with <code>git push all BRANCH</code> – replace BRANCH with a real branch name.
+You cannot fetch updates from multiple remotes in this method.</p>
+<p><em><code>Note: The branch name of all the remote repositories must be same.</code></em></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>In summary, adding and using multiple remotes in a Git repository can be a useful way to collaborate with others and make backups of your work. By using the git remote and git push commands, you can easily work with multiple remotes and push and fetch changes as needed.</p>
+
+    
+    <div class="shareable">
+        <p class="shareon">SHARE ON</p>
+        <a title="Share on facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://castorisdead.xyz/blog/understanding-and-working-with-git-remotes/" target="_blank" rel="noopener" class="social"><img src="/assets/images/social-icons/facebook.png" alt="facebook icon"> Facebook</a>
+        <a title="Share on twitter" href="https://twitter.com/intent/tweet?url=https://castorisdead.xyz/blog/understanding-and-working-with-git-remotes/" target="_blank" rel="noopener" class="social"><img src="/assets/images/social-icons/twitter.png" alt="twitter icon"> Twitter</a>
+        <a href="https://www.linkedin.com/share?url=https://castorisdead.xyz/blog/understanding-and-working-with-git-remotes/" target="_blank" rel="noopener" class="social" title="Share on linkedin"><img src="/assets/images/social-icons/linkedin.png" alt="linkedin icon"> LinkedIn</a>
+    </div>
+    
+    
+    <p class="shareable"><a href="/blog/">VIEW ALL POSTS</a></p>
+    
+</div>
+
+                <footer class="center">
+                    <hr>
+                    <div class="sociallinks">
+                        <a title="Get Connected on LinkedIn" href="https://www.linkedin.com/in/whoisYoges" target="_blank" rel="noopener" class="eachsociallinks"><img src="/assets/images/social-icons/linkedin.png" alt="LinkedIn"></a>
+                        <a title="Follow me on Mastodon" href="https://fosstodon.org/@whoisYoges" target="_blank" rel="noopener" class="eachsociallinks"><img src="/assets/images/social-icons/mastodon.png" alt="Mastodon"></a>
+                        <a title="Follow me on Twitter" href="https://twitter.com/whoisYoges" target="_blank" rel="noopener" class="eachsociallinks"><img src="/assets/images/social-icons/x.png" alt="Twitter"></a>
+                        <a title="Check my codes on GitHub" href="https://github.com/whoisYoges" target="_blank" rel="noopener" class="eachsociallinks"><img src="/assets/images/social-icons/github.png" alt="GitHub"></a>
+                        <a href="/atom.xml" target="_blank" rel="noopener" class="eachsociallinks" title="My Rss Feed"><img src="/assets/images/social-icons/rssfeed.png" alt="RSS Feed"></a>
+                    </div>
+                    <p><span class="copyright">&copy;</span> Copyright <a href="/">Castor</a>, <a href="https://www.gnu.org/licenses/agpl-3.0.en.html#license-text" target="_blank" rel="noopener nofollow noreferrer">AGPL-3.0</a> licensed.</p>
+                    <p>Made with <span><img class="heart" src="/assets/images/site/blue-heart.png" alt="&lt;3"></span> in <a href="https://en.wikipedia.org/wiki/Nepal" target="_blank" rel="noopener nofollow noreferrer">Nepal</a> | Powered by <a href="https://www.getzola.org" target="_blank" rel="noopener">zola</a>.</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    
+    <div class="gototop">
+        <a class="gototoplink" href="#top">^</a>
+    </div>
+    
+    
+    
+    
+</body>
+
+</html>
