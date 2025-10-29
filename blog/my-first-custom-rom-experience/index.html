@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/images/avatar/avatar.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/assets/images/avatar/avatar.png">
+    <link rel="preload" href="/assets/fonts/FreePixel/FreePixel.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="/assets/css/style.css" as="style">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <meta name="author" content="Castor, whoisyoges@castorisdead.xyz">
+    <meta name="msapplication-TileColor" content="#141414">
+    <meta name="theme-color" content="#141414">
+    <meta name="msapplication-TileImage" content="/assets/images/avatar/avatar.png">
+    <meta name="twitter:creator" content="@whoisYoges">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:locale" content="en_US">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large max-video-preview:-1">
+    <meta name="reply-to" content="whoisyoges@castorisdead.xyz">
+    <meta property="og:email" content="whoisyoges@castorisdead.xyz">
+    <meta name="twitter:site" content="@whoisYoges">
+    
+    <meta name="keywords" content="custom rom, lineage os, castor, castorIsDead, castor is dead, zero to noob linux, whoisYoges, Yogesh Lamichhane, open source, FOSS, linux, geek, Arch, Artix, archlinux, arch linux, artix linux">
+    
+    
+    <title>My first custom ROM experience!</title>
+    <meta name="twitter:title" content="My first custom ROM experience!">
+    <meta property="og:title" content="My first custom ROM experience!">
+    <meta name="dc.title" content="My first custom ROM experience!">
+    
+    
+    <meta name="twitter:description" content="I used LineageOS 20 as a daily driver for over 3 months on my old Redmi phone. Here&#x27;s my experience with custom ROMs: better performance, smooth UI, privacy, and some challenges to consider.">
+    <meta property="og:description" content="I used LineageOS 20 as a daily driver for over 3 months on my old Redmi phone. Here&#x27;s my experience with custom ROMs: better performance, smooth UI, privacy, and some challenges to consider.">
+    <meta name="description" content="I used LineageOS 20 as a daily driver for over 3 months on my old Redmi phone. Here&#x27;s my experience with custom ROMs: better performance, smooth UI, privacy, and some challenges to consider.">
+    <meta name="dc.description" content="I used LineageOS 20 as a daily driver for over 3 months on my old Redmi phone. Here&#x27;s my experience with custom ROMs: better performance, smooth UI, privacy, and some challenges to consider.">
+    
+    
+    <meta property="twitter:url" content="https://castorisdead.xyz/blog/my-first-custom-rom-experience/">
+    <meta property="og:url" content="https://castorisdead.xyz/blog/my-first-custom-rom-experience/">
+    <meta property="og:type" content="article">
+    <meta name="dc.relation" content="https://castorisdead.xyz/blog/my-first-custom-rom-experience/">
+    
+    
+    <meta name="og:image" content="https://castorisdead.xyz/assets/images/blogs/custom-rom/lineageos.jpg">
+    <meta name="twitter:image:src" content="https://castorisdead.xyz/assets/images/blogs/custom-rom/lineageos.jpg">
+    
+</head>
+
+<body id="top">
+    <div class="contents">
+        <div class="twocols">
+            <div class="navcol">
+                <nav>
+                    <div class="fixedcol">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li> <a href="/"> <i class="arrow"></i> Home</a></li>
+                            <li> <a href="/about"> <i class="arrow"></i> About</a> </li>
+                            <li> <a href="/blog"> <i class="arrow"></i> Blog</a> </li>
+                            <li> <a href="/contact"> <i class="arrow"></i> Contact</a> </li>
+                            <li> <a href="/donate"> <i class="arrow"></i> Donate</a> </li>
+                            <li> <a href="/homies"> <i class="arrow"></i> Homies</a> </li>
+                            <li> <a href="/programs"> <i class="arrow"></i> Programs</a> </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="maincol">
+                
+<div id="blog">
+    <h1 id="blog-title">My first custom ROM experience!</h1>
+    <hr>
+    
+    <small class="blog-date"> 2024-12-05 </small>
+    
+    <p>I used LineageOS 20 as a daily driver for over 3 months on my old Redmi phone. Here's my experience with custom ROMs: better performance, smooth UI, privacy, and some challenges to consider.</p>
+<span id="continue-reading"></span>
+<p>After four years with my trusty Redmi phone, I decided to try something a little more adventurous: installing a custom ROM. I had previously switched the stock ROM to different regional MIUI versions (European and Indonesian) and was quite comfortable, but I had never ventured into the realm of custom ROMs. Enter <strong><a rel="noopener" target="_blank" href="https://lineageos.org">LineageOS</a></strong> 20 - an open-source, ad-free, and bloatware-free custom ROM that's known for its clean UI and privacy-first features.</p>
+<p><img src="/assets/images/blogs/custom-rom/lineageos.jpg" alt="Lineage OS" /></p>
+<p>This blog is a technical dive into my experience, the steps I followed, and the lessons learned along the way. If you're on the fence about switching to a custom ROM like LineageOS, this might help you decide whether it's worth the effort.</p>
+<h2 id="the-basics-how-i-installed-lineageos-20-on-my-redmi-phone">The Basics: How I Installed LineageOS 20 on My Redmi Phone</h2>
+<p>I won’t go into an exhaustive step-by-step guide because installation can vary greatly depending on your device. However, here's a quick overview of what I did:</p>
+<ol>
+<li><strong>Backup everything</strong>: I made sure to back up all my important data on a computer.</li>
+<li><strong>Unlock the bootloader</strong>: This is necessary for installing a custom ROM. It's a bit tricky and requires permission from your device’s manufacturer (for Xiaomi, you need to use their unlock tool).</li>
+<li><strong>Downgrade MIUI (Optional)</strong>: My phone was running the latest MIUI version, which didn’t support custom recovery. I had to downgrade to a version that did, but this step might not be required for you.</li>
+<li><strong>Install a custom recovery</strong>: I flashed a custom recovery from the lineageos itself.</li>
+<li><strong>Flash the ROM</strong>: This involved flashing the LineageOS ROM and associated files (boot, vbmeta, dtbo, and super_empty images). Not all of these steps might be necessary, but they worked for me.</li>
+<li><strong>Install LiteGApps</strong>: Since I only needed Google Maps and the Play Store from google apps, I opted for the <a rel="noopener" target="_blank" href="https://litegapps.github.io/">litegapps</a> <a rel="noopener" target="_blank" href="https://litegapps.github.io/doc/litegapps_variant.html#superlite">SuperLite</a> version to minimize bloatware and google tracking.</li>
+</ol>
+<p>If you're interested in custom ROMs, the <strong><a rel="noopener" target="_blank" href="https://www.xda-developers.com/">XDA Developers</a></strong> forum is a great place to start. It’s essentially a treasure trove of ROM guides and developer support.</p>
+<h2 id="the-benefits-i-experienced-with-lineageos-20">The Benefits I Experienced with LineageOS 20</h2>
+<p>Once everything was up and running, here are the key advantages I noticed immediately:</p>
+<ol>
+<li><strong>A Clean, Super Smooth UI</strong>: No bloatware, no adware—just a clean, fast UI. LineageOS was sleek, snappy, and felt like a breath of fresh air compared to the bloat-heavy stock MIUI experience.</li>
+<li><strong>Nightly OTA Updates</strong>: This was a game-changer. LineageOS offers regular nightly updates, ensuring my phone stays up-to-date with the latest security patches.</li>
+<li><strong>Banking and Streaming Apps Work Out of the Box</strong>: I was relieved to see that essential apps like Netflix, Google Pay, and various banking apps passed the integrity checks and worked without issues.</li>
+<li><strong>Improved Privacy</strong>: One of the key reasons I switched was to minimize tracking. LineageOS offers a higher level of privacy, giving me more control over app permissions.</li>
+<li><strong>Longer Battery Life</strong>: With bloatware out of the picture, I noticed improved battery life. It was a pleasant surprise, especially on a phone that was already several years old.</li>
+<li><strong>More Storage</strong>: With fewer pre-installed apps and system processes, I had more free space on my device.</li>
+<li><strong>Self-Satisfaction</strong>: There’s an undeniable feeling of accomplishment when you successfully install a custom ROM and enjoy a better experience on a device that’s been written off as obsolete.</li>
+</ol>
+<h2 id="challenges-i-faced-during-the-switch">Challenges I Faced During the Switch</h2>
+<p>While the experience was largely positive, there were a few hurdles along the way:</p>
+<ol>
+<li><strong>Bootloader Locking Issues</strong>: One major frustration was that the bootloader could not be locked once I installed the custom ROM. Locking the bootloader requires manually compiling signed images and using a capable PC, which was beyond my setup. This also meant that Google Play’s integrity checks failed, so certain apps like <strong>Indriver</strong>, <strong>Binance</strong>, and <strong>Banana Kong 2</strong> wouldn’t install properly. I was able to sideload Indriver using the <strong><a rel="noopener" target="_blank" href="https://auroraoss.com/">Aurora Store</a></strong> APK, but other apps remained inaccessible.</li>
+<li><strong>WiFi Connectivity</strong>: LineageOS had some trouble connecting to hidden WiFi networks. It took anywhere from 10-20 seconds longer to discover and connect to them, which was a bit annoying at times.</li>
+<li><strong>Missing Camera Features</strong>: The default camera app from LineageOS was pretty basic. Missing features like panorama and timelapse were noticeable.</li>
+</ol>
+<h2 id="final-thoughts-was-it-worth-it">Final Thoughts: Was It Worth It?</h2>
+<p>Despite the few challenges, my experience with LineageOS 20 was overwhelmingly positive. The performance boost, the ad-free environment, and the heightened privacy were all worth the effort. LineageOS delivered a noticeable improvement over MIUI, and the fact that my device was getting regular updates made it feel like I had a brand-new phone.</p>
+<p>Even though I have since moved on to a newer device, I still use my Redmi phone as a secondary device with LineageOS. I plan to continue experimenting with custom ROMs as long as my primary phone remains unsupported or outdated.</p>
+<p>For those who are tech-savvy and willing to take on the occasional challenge, a custom ROM like LineageOS is definitely worth considering. It offers a level of control and performance that’s hard to match with stock ROMs.</p>
+
+    
+    <div class="shareable">
+        <p class="shareon">SHARE ON</p>
+        <a title="Share on facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://castorisdead.xyz/blog/my-first-custom-rom-experience/" target="_blank" rel="noopener" class="social"><img src="/assets/images/social-icons/facebook.png" alt="facebook icon"> Facebook</a>
+        <a title="Share on twitter" href="https://twitter.com/intent/tweet?url=https://castorisdead.xyz/blog/my-first-custom-rom-experience/" target="_blank" rel="noopener" class="social"><img src="/assets/images/social-icons/twitter.png" alt="twitter icon"> Twitter</a>
+        <a href="https://www.linkedin.com/share?url=https://castorisdead.xyz/blog/my-first-custom-rom-experience/" target="_blank" rel="noopener" class="social" title="Share on linkedin"><img src="/assets/images/social-icons/linkedin.png" alt="linkedin icon"> LinkedIn</a>
+    </div>
+    
+    
+    <p class="shareable"><a href="/blog/">VIEW ALL POSTS</a></p>
+    
+</div>
+
+                <footer class="center">
+                    <hr>
+                    <div class="sociallinks">
+                        <a title="Get Connected on LinkedIn" href="https://www.linkedin.com/in/whoisYoges" target="_blank" rel="noopener" class="eachsociallinks"><img src="/assets/images/social-icons/linkedin.png" alt="LinkedIn"></a>
+                        <a title="Follow me on Mastodon" href="https://fosstodon.org/@whoisYoges" target="_blank" rel="noopener" class="eachsociallinks"><img src="/assets/images/social-icons/mastodon.png" alt="Mastodon"></a>
+                        <a title="Follow me on Twitter" href="https://twitter.com/whoisYoges" target="_blank" rel="noopener" class="eachsociallinks"><img src="/assets/images/social-icons/x.png" alt="Twitter"></a>
+                        <a title="Check my codes on GitHub" href="https://github.com/whoisYoges" target="_blank" rel="noopener" class="eachsociallinks"><img src="/assets/images/social-icons/github.png" alt="GitHub"></a>
+                        <a href="/atom.xml" target="_blank" rel="noopener" class="eachsociallinks" title="My Rss Feed"><img src="/assets/images/social-icons/rssfeed.png" alt="RSS Feed"></a>
+                    </div>
+                    <p><span class="copyright">&copy;</span> Copyright <a href="/">Castor</a>, <a href="https://www.gnu.org/licenses/agpl-3.0.en.html#license-text" target="_blank" rel="noopener nofollow noreferrer">AGPL-3.0</a> licensed.</p>
+                    <p>Made with <span><img class="heart" src="/assets/images/site/blue-heart.png" alt="&lt;3"></span> in <a href="https://en.wikipedia.org/wiki/Nepal" target="_blank" rel="noopener nofollow noreferrer">Nepal</a> | Powered by <a href="https://www.getzola.org" target="_blank" rel="noopener">zola</a>.</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    
+    <div class="gototop">
+        <a class="gototoplink" href="#top">^</a>
+    </div>
+    
+    
+    
+    
+</body>
+
+</html>
