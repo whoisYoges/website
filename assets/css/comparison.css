@@ -1,0 +1,130 @@
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+    max-width: 100%
+}
+
+table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em
+}
+
+table tr {
+    border: 1px solid #ddd;
+    padding: .35em
+}
+
+table th,
+table td {
+    text-align: left;
+    border: 1px solid #ccc;
+    padding: .625em;
+    word-wrap: break-word
+}
+
+table th {
+    font-size: .85em;
+    font-weight: bold;
+    letter-spacing: .1em;
+    text-transform: uppercase
+}
+
+.purple-bg {
+    background-color: #28055a
+}
+
+.red-bg {
+    background-color: #69003d
+}
+
+.yellow-bg {
+    background-color: #5c6207
+}
+
+.green-bg {
+    background-color: #0a4f28
+}
+
+@media only screen and (max-width: 768px),
+(min-device-width: 768px) and (max-device-width: 1200px) {
+    table {
+        border: 0
+    }
+
+    table caption {
+        font-size: 1.3em
+    }
+
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px
+    }
+
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .85em;
+        text-align: right
+    }
+
+    table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase
+    }
+
+    table td:last-child {
+        border-bottom: 0
+    }
+
+    .purple-bg,
+    .red-bg,
+    .yellow-bg,
+    .green-bg {
+        background-color: #181a1b
+    }
+
+    .purple-bg span {
+        background-color: #320671;
+        padding: 2px;
+        margin: 2px
+    }
+
+    .red-bg span {
+        background-color: #83004c;
+        padding: 2px;
+        margin: 2px
+    }
+
+    .yellow-bg span {
+        background-color: #737a09;
+        padding: 2px;
+        margin: 2px
+    }
+
+    .green-bg span {
+        background-color: #049b46;
+        padding: 2px;
+        margin: 2px
+    }
+}
+
+body {
+    line-height: 1.25
+}

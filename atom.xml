@@ -1,0 +1,1124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Castor Writes</title>
+      <link>https://castorisdead.xyz</link>
+      <description>Just Some random article posts by Castor.</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://castorisdead.xyz/atom.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Wed, 31 Dec 2025 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Last Day of 2025</title>
+          <pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
+          <author>whoisyoges@castorisdead.xyz (Castor)</author>
+          <link>https://castorisdead.xyz/blog/last-day-of-2025/</link>
+          <guid>https://castorisdead.xyz/blog/last-day-of-2025/</guid>
+          <description xml:base="https://castorisdead.xyz/blog/last-day-of-2025/">&lt;p&gt;It&#x27;s 21:20 on a cold, frosty winter night, with a temperature of 7 degrees Celsius, December 31, 2025.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;I have been lazy and full of excuses when it came to doing the things I wanted to do. This is a reminder to myself that whenever I look at this, I’ll force myself to be who I am and do all the things I wanted to do.&lt;&#x2F;p&gt;
+&lt;p&gt;I wrote zero articles in 2025. Me and my friend started some services that helps individuals and organizations solve&#x2F;easier their problems and requiremnts with technology (I promise I&#x27;ll reveal more about this soon in another article). We created websites, chat systems, support, and all the setups—but we didn’t focus on actual customers and services. I had some ups and downs, but now I am back with new energy, and I will at least stick to that energy.&lt;&#x2F;p&gt;
+&lt;p&gt;I am a DevOps engineer, and a few things I learned and used for my projects in 2025 are Proxmox, Kubernetes, Terraform, and Ansible. I also had some amazing freelance work from around the globe.&lt;&#x2F;p&gt;
+&lt;p&gt;Looking forward to not making excuses to do what I want to do, go out, meet new people, and travel to different places. Connect with people from around the globe, learn new technologies, and provide services to as many people as I can. Grateful for my time on Earth.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>My first custom ROM experience!</title>
+          <pubDate>Thu, 05 Dec 2024 00:00:00 +0000</pubDate>
+          <author>whoisyoges@castorisdead.xyz (Castor)</author>
+          <link>https://castorisdead.xyz/blog/my-first-custom-rom-experience/</link>
+          <guid>https://castorisdead.xyz/blog/my-first-custom-rom-experience/</guid>
+          <description xml:base="https://castorisdead.xyz/blog/my-first-custom-rom-experience/">&lt;p&gt;I used LineageOS 20 as a daily driver for over 3 months on my old Redmi phone. Here&#x27;s my experience with custom ROMs: better performance, smooth UI, privacy, and some challenges to consider.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;After four years with my trusty Redmi phone, I decided to try something a little more adventurous: installing a custom ROM. I had previously switched the stock ROM to different regional MIUI versions (European and Indonesian) and was quite comfortable, but I had never ventured into the realm of custom ROMs. Enter &lt;strong&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;lineageos.org&quot;&gt;LineageOS&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt; 20 - an open-source, ad-free, and bloatware-free custom ROM that&#x27;s known for its clean UI and privacy-first features.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;assets&#x2F;images&#x2F;blogs&#x2F;custom-rom&#x2F;lineageos.jpg&quot; alt=&quot;Lineage OS&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This blog is a technical dive into my experience, the steps I followed, and the lessons learned along the way. If you&#x27;re on the fence about switching to a custom ROM like LineageOS, this might help you decide whether it&#x27;s worth the effort.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-basics-how-i-installed-lineageos-20-on-my-redmi-phone&quot;&gt;The Basics: How I Installed LineageOS 20 on My Redmi Phone&lt;&#x2F;h2&gt;
+&lt;p&gt;I won’t go into an exhaustive step-by-step guide because installation can vary greatly depending on your device. However, here&#x27;s a quick overview of what I did:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Backup everything&lt;&#x2F;strong&gt;: I made sure to back up all my important data on a computer.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Unlock the bootloader&lt;&#x2F;strong&gt;: This is necessary for installing a custom ROM. It&#x27;s a bit tricky and requires permission from your device’s manufacturer (for Xiaomi, you need to use their unlock tool).&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Downgrade MIUI (Optional)&lt;&#x2F;strong&gt;: My phone was running the latest MIUI version, which didn’t support custom recovery. I had to downgrade to a version that did, but this step might not be required for you.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Install a custom recovery&lt;&#x2F;strong&gt;: I flashed a custom recovery from the lineageos itself.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Flash the ROM&lt;&#x2F;strong&gt;: This involved flashing the LineageOS ROM and associated files (boot, vbmeta, dtbo, and super_empty images). Not all of these steps might be necessary, but they worked for me.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Install LiteGApps&lt;&#x2F;strong&gt;: Since I only needed Google Maps and the Play Store from google apps, I opted for the &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;litegapps.github.io&#x2F;&quot;&gt;litegapps&lt;&#x2F;a&gt; &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;litegapps.github.io&#x2F;doc&#x2F;litegapps_variant.html#superlite&quot;&gt;SuperLite&lt;&#x2F;a&gt; version to minimize bloatware and google tracking.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;If you&#x27;re interested in custom ROMs, the &lt;strong&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.xda-developers.com&#x2F;&quot;&gt;XDA Developers&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt; forum is a great place to start. It’s essentially a treasure trove of ROM guides and developer support.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;the-benefits-i-experienced-with-lineageos-20&quot;&gt;The Benefits I Experienced with LineageOS 20&lt;&#x2F;h2&gt;
+&lt;p&gt;Once everything was up and running, here are the key advantages I noticed immediately:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;A Clean, Super Smooth UI&lt;&#x2F;strong&gt;: No bloatware, no adware—just a clean, fast UI. LineageOS was sleek, snappy, and felt like a breath of fresh air compared to the bloat-heavy stock MIUI experience.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Nightly OTA Updates&lt;&#x2F;strong&gt;: This was a game-changer. LineageOS offers regular nightly updates, ensuring my phone stays up-to-date with the latest security patches.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Banking and Streaming Apps Work Out of the Box&lt;&#x2F;strong&gt;: I was relieved to see that essential apps like Netflix, Google Pay, and various banking apps passed the integrity checks and worked without issues.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Improved Privacy&lt;&#x2F;strong&gt;: One of the key reasons I switched was to minimize tracking. LineageOS offers a higher level of privacy, giving me more control over app permissions.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Longer Battery Life&lt;&#x2F;strong&gt;: With bloatware out of the picture, I noticed improved battery life. It was a pleasant surprise, especially on a phone that was already several years old.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;More Storage&lt;&#x2F;strong&gt;: With fewer pre-installed apps and system processes, I had more free space on my device.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Self-Satisfaction&lt;&#x2F;strong&gt;: There’s an undeniable feeling of accomplishment when you successfully install a custom ROM and enjoy a better experience on a device that’s been written off as obsolete.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;challenges-i-faced-during-the-switch&quot;&gt;Challenges I Faced During the Switch&lt;&#x2F;h2&gt;
+&lt;p&gt;While the experience was largely positive, there were a few hurdles along the way:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Bootloader Locking Issues&lt;&#x2F;strong&gt;: One major frustration was that the bootloader could not be locked once I installed the custom ROM. Locking the bootloader requires manually compiling signed images and using a capable PC, which was beyond my setup. This also meant that Google Play’s integrity checks failed, so certain apps like &lt;strong&gt;Indriver&lt;&#x2F;strong&gt;, &lt;strong&gt;Binance&lt;&#x2F;strong&gt;, and &lt;strong&gt;Banana Kong 2&lt;&#x2F;strong&gt; wouldn’t install properly. I was able to sideload Indriver using the &lt;strong&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;auroraoss.com&#x2F;&quot;&gt;Aurora Store&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt; APK, but other apps remained inaccessible.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;WiFi Connectivity&lt;&#x2F;strong&gt;: LineageOS had some trouble connecting to hidden WiFi networks. It took anywhere from 10-20 seconds longer to discover and connect to them, which was a bit annoying at times.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Missing Camera Features&lt;&#x2F;strong&gt;: The default camera app from LineageOS was pretty basic. Missing features like panorama and timelapse were noticeable.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;final-thoughts-was-it-worth-it&quot;&gt;Final Thoughts: Was It Worth It?&lt;&#x2F;h2&gt;
+&lt;p&gt;Despite the few challenges, my experience with LineageOS 20 was overwhelmingly positive. The performance boost, the ad-free environment, and the heightened privacy were all worth the effort. LineageOS delivered a noticeable improvement over MIUI, and the fact that my device was getting regular updates made it feel like I had a brand-new phone.&lt;&#x2F;p&gt;
+&lt;p&gt;Even though I have since moved on to a newer device, I still use my Redmi phone as a secondary device with LineageOS. I plan to continue experimenting with custom ROMs as long as my primary phone remains unsupported or outdated.&lt;&#x2F;p&gt;
+&lt;p&gt;For those who are tech-savvy and willing to take on the occasional challenge, a custom ROM like LineageOS is definitely worth considering. It offers a level of control and performance that’s hard to match with stock ROMs.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>My Second Job Interview!</title>
+          <pubDate>Thu, 25 Apr 2024 00:00:00 +0000</pubDate>
+          <author>whoisyoges@castorisdead.xyz (Castor)</author>
+          <link>https://castorisdead.xyz/blog/my-second-job-interview/</link>
+          <guid>https://castorisdead.xyz/blog/my-second-job-interview/</guid>
+          <description xml:base="https://castorisdead.xyz/blog/my-second-job-interview/">&lt;p&gt;Crushed my second successful job interview - an incredible experience!&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;After spending over a year in my first job as a Linux Server Administrator, I found myself ready for a change shifting gears towards becoming a DevOps Engineer. In February 2024, I parted ways with my old position and set my sights on transitioning into a DevOps Engineer role. Thankfully, after a successful interview on April 22, 2024, I landed a new role at a prestigious company as a DevOps Engineer. If you&#x27;re curious about my first interview experience, feel free to check out &lt;a href=&quot;&#x2F;blog&#x2F;my-first-interview&#x2F;&quot;&gt;my account of it&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Even though I aced the interview for a DevOps internship a few months ago at a top outsourcing company in Nepal, I didn&#x27;t get the job because my college and office hours clashed. Luckily, it was a remote position and I got selected after a quick online interview.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;so-what-was-i-asked-exactly&quot;&gt;So, what was I asked exactly?&lt;&#x2F;h2&gt;
+&lt;p&gt;I will here address only the few important topics and questions that I was asked.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;about aws, azure and other cloud platforms and its services&lt;&#x2F;li&gt;
+&lt;li&gt;about CICD pipelines, github actions, webhooks and jenkins&lt;&#x2F;li&gt;
+&lt;li&gt;about docker, containerization and virtualization&lt;&#x2F;li&gt;
+&lt;li&gt;about kubernates, automation and scaling&lt;&#x2F;li&gt;
+&lt;li&gt;Task: To learn, understand and deploy one of the well known open source commerce platform using docker containerization and github actions in a AWS Cloud Instance.&lt;&#x2F;li&gt;
+&lt;li&gt;Most Importantly: Why did I left my previous job?&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Well, it&#x27;s clear that I struggled with some questions and tasks. However, the experience was fantastic, and I got a golden chance to learn and work alongside them.&lt;&#x2F;p&gt;
+&lt;p&gt;Since my passion lies in Linux, servers, and cloud technologies, this opportunity was truly amazing for me. With my background and experience, I was fortunate enough to secure it.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Why is it difficult to change the human thinking?</title>
+          <pubDate>Wed, 10 Apr 2024 00:00:00 +0000</pubDate>
+          <author>whoisyoges@castorisdead.xyz (Castor)</author>
+          <link>https://castorisdead.xyz/blog/why-is-it-difficult-to-change-the-human-thinking/</link>
+          <guid>https://castorisdead.xyz/blog/why-is-it-difficult-to-change-the-human-thinking/</guid>
+          <description xml:base="https://castorisdead.xyz/blog/why-is-it-difficult-to-change-the-human-thinking/">&lt;p&gt;Our cognitive processes, shaped by evolution, often lead us to resist change and cling to established beliefs and behaviors. Why is it that we persist in holding onto stubborn ideas, biases, and prejudices, even in the face of contradictory evidence? Much of this can be attributed to the inherent nature of our brain&#x27;s decision-making mechanisms, which rely heavily on quick, rule-of-thumb shortcuts known as heuristics.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;To gain a deeper understanding of the subject, let&#x27;s delve into the following key terms initially:&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;sensation-the-raw-data-of-experience&quot;&gt;Sensation: The Raw Data of Experience&lt;&#x2F;h2&gt;
+&lt;p&gt;At its core, sensation is about the raw data collected by our senses — sight, hearing, taste, smell, and touch. It&#x27;s the initial input that floods our brains with information about the world. Imagine standing in a bustling marketplace: the vibrant colors of fresh produce, the cacophony of voices blending into a symphony of sounds, the tantalizing aromas wafting through the air — all of these are sensations bombarding our senses. These fundamental aspects of our human experience plays a crucial role in how we perceive and interact with the world around us.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;perception-making-sense-of-the-world&quot;&gt;Perception: Making Sense of the World&lt;&#x2F;h2&gt;
+&lt;p&gt;Perception, on the other hand, is where the magic happens. It&#x27;s the intricate process through which our brains take that raw sensory input and transform it into meaningful patterns, shapes, and meanings. Picture a puzzle being pieced together as our minds categorize, organize, and interpret the incoming sensory information. This is how we recognize a friend&#x27;s face in a crowded room or distinguish between the aroma of coffee and that of freshly steamed Mo:Mos.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;cognitive-process-advance-mental-processes&quot;&gt;Cognitive Process: Advance Mental Processes&lt;&#x2F;h2&gt;
+&lt;p&gt;Cognitive processes are the activities involved in acquiring, processing, storing, and using information. These processes allow individuals to perceive, understand, and interact with the world around them. Perception, Attention, Memory, Decision-making, Cognitive control, etc are some of the key conitive processes.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;assets&#x2F;images&#x2F;blogs&#x2F;why-is-it-difficult-to-change-the-human-thinking&#x2F;why-is-it-difficult-to-change-the-human-thinking.jpg&quot; alt=&quot;Perception of a Human!&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;the-significance-of-perception&quot;&gt;The Significance of Perception&lt;&#x2F;h3&gt;
+&lt;p&gt;Perception is not just about identifying objects or discerning between different sensations; it profoundly influences how we understand and navigate the world around us. It shapes our beliefs, emotions, and interactions with others.&lt;&#x2F;p&gt;
+&lt;p&gt;Consider this: two individuals may witness the same event, yet their perceptions of it can vary drastically based on their unique experiences, cultural backgrounds, and personal beliefs. This is why perception is often described as a subjective phenomenon — it&#x27;s deeply intertwined with our individual perspectives and interpretations.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;shaping-beliefs-thoughts-and-thinking&quot;&gt;Shaping Beliefs, Thoughts, and Thinking&lt;&#x2F;h3&gt;
+&lt;p&gt;Our perceptions play a central role in shaping our beliefs, thoughts, and overall cognitive processes. Imagine someone who has grown up hearing a particular narrative about a certain group of people. Their perception of that group will likely be influenced by the information they&#x27;ve been exposed to, leading to the formation of beliefs and attitudes that align with that narrative. These beliefs, in turn, influence how they interpret new information and navigate the world around them.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;primacy-effect-the-influence-of-first-impressions&quot;&gt;Primacy Effect: The Influence of First Impressions&lt;&#x2F;h2&gt;
+&lt;p&gt;The primacy effect is a cognitive bias in which individuals tend to remember and give greater weight to information that they encountered first, compared to information presented later. This phenomenon can influence various aspects of human cognition, including perception, memory, and decision-making.&lt;&#x2F;p&gt;
+&lt;p&gt;An example of the primacy effect can be observed in a job interview scenario. Imagine a hiring manager is interviewing several candidates for a position. The first candidate impresses the manager with their qualifications, experience, and demeanor. Subsequent candidates may also have impressive credentials, but the manager&#x27;s initial positive impression of the first candidate may bias their evaluation of the others.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;confirmation-bias-rigid-to-pre-existing-beliefs&quot;&gt;Confirmation Bias: Rigid to pre-existing beliefs&lt;&#x2F;h2&gt;
+&lt;p&gt;Confirmation bias is a cognitive bias where individuals tend to seek out, interpret, and remember information in a way that confirms their preexisting beliefs or hypotheses, while ignoring or discounting contradictory evidence that can lead to perceptual distortions, irrational judgments, and faulty decision-making processes. They arise from the brain&#x27;s attempts to simplify complex information processing tasks, but they can also lead to errors and inaccuracies in our perceptions and judgments.&lt;&#x2F;p&gt;
+&lt;p&gt;For example: Let&#x27;s consider an individual who holds the belief that all politicians are dishonest. When presented with news stories or anecdotes that depict politicians engaging in unethical behavior, they readily accept and remember this information, reinforcing their belief in the dishonesty of politicians.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;so-why-do-people-find-it-hard-to-change-their-mindset&quot;&gt;So, Why do people find it hard to change their mindset?&lt;&#x2F;h2&gt;
+&lt;p&gt;Firstly, our brains are marvelously intricate organs, honed by millions of years of evolution. They&#x27;re wired to seek patterns, make snap judgments, and rely on mental shortcuts known as heuristics to process information swiftly. These mechanisms, while efficient, also give rise to cognitive biases—like the tendency to favor information that confirms our existing beliefs or the reliance on first impressions—that stubbornly resist change due to their deep-seated roots in our neurological functioning.&lt;&#x2F;p&gt;
+&lt;p&gt;Our thoughts and beliefs aren&#x27;t just intellectual constructs; they&#x27;re intertwined with our emotions and sense of self. This emotional attachment acts as a formidable barrier to changing our thinking.&lt;&#x2F;p&gt;
+&lt;p&gt;Moreover, our behaviors and thoughts are reinforced over time by various factors — societal norms, cultural influences, personal experiences—that shape our cognitive landscape. Breaking free from these reinforced patterns requires concerted effort and a willingness to swim against the current of our ingrained habits.&lt;&#x2F;p&gt;
+&lt;p&gt;But perhaps one of the most intriguing phenomena we encounter is cognitive dissonance — a discomforting clash between our existing beliefs and new information. To alleviate this discomfort, we often resort to rationalizing or dismissing the conflicting evidence rather than altering our beliefs. Maintaining consistency in our beliefs and actions, even in the face of contradictory evidence, becomes a priority.&lt;&#x2F;p&gt;
+&lt;p&gt;Humans are creatures of habit, resistant to change, especially when it challenges fundamental aspects of our identity or worldview. Stepping out of our comfort zones, confronting uncertainty, and facing potential social repercussions can evoke anxiety and resistance.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;&#x2F;h2&gt;
+&lt;p&gt;Overall, changing someone&#x27;s perception and thinking is a complex interplay of neurological, emotional, and social factors that requires addressing these barriers by presenting new information in a compelling and persuasive manner, fostering open-mindedness and critical thinking skills, and providing opportunities for individuals to reevaluate their beliefs in light of new evidence. However, it can still be a challenging and gradual process, requiring patience, empathy, persistence and  a willingness to engage in open dialogue.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Life is a Collection of Conditions and Loops</title>
+          <pubDate>Sun, 17 Sep 2023 00:00:00 +0000</pubDate>
+          <author>whoisyoges@castorisdead.xyz (Castor)</author>
+          <link>https://castorisdead.xyz/blog/life-is-a-collection-of-conditions-and-loops/</link>
+          <guid>https://castorisdead.xyz/blog/life-is-a-collection-of-conditions-and-loops/</guid>
+          <description xml:base="https://castorisdead.xyz/blog/life-is-a-collection-of-conditions-and-loops/">&lt;p&gt;Life is a collection of conditions and progressive loops. Just like in programming, we navigate through decisions and cycles, adapting to ever-changing circumstances and recurring patterns in the dynamic journey of life.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;Life is often described as a journey, a path we traverse from birth to death. But have you ever thought of it as a collection of conditions and loops?&lt;&#x2F;p&gt;
+&lt;p&gt;In our quest to find meaning and purpose in life, we set up goals. These goals become the conditions that define our journey. It could be landing a dream job, starting a family, traveling the world, or even achieving inner peace. Goals give us direction and a sense of purpose, motivating us to strive for something greater.&lt;&#x2F;p&gt;
+&lt;p&gt;Once we establish our goals, we enter into a loop, a repetitive cycle of actions and experiences. Each day, we take steps towards our objectives, inching closer to the desired outcome. This loop is the engine that propels us forward, and it&#x27;s what keeps us engaged in the pursuit of our aspirations.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;assets&#x2F;images&#x2F;blogs&#x2F;life-is-a-loop&#x2F;loop.jpg&quot; alt=&quot;Life is a loop.&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Life, however, is not a linear path. It is dynamic, filled with unexpected twists and turns. As we work diligently in our loops, we sometimes realize that the conditions we set initially have changed. We might have achieved a goal, only to find that it no longer brings the fulfillment we once thought it would. Alternatively, new opportunities and desires may emerge, leading us to redefine our goals.&lt;&#x2F;p&gt;
+&lt;p&gt;Life, as we now understand it, is an ongoing, never-ending loop of setting conditions and working towards them. It&#x27;s an intricate dance between ambition and contentment. We achieve one goal, and then another takes its place. The loop continues, constantly pushing us to evolve, learn, and grow.&lt;&#x2F;p&gt;
+&lt;p&gt;However, Life&#x27;s repetitive loops can easily lead to boredom as we find ourselves stuck in the same routines, facing the same challenges, and pursuing similar goals day after day. The lack of novelty, variety, and excitement within this endless cycle can make life seem monotonous and uninspiring.&lt;&#x2F;p&gt;
+&lt;p&gt;Living in a repetitive loop can lead to a harsh reality of mental and emotional challenges. The predictability and lack of novelty can foster anxiety about an unchanging future and contribute to feelings of hopelessness and emptiness, resulting in depression. Additionally, the isolation that often accompanies such routines can intensify loneliness, amplifying the sense of disconnection from others. Furthermore, the monotony can sap motivation and energy, giving rise to laziness and a reluctance to break free from the routine.&lt;&#x2F;p&gt;
+&lt;p&gt;So, Don&#x27;t let the conditions control you; take charge of them to break free from life&#x27;s repetitive loops.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Why did I switch back to Arch from Artix Linux?</title>
+          <pubDate>Mon, 17 Jul 2023 00:00:00 +0000</pubDate>
+          <author>whoisyoges@castorisdead.xyz (Castor)</author>
+          <link>https://castorisdead.xyz/blog/why-did-i-switch-back-to-arch-from-artix/</link>
+          <guid>https://castorisdead.xyz/blog/why-did-i-switch-back-to-arch-from-artix/</guid>
+          <description xml:base="https://castorisdead.xyz/blog/why-did-i-switch-back-to-arch-from-artix/">&lt;p&gt;Arch is my favourite distro and openrc being my favourite init system, I was using Artix Linux for more than a year and now, for few reasons I switched back to Arch Linux.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;assets&#x2F;images&#x2F;blogs&#x2F;why-did-i-switch-back-to-arch-from-artix&#x2F;linux-is-linux.jpg&quot; alt=&quot;Linux is Linux&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;For the past five years, I have embraced the Linux operating system as my primary choice, diving headfirst into the world of open-source software and enjoying the freedom and flexibility it offers. Throughout this journey, I have explored various Linux distributions, honing my skills and discovering the unique features each one brings to the table.&lt;&#x2F;p&gt;
+&lt;p&gt;Over a year ago, I stumbled upon Artix Linux, an intriguing distribution that captured my attention with its philosophy of providing a systemd-free environment. Artix Linux allowed me to craft a customized and minimalist system tailored to my preferences. Its reliance on the OpenRC init system resonated with me, as it aligned with my desire for a more hands-on, traditional approach to managing my system.&lt;&#x2F;p&gt;
+&lt;p&gt;During this time, I delved deeper into the Linux ecosystem, expanding my knowledge and expertise. My professional journey took a turn as I secured a role as a Server Administrator, responsible for managing and maintaining servers that powered critical services. To my dismay, I discovered that many of the applications and services used in this server environment relied heavily on systemd.&lt;&#x2F;p&gt;
+&lt;p&gt;As I grappled with this new reality, I faced a dilemma. On one hand, I had grown fond of the flexibility and simplicity offered by Artix Linux, where I had crafted a finely-tuned system that suited my needs. On the other hand, my professional responsibilities compelled me to work seamlessly with systemd-based systems and applications.&lt;&#x2F;p&gt;
+&lt;p&gt;Given my prior experience and familiarity with Arch Linux, a distribution I had grown to love, I made the difficult decision to transition back to a systemd-based environment. Arch Linux, with its rolling release model, robust package management system, and vast community support, seemed like the logical choice for me to make a smooth return.&lt;&#x2F;p&gt;
+&lt;p&gt;The transition process was not without its challenges. I had to carefully migrate my customized configurations, adapt my workflow to accommodate systemd, and familiarize myself with the specific tools and utilities associated with this init system. However, the inherent flexibility and extensive documentation of Arch Linux aided me greatly in this endeavor.&lt;&#x2F;p&gt;
+&lt;p&gt;While bidding farewell to Artix Linux was bittersweet, I embraced the opportunity to expand my skill set and adapt to the demands of my professional role. I found solace in the fact that my return to Arch Linux allowed me to leverage its vast repository of software, making it easier to install and manage the systemd-dependent applications crucial to my server administration tasks.&lt;&#x2F;p&gt;
+&lt;p&gt;As I settled back into the Arch Linux ecosystem, I realized that this journey had enriched my understanding of different Linux distributions and their underlying philosophies. It highlighted the importance of versatility and adaptability in the ever-evolving landscape of technology.&lt;&#x2F;p&gt;
+&lt;p&gt;Today, as a seasoned Linux user and Server Administrator, I continue to explore the vast possibilities offered by Arch Linux, blending my personal preferences with the demands of my professional responsibilities. I remain grateful for the diverse experiences that Artix Linux and Arch Linux have provided me, as they have shaped me into a more versatile and resourceful Linux enthusiast.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Understanding DNS</title>
+          <pubDate>Tue, 28 Feb 2023 00:00:00 +0000</pubDate>
+          <author>whoisyoges@castorisdead.xyz (Castor)</author>
+          <link>https://castorisdead.xyz/blog/understanding-dns/</link>
+          <guid>https://castorisdead.xyz/blog/understanding-dns/</guid>
+          <description xml:base="https://castorisdead.xyz/blog/understanding-dns/">&lt;p&gt;Trying to understand the concept of Domain Name System; dns clustering, anycast DNS and how they work?&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;understanding-the-basics&quot;&gt;Understanding the basics&lt;&#x2F;h2&gt;
+&lt;p&gt;Before diving deep into DNS, we need to understand some of the following basic concepts and terminologies.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;ip-address&quot;&gt;IP Address&lt;&#x2F;h3&gt;
+&lt;p&gt;Every device on the internet has a unique Internet Protocol (IP) address. An IP address is a numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication.&lt;br &#x2F;&gt;
+For e.g IP address of github.com is 20.205.243.166.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;dns&quot;&gt;DNS&lt;&#x2F;h3&gt;
+&lt;p&gt;The Domain Name System (DNS) is the phonebook of the Internet which is used to translate human-readable domain names into it&#x27;s ip addresses, such as github.com into 20.205.243.166. DNS is a critical part of the internet infrastructure, and it allows users to access websites and other online services using easy-to-remember names instead of IP addresses.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;dns-server&quot;&gt;DNS Server&lt;&#x2F;h3&gt;
+&lt;p&gt;A DNS server is a computer server that contains a database of public IP addresses and their associated hostnames (domain names) which is used to translate domain names into IP addresses, making it possible for DNS clients to reach the origin server.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;Note: You may see a DNS server referred to by other names, such as a name server or nameserver, and a domain name system server.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;DNS servers use specialized software called DNS server software or DNS resolver software to manage and resolve domain name requests. Some popular DNS server software includes:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;BIND (Berkeley Internet Name Domain): This is the most widely used DNS server software, developed by the Internet Systems Consortium (ISC).&lt;&#x2F;li&gt;
+&lt;li&gt;Microsoft DNS: This DNS server software is built into Windows Server operating systems.&lt;&#x2F;li&gt;
+&lt;li&gt;PowerDNS: A high-performance, reliable, and scalable DNS server software that supports various backends and features.&lt;&#x2F;li&gt;
+&lt;li&gt;Unbound: A secure and modern recursive DNS resolver that provides high performance and customization.&lt;&#x2F;li&gt;
+&lt;li&gt;Knot DNS: A lightweight, high-performance DNS server software designed for modern architectures.&lt;&#x2F;li&gt;
+&lt;li&gt;NSD (Name Server Daemon): A fast, simple, and secure authoritative-only DNS server software.&lt;&#x2F;li&gt;
+&lt;li&gt;Dnsmasq: A lightweight and easy-to-configure DNS server software that also provides DHCP and TFTP services.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;These software packages provide a range of features, including caching, forwarding, security, and DNSSEC (DNS Security Extensions) support. A complete comparison between DNS server softwares can be found &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Comparison_of_DNS_server_software&quot;&gt;here&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;table&gt;
+    &lt;caption&gt;Some Free &amp; Public DNS Servers&lt;&#x2F;caption&gt;
+    &lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th scope=&quot;col&quot;&gt;Provider&lt;&#x2F;th&gt;
+        &lt;th scope=&quot;col&quot;&gt;Primary DNS&lt;&#x2F;th&gt;
+        &lt;th scope=&quot;col&quot;&gt;Secondary DNS&lt;&#x2F;th&gt;
+    &lt;&#x2F;tr&gt;
+    &lt;&#x2F;thead&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td data-label=&quot;Provider&quot;&gt;Google&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;
+        &lt;td data-label=&quot;Primary DNS&quot;&gt;&lt;span&gt;8.8.8.8&lt;&#x2F;span&gt;&lt;&#x2F;td&gt;
+        &lt;td data-label=&quot;Default search engine&quot;&gt;&lt;span&gt;8.8.4.4&lt;&#x2F;span&gt;&lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+    &lt;tr&gt;
+        &lt;td data-label=&quot;Provider&quot;&gt;Control D&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;
+        &lt;td data-label=&quot;Primary DNS&quot;&gt;&lt;span&gt;76.76.2.0&lt;&#x2F;span&gt;&lt;&#x2F;td&gt;
+        &lt;td data-label=&quot;Default search engine&quot;&gt;&lt;span&gt;76.76.10.0&lt;&#x2F;span&gt;&lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+    &lt;tr&gt;
+        &lt;td data-label=&quot;Provider&quot;&gt;Quad9&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;
+        &lt;td data-label=&quot;Primary DNS&quot;&gt;&lt;span&gt;9.9.9.9&lt;&#x2F;span&gt;&lt;&#x2F;td&gt;
+        &lt;td data-label=&quot;Default search engine&quot;&gt;&lt;span&gt;149.112.112.112&lt;&#x2F;span&gt;&lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;	
+    &lt;tr&gt;
+        &lt;td data-label=&quot;Provider&quot;&gt;OpenDNS Home&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;
+        &lt;td data-label=&quot;Primary DNS&quot;&gt;&lt;span&gt;208.67.222.222&lt;&#x2F;span&gt;&lt;&#x2F;td&gt;
+        &lt;td data-label=&quot;Default search engine&quot;&gt;&lt;span&gt;208.67.220.220&lt;&#x2F;span&gt;&lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+    &lt;tr&gt;
+        &lt;td data-label=&quot;Provider&quot;&gt;Cloudflare&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;
+        &lt;td data-label=&quot;Primary DNS&quot;&gt;&lt;span&gt;1.1.1.1&lt;&#x2F;span&gt;&lt;&#x2F;td&gt;
+        &lt;td data-label=&quot;Default search engine&quot;&gt;&lt;span&gt;1.0.0.1&lt;&#x2F;span&gt;&lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+    &lt;tr&gt;
+        &lt;td data-label=&quot;Provider&quot;&gt;CleanBrowsing&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;
+        &lt;td data-label=&quot;Primary DNS&quot;&gt;&lt;span&gt;185.228.168.9&lt;&#x2F;span&gt;&lt;&#x2F;td&gt;
+        &lt;td data-label=&quot;Default search engine&quot;&gt;&lt;span&gt;185.228.169.9&lt;&#x2F;span&gt;&lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+    &lt;tr&gt;
+        &lt;td data-label=&quot;Provider&quot;&gt;Alternate DNS&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;
+        &lt;td data-label=&quot;Primary DNS&quot;&gt;&lt;span&gt;76.76.19.19&lt;&#x2F;span&gt;&lt;&#x2F;td&gt;
+        &lt;td data-label=&quot;Default search engine&quot;&gt;&lt;span&gt;76.223.122.150&lt;&#x2F;span&gt;&lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;	 	
+    &lt;tr&gt;
+        &lt;td data-label=&quot;Provider&quot;&gt;AdGuard DNS&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;
+        &lt;td data-label=&quot;Primary DNS&quot;&gt;&lt;span&gt;94.140.14.14&lt;&#x2F;span&gt;&lt;&#x2F;td&gt;
+        &lt;td data-label=&quot;Default search engine&quot;&gt;&lt;span&gt;94.140.15.15&lt;&#x2F;span&gt;&lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+    &lt;&#x2F;tbody&gt;
+&lt;&#x2F;table&gt;
+&lt;p&gt;These different DNS servers communicate with each other using special protocols known as DNS protocol which is a standardized protocol for resolving domain names to IP addresses and vice versa.&lt;br &#x2F;&gt;
+DNS servers typically communicate with each other using a combination of two protocols: the Transmission Control Protocol (TCP) and the User Datagram Protocol (UDP).&lt;br &#x2F;&gt;
+DNS queries and responses are usually sent using UDP, which is faster and more efficient for simple requests. However, if the response is too large for a single UDP packet, or if the query requires a more reliable connection, DNS servers will use TCP instead.&lt;&#x2F;p&gt;
+&lt;p&gt;DNS servers also use a variety of mechanisms to discover and communicate with each other, including recursive queries, zone transfers, and forwarding. These mechanisms allow DNS servers to share information and collaborate to provide reliable and accurate name resolution for clients.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;how-dns-servers-resolve-a-dns-query&quot;&gt;How DNS Servers Resolve a DNS Query&lt;&#x2F;h3&gt;
+&lt;p&gt;When you enter a website address into your browsers address bar, a DNS server goes to work to find the address that you want to visit. It does this by sending a DNS query to several servers, each of which translates a different part of the domain name you entered. The different servers queried are:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A DNS Recursor&#x2F;Resolver: The recursor can be thought of as a librarian who is asked to go find a particular book somewhere in a library. The DNS recursor is a server designed to receive queries from client machines through applications such as web browsers. Typically the recursor is then responsible for making additional requests in order to satisfy the client’s DNS query.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;A Root Nameserver: The root server is the first step in translating (resolving) human readable host names into IP addresses. It can be thought of like an index in a library that points to different racks of books - typically it serves as a reference to other more specific locations.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;A TLD Nameserver: The top level domain server (TLD) can be thought of as a specific rack of books in a library. This nameserver is the next step in the search for a specific IP address, and it hosts the last portion of a hostname (In example.com, the TLD server is “com”).&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;An Authoritative Nameserver: This final nameserver can be thought of as a dictionary on a rack of books, in which a specific name can be translated into its definition. The authoritative nameserver is the last stop in the nameserver query. If the authoritative name server has access to the requested record, it will return the IP address for the requested hostname back to the DNS Recursor (the librarian) that made the initial request.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Once the IP address is returned, the website you wanted to visit is then displayed in your web browser.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;assets&#x2F;images&#x2F;blogs&#x2F;concept-of-dns&#x2F;DNS_servers.jpg&quot; alt=&quot;How-DNS-Servers-Resolve-a-DNS-Query&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;anycast&quot;&gt;Anycast&lt;&#x2F;h3&gt;
+&lt;p&gt;Anycast is a network addressing and routing methodology that allows multiple devices to share the same IP address. When a client sends a request to an anycast IP address, the request is routed to a variety of different locations or &lt;em&gt;nodes&lt;&#x2F;em&gt; and responed from the nearest active node.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;assets&#x2F;images&#x2F;blogs&#x2F;concept-of-dns&#x2F;anycast.jpg&quot; alt=&quot;Anycast&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;unicast&quot;&gt;Unicast&lt;&#x2F;h3&gt;
+&lt;p&gt;It uses a one-to-one association, where each destination address is uniquely identified as a single receiver endpoint. Traditional DNS deployments are configured with unicast addresses.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;assets&#x2F;images&#x2F;blogs&#x2F;concept-of-dns&#x2F;unicast.png&quot; alt=&quot;Unicast&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;multicast&quot;&gt;Multicast&lt;&#x2F;h3&gt;
+&lt;p&gt;It uses a one-to-unique many association, where datagrams are routed from a single sender to multiple selected endpoints in a single transmission, using a multicast group address. A common use of multicast is streaming audio, where the audio is published via multicast addressing and clients pick up the routed stream as a channel.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;assets&#x2F;images&#x2F;blogs&#x2F;concept-of-dns&#x2F;multicast.png&quot; alt=&quot;Multicast&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;broadcast&quot;&gt;Broadcast&lt;&#x2F;h3&gt;
+&lt;p&gt;It uses a one-to-many association, where datagrams are routed from a single sender to all other connected endpoints in a single transmission, using a broadcast address. The network automatically replicates datagrams as needed for all network segments (links) that contain an eligible receiver.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;assets&#x2F;images&#x2F;blogs&#x2F;concept-of-dns&#x2F;broadcast.png&quot; alt=&quot;Broadcast&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;anycast-vps&quot;&gt;Anycast VPS&lt;&#x2F;h2&gt;
+&lt;p&gt;Anycast VPS is a type of virtual private server (VPS) that uses anycast networking to improve its performance and availability. Anycast VPS hosting is based on the anycast routing technology that allows multiple servers to share the same IP address, making it possible for users to access the same service from different locations.&lt;&#x2F;p&gt;
+&lt;p&gt;An anycast VPS provider typically operates multiple data centers located in different regions or countries, and assigns the same IP address to each of the VPS instances hosted in these data centers. When a user sends a request to the anycast IP address, the network infrastructure routes the traffic to the nearest data center based on network topology, latency, and other factors.&lt;&#x2F;p&gt;
+&lt;p&gt;This approach provides several benefits for VPS hosting, including:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Improved performance: Anycast VPS hosting can help reduce latency and increase the speed of access to VPS instances by directing traffic to the nearest data center.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Increased availability: By distributing VPS instances across multiple data centers, anycast VPS hosting can provide better resilience and availability in case of hardware failures, network outages, or other disruptions.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Scalability: Anycast VPS providers can easily add more capacity by deploying additional VPS instances in different data centers as demand grows.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Reduces impact of DoS attacks: Anycast allows traffic to be distributed across multiple servers, reducing the amount of traffic any one server has to handle. This means that if one server is overwhelmed by a DoS attack, traffic can be automatically redirected to other servers in the anycast group. Since all the servers in an anycast group share the same IP address, it can be more difficult for attackers to determine the exact location of the targeted server.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;Overall, anycast VPS hosting can be an effective way to enhance the performance and reliability of VPS hosting, especially for applications that require low latency and high availability.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;anycast-dns&quot;&gt;Anycast DNS&lt;&#x2F;h2&gt;
+&lt;p&gt;Anycast DNS is a method of distributing DNS (Domain Name System) queries across multiple servers located in different geographic locations. This is done by configuring multiple servers with the same IP address, allowing clients to connect to the nearest available server, thus reducing latency and improving response times.&lt;&#x2F;p&gt;
+&lt;p&gt;Suppose you have a website hosted on multiple servers located in different regions of the world, and you want to ensure that clients are always connected to the nearest available server for the best performance. You can achieve this by configuring each server with the same anycast IP address.&lt;&#x2F;p&gt;
+&lt;p&gt;When a client sends a DNS query to resolve your website&#x27;s domain name, the query is sent to the nearest anycast DNS server, based on the client&#x27;s network topology. The anycast routing protocol then delivers the query to the nearest server that is advertising that IP address.&lt;&#x2F;p&gt;
+&lt;p&gt;For example, suppose you have three servers located in North America, Europe, and Asia, respectively. Each server is configured with the same anycast IP address, say 192.0.2.1. When a client in North America sends a DNS query to resolve your website&#x27;s domain name, the query is sent to the anycast DNS server located in North America. The anycast routing protocol then delivers the query to the server in North America that is advertising the 192.0.2.1 IP address. Similarly, when a client in Asia sends a DNS query, the query is sent to the anycast DNS server in Asia, which then delivers the query to the server in Asia that is advertising the 192.0.2.1 IP address.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;assets&#x2F;images&#x2F;blogs&#x2F;concept-of-dns&#x2F;why-anycast.jpg&quot; alt=&quot;Why-Anycast&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Anycast DNS is widely used by large websites, content delivery networks (CDNs), and cloud providers to distribute their services across multiple regions and ensure high availability and performance. It is also commonly used in DDoS (Distributed Denial of Service) mitigation, as it allows traffic to be spread across multiple servers, making it harder for attackers to overwhelm a single server.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;dns-cluster&quot;&gt;DNS Cluster&lt;&#x2F;h2&gt;
+&lt;p&gt;A DNS cluster is a group of DNS servers that work together to provide high availability and redundancy for a domain&#x27;s DNS records. The cluster consists of multiple servers that are located in different geographic locations and communicate with each other to ensure that they have the same DNS records.&lt;&#x2F;p&gt;
+&lt;p&gt;When a user requests to access a domain, the DNS cluster will respond by directing the request to the closest server, which will then provide the user with the IP address associated with the domain. This ensures that users receive a fast and reliable response time, even if one of the servers in the cluster goes down.&lt;&#x2F;p&gt;
+&lt;p&gt;Here&#x27;s an example of how a DNS cluster might work:&lt;&#x2F;p&gt;
+&lt;p&gt;Let&#x27;s say there is a website called example.com that is hosted on a web server in the United States. The website is popular and receives visitors from all over the world. To ensure that the website can be accessed quickly and reliably by users in different geographic locations, the website&#x27;s owner sets up a DNS cluster consisting of three servers: one in the United States, one in Europe, and one in Asia.&lt;&#x2F;p&gt;
+&lt;p&gt;When a user in the United States types example.com into their web browser, their DNS request will be directed to the server in the United States. If the server is working properly, it will respond with the IP address of the web server hosting example.com, and the user will be able to access the website.&lt;&#x2F;p&gt;
+&lt;p&gt;If the server in the United States goes down, however, the DNS request will be directed to the next closest server, which is the server in Europe. This server will provide the user with the IP address of the web server hosting example.com, and the user will still be able to access the website, although the response time may be slightly slower due to the increased distance.&lt;&#x2F;p&gt;
+&lt;p&gt;If both the servers in the United States and Europe are down, the DNS request will be directed to the server in Asia, which will provide the user with the IP address of the web server hosting example.com.&lt;&#x2F;p&gt;
+&lt;p&gt;In this way, the DNS cluster ensures that users can always access the website, regardless of which server is working or where the user is located.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;differences-in-anycast-dns-and-dns-cluster&quot;&gt;Differences in Anycast DNS and DNS Cluster&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Routing Method: Anycast DNS uses anycast routing, which routes traffic to the nearest available DNS server based on network conditions, while DNS clustering uses a load balancing mechanism to distribute traffic across multiple servers.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;IP Addressing: In anycast DNS, multiple servers share the same IP address, while in DNS clustering, each server has its own unique IP address.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Network Configuration: Anycast DNS requires specialized network configurations and routing protocols to work properly, while DNS clustering can be set up using standard load balancing mechanisms and network equipment.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Scalability: Anycast DNS is highly scalable and can easily handle large volumes of traffic by adding more servers to the anycast network, while DNS clustering can also be scaled up by adding more servers to the cluster.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Service Level Agreement (SLA): Anycast DNS typically offers a higher SLA than DNS clustering because it provides better resilience against network outages and hardware failures.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;cpanel&quot;&gt;cPanel&lt;&#x2F;h3&gt;
+&lt;p&gt;cPanel is a popular web hosting control panel that allows website owners to manage various aspects of their hosting account.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;cpanel-only-dns&quot;&gt;cPanel Only DNS&lt;&#x2F;h2&gt;
+&lt;p&gt;cPanel&#x27;s DNS management interface allows users to manage their DNS records without the need for advanced technical knowledge. One of the options available in cPanel&#x27;s DNS management interface is the ability to use cPanel only DNS.&lt;&#x2F;p&gt;
+&lt;p&gt;cPanel only DNS means that all DNS records for a domain are managed solely through cPanel&#x27;s DNS management interface. This means that cPanel is responsible for hosting and serving the DNS records for the domain, rather than the DNS being hosted by an external DNS provider.&lt;&#x2F;p&gt;
+&lt;p&gt;When a user chooses to use cPanel only DNS, cPanel creates a DNS zone for the domain and automatically generates the necessary DNS records. The user can then modify or add to these records as needed using cPanel&#x27;s DNS management interface.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;benefits-of-cpanel-only-dns&quot;&gt;Benefits of cPanel only DNS&lt;&#x2F;h3&gt;
+&lt;p&gt;One benefit of using cPanel only DNS is that it can simplify DNS management for users who are not familiar with advanced DNS concepts. It also allows users to manage all aspects of their hosting account from within cPanel, rather than having to use separate interfaces for DNS management and other hosting functions.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;downsides-of-cpanel-only-dns&quot;&gt;Downsides of cPanel only DNS&lt;&#x2F;h3&gt;
+&lt;p&gt;However, there are also some potential downsides to using cPanel only DNS. One is that it may limit flexibility and customization options for users who need more advanced DNS management capabilities. Additionally, if there are issues with cPanel&#x27;s DNS service, it can affect the availability and performance of the domain&#x27;s website and email services.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>My first interview</title>
+          <pubDate>Fri, 27 Jan 2023 00:00:00 +0000</pubDate>
+          <author>whoisyoges@castorisdead.xyz (Castor)</author>
+          <link>https://castorisdead.xyz/blog/my-first-interview/</link>
+          <guid>https://castorisdead.xyz/blog/my-first-interview/</guid>
+          <description xml:base="https://castorisdead.xyz/blog/my-first-interview/">&lt;p&gt;This was my first job interview, and it was a hell of an amazing experience.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;So, it was Thursday, January 26, 2023, and I went for an interview at a reputed cloud services providing company. I was told to come to a certain building, and you know what? I went to a similar-looking structure in someone else&#x27;s backyard. Fu*k me, I am so dumb that I was a step away from getting into some serious trouble.&lt;&#x2F;p&gt;
+&lt;p&gt;Both the HR director and the CEO were out for some business meetings, so I had to wait for about 2 and a half hours, I guess. But the other team members were so friendly that I didn&#x27;t feel like I was there for the first time. When they arrived, I had already been introduced to what I should do by the team members and had already eaten some delicious lunch. The environment is so friendly, with such amazing members and a working place with scenic mountain views.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;so-what-was-i-asked-exactly&quot;&gt;So, what was I asked exactly?&lt;&#x2F;h2&gt;
+&lt;p&gt;I will here address only the few important topics and questions that I was asked.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;about domain, hosting and cpanels&lt;&#x2F;li&gt;
+&lt;li&gt;about cloud linux, shared hosting and vps&lt;&#x2F;li&gt;
+&lt;li&gt;about firewalls, dos and d-dos attacks&lt;&#x2F;li&gt;
+&lt;li&gt;about bare-metal, virtualization and virtualizor&lt;&#x2F;li&gt;
+&lt;li&gt;How can I block all traffic from a certain country using a firewall (iptables)?&lt;&#x2F;li&gt;
+&lt;li&gt;How can I block all incoming traffic from a certain country except for a certain port (port 25) using a firewall (iptables)?&lt;&#x2F;li&gt;
+&lt;li&gt;There was a case where someone was attacking the server, but it was not directly identified. I mean, there was a super high resource usage, but the traffic was low, and I had to identify and stop the attack.&lt;br &#x2F;&gt;
+So, the attacker was using his own domain to attack the server. Yes, you read it right; the attacker was attacking his own domain. He connected his domain to the Cloudflare and then directed traffic to our server.&lt;br &#x2F;&gt;
+What we had to do to stop the attack was identify the IPs causing high CPU usage and block that specific IP range. It was two sets of IP ranges coming from Australia and China.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;It&#x27;s obvious that I wasn&#x27;t able to answer or solve some of the questions or tasks. But yeah, the experience was amazing, and I got a golden opportunity to learn from and work with them.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Static website optimization tips</title>
+          <pubDate>Tue, 24 Jan 2023 00:00:00 +0000</pubDate>
+          <author>whoisyoges@castorisdead.xyz (Castor)</author>
+          <link>https://castorisdead.xyz/blog/static-website-optimization-tips/</link>
+          <guid>https://castorisdead.xyz/blog/static-website-optimization-tips/</guid>
+          <description xml:base="https://castorisdead.xyz/blog/static-website-optimization-tips/">&lt;p&gt;Learn some html, css tips and tricks to optimize your static website for speed and performance that anyone rarely tells you.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;&#x2F;h2&gt;
+&lt;p&gt;Static websites are those that are built using only HTML, CSS, and JavaScript, and do not rely on server-side scripting or databases. These types of websites are fast, secure, and easy to maintain, but they can still benefit from optimization to improve their load times and overall performance.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;optimization-tips&quot;&gt;Optimization Tips&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;minimize-http-requests&quot;&gt;Minimize HTTP requests&lt;&#x2F;h3&gt;
+&lt;p&gt;Use less number of files as possible as you can; Combine and minify CSS and JavaScript files, and use &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.w3schools.com&#x2F;css&#x2F;css_image_sprites.asp&quot;&gt;CSS sprites&lt;&#x2F;a&gt; to reduce the number of images that need to be loaded.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;optimize-images&quot;&gt;Optimize images&lt;&#x2F;h3&gt;
+&lt;p&gt;Compress images and use the appropriate image format (e.g., JPEG for photographs, PNG for graphics with transparency).&lt;br &#x2F;&gt;
+&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;shortpixel.com&#x2F;online-image-compression&quot;&gt;Shortpixel&lt;&#x2F;a&gt; is one of the best online image compression tool I&#x27;ve discoverd so far.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;lazy-loading-of-images-videos-and-other-heavy-resources&quot;&gt;Lazy loading of images, videos and other heavy resources&lt;&#x2F;h3&gt;
+&lt;p&gt;Loading only what is visible to the user and loading the rest of the resources as user scrolls down the page will improve the loading time.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;img src=&amp;quot;image.jpg&amp;quot; loading=&amp;quot;lazy&amp;quot;&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;preload-html-assets&quot;&gt;Preload html assets&lt;&#x2F;h3&gt;
+&lt;p&gt;Preloading is a technique used to load resources in a webpage before they are actually needed. This allows the resources to be available immediately when they are needed, improving the overall performance of the webpage.&lt;&#x2F;p&gt;
+&lt;p&gt;You can preload stylesheets, fonts, and images using the &lt;code&gt;&amp;lt;link&amp;gt;&lt;&#x2F;code&gt; tag with the rel attribute set to &lt;code&gt;preload&lt;&#x2F;code&gt; and as attribute set to &lt;code&gt;style&lt;&#x2F;code&gt;, &lt;code&gt;font&lt;&#x2F;code&gt;, or &lt;code&gt;image&lt;&#x2F;code&gt; respectively. For examples:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;link rel=&amp;quot;preload&amp;quot; href=&amp;quot;styles.css&amp;quot; as=&amp;quot;style&amp;quot;&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;link rel=&amp;quot;preload&amp;quot; href=&amp;quot;OpenSans-Regular.ttf&amp;quot; as=&amp;quot;font&amp;quot; type=&amp;quot;font&amp;#x2F;ttf&amp;quot; crossorigin&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;link rel=&amp;quot;preload&amp;quot; href=&amp;quot;image.jpg&amp;quot; as=&amp;quot;image&amp;quot;&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;It&#x27;s worth noting that preloading resources can increase the overall page load time, so it is important to be selective about which resources are preloaded and to test the performance of your webpage after preloading resources.&lt;&#x2F;p&gt;
+&lt;p&gt;Another way is to use &lt;code&gt;&amp;lt;link rel=&quot;prefetch&quot;&amp;gt;&lt;&#x2F;code&gt; which is similar to preload but it download the resource in low priority background and it is mainly used for resources that are not immediately needed but will be needed in the future.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;use-of-font-display-attribute-in-your-font-family&quot;&gt;Use of font-display attribute in your font family&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;code&gt;font-display&lt;&#x2F;code&gt; is a CSS property that controls how a web font is displayed while it&#x27;s loading. The property can have one of the following values:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;auto&lt;&#x2F;code&gt;: The default value, the browser decides how to display the font based on its own heuristics.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;block&lt;&#x2F;code&gt;: The text is invisible until the font is loaded, then it is displayed.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;swap&lt;&#x2F;code&gt;: The text is displayed with a fallback font until the web font is loaded, then it is swapped with the web font.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;fallback&lt;&#x2F;code&gt;: The text is displayed with a fallback font until the web font is loaded, but it is not swapped with the web font.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;optional&lt;&#x2F;code&gt;: The text is displayed with a fallback font, but the web font is loaded asynchronously and if the user has a good network connection it will be swapped with the web font, otherwise it will not.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;In the following example, the &lt;code&gt;font-display&lt;&#x2F;code&gt; property is set to &lt;code&gt;swap&lt;&#x2F;code&gt;, so the text will be displayed with a fallback font until the &lt;code&gt;OpenSans-Regular.ttf&lt;&#x2F;code&gt; web font is loaded, then it will be swapped with the web font.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;@font-face {
+  font-family: &amp;#x27;Open Sans&amp;#x27;;
+  src: url(&amp;#x27;OpenSans-Regular.ttf&amp;#x27;) format(&amp;#x27;truetype&amp;#x27;);
+  font-display: swap;
+}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;regular-update-and-monitoring&quot;&gt;Regular update and monitoring&lt;&#x2F;h3&gt;
+&lt;p&gt;Always keep your code updated and monitor your website performance regularly to detect and fix issues that may arise over time.&lt;&#x2F;p&gt;
+&lt;p&gt;You may use following tool&#x2F;s to test the performance and speed of your website after implementing these tips to make sure they are having a positive impact on your website&#x27;s speed.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;tools.pingdom.com&quot;&gt;Pingdom&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gtmetrix.com&quot;&gt;GTmetrix&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.debugbear.com&#x2F;test&#x2F;website-speed&quot;&gt;DebugBear&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Additionally, it is important to make sure your website is mobile-friendly and uses responsive design so that it can be easily viewed on any device.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Make connections rather than relationships</title>
+          <pubDate>Thu, 19 Jan 2023 00:00:00 +0000</pubDate>
+          <author>whoisyoges@castorisdead.xyz (Castor)</author>
+          <link>https://castorisdead.xyz/blog/make-connections-not-relationship/</link>
+          <guid>https://castorisdead.xyz/blog/make-connections-not-relationship/</guid>
+          <description xml:base="https://castorisdead.xyz/blog/make-connections-not-relationship/">&lt;p&gt;Connections allow us to be more open, present, and flexible in our interactions with others, without any pressure, expectation and compromization, which leads to greater fulfillment and satisfaction.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;In today&#x27;s fast-paced world, it&#x27;s easy to get caught up in the idea of building relationships. We&#x27;re taught from a young age that having a significant other, a group of friends, or a close-knit family is the key to happiness. But what if there was a different way to approach social interactions that could lead to even greater fulfillment and satisfaction?&lt;&#x2F;p&gt;
+&lt;p&gt;Enter the concept of making connections instead of relationships.&lt;&#x2F;p&gt;
+&lt;p&gt;When we focus on building relationships, we often put pressure on ourselves and others to meet certain expectations. We may feel the need to constantly be available, to agree on everything, or to put in a certain amount of effort to maintain the relationship. This can lead to feelings of disappointment or resentment if those expectations aren&#x27;t met.&lt;&#x2F;p&gt;
+&lt;p&gt;Making connections, on the other hand, is about focusing on the present moment and being open to the potential for a connection, without any pressure or expectation. It&#x27;s about being fully present and engaged in a conversation or interaction, without worrying about what it may lead to in the future.&lt;&#x2F;p&gt;
+&lt;p&gt;Making connections also allows for a level of flexibility and freedom that may not be present in relationships. In relationships, there can often be a sense of obligation or commitment that can limit our ability to explore other possibilities. With connections, we can have many different interactions and experiences without feeling tied down or restricted.&lt;&#x2F;p&gt;
+&lt;p&gt;Another advantage of making connections is that it allows us to build a diverse network of people from different backgrounds, experiences, and perspectives. This diversity can bring a wealth of knowledge, inspiration, and opportunities into our lives.&lt;&#x2F;p&gt;
+&lt;p&gt;In short, making connections is about being open, present, and flexible in our interactions with others, which can lead to greater fulfillment and satisfaction. It&#x27;s about embracing the potential for a connection without any pressure or expectation. By focusing on making connections, we open ourselves up to a world of possibilities and potential for growth and fulfillment.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Internet is a spyware.</title>
+          <pubDate>Tue, 10 Jan 2023 00:00:00 +0000</pubDate>
+          <author>whoisyoges@castorisdead.xyz (Castor)</author>
+          <link>https://castorisdead.xyz/blog/internet-is-a-spyware/</link>
+          <guid>https://castorisdead.xyz/blog/internet-is-a-spyware/</guid>
+          <description xml:base="https://castorisdead.xyz/blog/internet-is-a-spyware/">&lt;p&gt;The internet, through the collection and storage of personal data by companies and governments, can be used as a tool for surveillance.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;&#x2F;h2&gt;
+&lt;p&gt;As a general principle, it&#x27;s important to be aware that any time you use the internet, you&#x27;re potentially sharing information about yourself. That being said, some companies are certainly better known for collecting and using large amounts of data about their users than others. When we talk about &quot;big tech companies,&quot; we&#x27;re typically talking about a few large corporations like Google, Facebook, Amazon, and Apple. This doesn&#x27;t mean &quot;just big tech companies collect your data&quot; but also includes many smaller websites and apps that you might use.&lt;&#x2F;p&gt;
+&lt;p&gt;These companies collect a lot of data about you when you use their services. For example, when you use Google to search for something, they collect information about what you searched for, as well as your location and other information about your device. Similarly, when you use Facebook, they collect information about what you post, who you interact with, and so on.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;assets&#x2F;images&#x2F;blogs&#x2F;internet-is-a-spyware&#x2F;bigbrotheriswatchingyou.jpg&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;concern&quot;&gt;Concern&lt;&#x2F;h2&gt;
+&lt;p&gt;People like us should be concerned that these companies use this data to spy on us or to target us with advertising. Another concern is that these companies share our data with governments or other third parties. While companies generally have privacy policies that prohibit them from sharing our data without our consent, it&#x27;s possible that they could be compelled to share your data with governments or other organizations through legal means, such as a court order.&lt;&#x2F;p&gt;
+&lt;p&gt;It&#x27;s also important to remember that other parties could also be collecting data about you. For example, your internet service provider (ISP) could be collecting information about the websites you visit, and advertisers could be using cookies and other tracking technologies to collect information about your browsing history.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;keep-in-mind&quot;&gt;Keep in mind&lt;&#x2F;h2&gt;
+&lt;p&gt;In terms of internet privacy and freedom, the main take away is you should be aware of what data you&#x27;re sharing and with whom, and to be cautious about giving out too much personal information online. You should also look for ways to protect your privacy, such as using privacy-protecting browser extensions, virtual private networks (VPNs), and encryption to protect your information from being intercepted by third parties and using privacy friendly front-ends and alternatives.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;&#x2F;h2&gt;
+&lt;p&gt;The internet is a tool that can be used for a wide range of purposes, both positive and negative. And in this modern era of technology, it is true that most of the individuals or organizations use the internet for nefarious purposes, such as surveillance and data collection mostly without user&#x27;s awareness. So I recommend everyone to look for and use the privacy-protecting open source programs and softwares. You can take a look at the &lt;a href=&quot;&#x2F;programs&quot;&gt;programs&lt;&#x2F;a&gt; that I use to not share any data or share fake date to these spywares.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Understanding and working with git remotes</title>
+          <pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate>
+          <author>whoisyoges@castorisdead.xyz (Castor)</author>
+          <link>https://castorisdead.xyz/blog/understanding-and-working-with-git-remotes/</link>
+          <guid>https://castorisdead.xyz/blog/understanding-and-working-with-git-remotes/</guid>
+          <description xml:base="https://castorisdead.xyz/blog/understanding-and-working-with-git-remotes/">&lt;p&gt;Do you have same git repository over different platforms? Are you searching for the convenient way to manage them all at once within a single local repository?&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;introduction-to-git-remote&quot;&gt;Introduction to git remote?&lt;&#x2F;h2&gt;
+&lt;p&gt;A remote in Git is a version of your repository that is hosted on the Internet or network somewhere. Remotes make it easy to collaborate with others, as you can fetch and push changes. You can also use them to create backups of your repository.&lt;&#x2F;p&gt;
+&lt;p&gt;It&#x27;s common to have a single remote, called &lt;code&gt;origin&lt;&#x2F;code&gt;, but you can have multiple remotes. This can be useful in a few different scenarios. For example, you might want to contribute to someone else&#x27;s repository and have a remote for their repository. Or, you might want to set up a &lt;code&gt;mirror&lt;&#x2F;code&gt; of your repository on a different hosting service.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;how-does-a-git-remote-work&quot;&gt;How does a git remote work?&lt;&#x2F;h3&gt;
+&lt;p&gt;There are two link urls for a remote git repository.&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;fetch url: to perform operations like fetch and pull from remote server to local computer.&lt;&#x2F;li&gt;
+&lt;li&gt;push url: to perform push operations from local computer to remote server.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;To check the all the remotes within a repository, you can use the git remote command.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;$ git remote -v
+origin	git@github.com:whoisYoges&amp;#x2F;website.git (fetch)
+origin	git@github.com:whoisYoges&amp;#x2F;website.git (push)
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Here, for a remote named &lt;code&gt;origin&lt;&#x2F;code&gt;, we have the same urls for both fetch and push operations cause we&#x27;re fetching&#x2F;pulling from and pushing to the same remote repository. If you fetch&#x2F;pull from one repository and push to other the urls can be different even in same remote.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;adding-a-new-remote&quot;&gt;Adding a new remote&lt;&#x2F;h2&gt;
+&lt;p&gt;To add a new remote to your repository, use the git remote add command. The basic syntax is:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;git remote add &amp;lt;name&amp;gt; &amp;lt;url&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Replace &amp;lt;name&amp;gt; with a short, memorable name for the remote, and &amp;lt;url&amp;gt; with the URL of the remote repository. For example, if you want to add a remote for a repository of this website hosted on GitHub, you might use a command like this:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;git remote add github git@github.com:whoisYoges&amp;#x2F;website.git
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This will add a remote called &lt;code&gt;github&lt;&#x2F;code&gt; that points to the specified repository. You can then use this remote like any other. For example, to fetch changes from the remote, you can use the git fetch command:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;git fetch github
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Again, if you want to add another remote for the same repository hosted on sourcehut, you might use a command like this:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;git remote add sourcehut git@git.sr.ht:~whoisyoges&amp;#x2F;website
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This will add a remote called &lt;code&gt;sourcehut&lt;&#x2F;code&gt; that points to the specified repository and then you can use this remote like any other. For example, to push changes to the remote, you can use the git push command.&lt;br &#x2F;&gt;
+For example, to push your local &lt;code&gt;master&lt;&#x2F;code&gt; branch to the &lt;code&gt;sourcehut&lt;&#x2F;code&gt; remote, you can use a command like this:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;git push sourcehut master
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This can be useful for collaborating with others, as you can push your work-in-progress to a branch on the remote and ask for feedback before merging it into the main branch.&lt;&#x2F;p&gt;
+&lt;p&gt;You can view a list of your remotes at any time by running the git remote command with no arguments. This will list the names of all your remotes.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;$ git remote
+github
+sourcehut
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To see more information about a specific remote, use the git remote show command, followed by the name of the remote. This will display information about the &lt;code&gt;sourcehut&lt;&#x2F;code&gt; remote, including the URL and the branches that are being tracked. For example:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;$ git remote show sourcehut
+* remote sourcehut
+  Fetch URL: git@git.sr.ht:~whoisyoges&amp;#x2F;website
+  Push  URL: git@git.sr.ht:~whoisyoges&amp;#x2F;website
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local ref configured for &amp;#x27;git push&amp;#x27;:
+    master pushes to master (fast-forwardable)
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;multiple-push-urls-in-a-single-remote&quot;&gt;Multiple push urls in a single remote&lt;&#x2F;h2&gt;
+&lt;p&gt;The above method allows us to add multiple remotes and push the local repository to the them one by one, but we cannot push our local repository to all of the remotes at once.&lt;&#x2F;p&gt;
+&lt;p&gt;So, Follow the procedure below for adding multiple push urls in a single remote to push a local repository to all of the remotes at once using a single command.&lt;&#x2F;p&gt;
+&lt;p&gt;Define a git remote which will point to multiple git remotes, we call it &lt;code&gt;all&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;git remote add all REMOTE-URL-1&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;This REMOTE-URL-1 will be used to perform fetch&#x2F;pull operations.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;git remote add all git@git.sr.ht:~whoisyoges&amp;#x2F;website
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now, add all the push urls one by one in the remote &lt;code&gt;all&lt;&#x2F;code&gt;.&lt;br &#x2F;&gt;
+Here, I&#x27;m adding the remote repositories of this website available in sourcehut, github, and codeberg.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;git remote set-url --add --push all git@git.sr.ht:~whoisyoges&amp;#x2F;website
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre&gt;&lt;code&gt;git remote set-url --add --push all git@github.com:whoisYoges&amp;#x2F;website.git
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre&gt;&lt;code&gt;git remote set-url --add --push all git@codeberg.org:whoisYoges&amp;#x2F;website.git
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Confirm the addition of remote urls by using git remote command.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;$ git remote -v
+all	git@git.sr.ht:~whoisyoges&amp;#x2F;website (fetch)
+all	git@git.sr.ht:~whoisyoges&amp;#x2F;website (push)
+all	git@codeberg.org:whoisYoges&amp;#x2F;website.git (push)
+all	git@github.com:whoisYoges&amp;#x2F;website.git (push)
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Push a branch to all the remotes with &lt;code&gt;git push all BRANCH&lt;&#x2F;code&gt; – replace BRANCH with a real branch name.
+You cannot fetch updates from multiple remotes in this method.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;&lt;code&gt;Note: The branch name of all the remote repositories must be same.&lt;&#x2F;code&gt;&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;&#x2F;h2&gt;
+&lt;p&gt;In summary, adding and using multiple remotes in a Git repository can be a useful way to collaborate with others and make backups of your work. By using the git remote and git push commands, you can easily work with multiple remotes and push and fetch changes as needed.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>I rejoined college and my first day experience!</title>
+          <pubDate>Tue, 27 Dec 2022 00:00:00 +0000</pubDate>
+          <author>whoisyoges@castorisdead.xyz (Castor)</author>
+          <link>https://castorisdead.xyz/blog/my-first-day-experience-in-college/</link>
+          <guid>https://castorisdead.xyz/blog/my-first-day-experience-in-college/</guid>
+          <description xml:base="https://castorisdead.xyz/blog/my-first-day-experience-in-college/">&lt;p&gt;So if you didn&#x27;t know, I had dropped out of computer science in 4th semester and recently joined &lt;em&gt;Bachelor of Arts in psychology and social work&lt;&#x2F;em&gt; just before Christmas on 2022-Dec-21.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;My college isn&#x27;t far from my place, just about a 10 minutes walk, and it starts at 6:15 in the morning till 10 a.m.&lt;br &#x2F;&gt;
+It&#x27;s December, and it was freezing cold outside with the temperature of 5° Celsius.&lt;br &#x2F;&gt;
+The gatekeeper stopped me for a while in the gate, saying not to wear grunge jeans in the first day of college. Funny, isn&#x27;t it? I just said okay and went in.&lt;&#x2F;p&gt;
+&lt;p&gt;Being an introvert, it was not easy for me to spend 4 hours for the first day.
+I had checked the number of students admitted to my class in the administration during my admission, but not even the half of them were present. There were about 10 students and all of them were female except me. Most of the desks were empty, and I sat on the third bench in the second row all alone. It was a damn moment for me because I didn&#x27;t even have anyone to talk to, but who cares...? First class went like a fly listening to the lecture. Two boys came in the second class after 45 minutes, and I was relieved, at least a little. But they just stayed that one class for 45 minutes. And I was all alone the rest of the classes. But I didn&#x27;t care that, either.&lt;&#x2F;p&gt;
+&lt;p&gt;There was a leisure and I just played Blockinger (a Tetris game) and minesweeper in my mobile phone. Other classes were good. I enjoyed the lectures. One of the professor (IDK the name yet; the one who gave the lecture of psychology) has piqued my curiosity. He was quite my type, I mean, he gives examples about technology and internet privacy relating with psychology.
+The class ended at 10 a.m and I just returned back to my place without giving a shit about anybody.&lt;&#x2F;p&gt;
+&lt;p&gt;So, yeah It was quiet a experience. Overall, it was fun and I kinda liked it.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Disk encryption in linux installation</title>
+          <pubDate>Thu, 22 Dec 2022 00:00:00 +0000</pubDate>
+          <author>whoisyoges@castorisdead.xyz (Castor)</author>
+          <link>https://castorisdead.xyz/blog/disk-encryption-in-linux-installation/</link>
+          <guid>https://castorisdead.xyz/blog/disk-encryption-in-linux-installation/</guid>
+          <description xml:base="https://castorisdead.xyz/blog/disk-encryption-in-linux-installation/">&lt;p&gt;Disk encryption in linux prevents a disk drive, like a hard drive or a portable USB storage device or laptop, from booting up unless the user inputs the correct authentication data. And here I&#x27;m going to talk about my preferred method of disk encryption while installing linux and see how it works?&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;assets&#x2F;images&#x2F;blogs&#x2F;disk-encryption-in-linux-installation&#x2F;disk-encryption-in-linux-installation.jpg&quot; alt=&quot;disk-encryption-in-linux-installation&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;&#x2F;h2&gt;
+&lt;p&gt;The booting up process for an operating system involves the first section of the disk — the master boot record — informing the system of where to read the first file, which initiates the loading of the operating system. Without encryption, no special instructions are required to interpret the contents of the disk. By default, files are written in plain text.&lt;&#x2F;p&gt;
+&lt;p&gt;When you use disk encryption, this process is modified. The contents of the disk (except for the master boot record) are encrypted using a modern symmetric cipher accessible via a secret key. The master boot record is modified so that it loads this system, which validates the authentication data from the user. If the authentication process is successful, the encryption key is unlocked.&lt;&#x2F;p&gt;
+&lt;p&gt;This system, which varies between different implementations, stores the master key for the device. Authentication information might be a password, a public key-based token, or a fingerprint scan. Once the valid authentication data is read, the master key is decrypted. The master key then remains in the computer’s memory while it’s powered-on. This allows the operating system to first read the disk to boot up, as well as read any other disk contents the user requests while using the computer.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;who-uses-disk-encryption&quot;&gt;Who Uses Disk Encryption&lt;&#x2F;h2&gt;
+&lt;p&gt;The main motive of encryption is to keep your data and personal information safe from others. So If anyone other than you has any access to your computer, then in should be encrypted. Also, I highly recommend encrypting the portable devices like laptops and raspberry-pi that has a chance of getting lost, stolen or access by others.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;my-preferred-method-of-disk-encryption&quot;&gt;My preferred method of disk encryption&lt;&#x2F;h2&gt;
+&lt;p&gt;So I do have a sigle hard drive in my computer so, I use &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.archlinux.org&#x2F;title&#x2F;LVM&quot;&gt;LVM&lt;&#x2F;a&gt; on &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.archlinux.org&#x2F;title&#x2F;Dm-crypt&quot;&gt;LUKS&lt;&#x2F;a&gt; encrypting all the filesystem and partitions excluding &#x2F;boot partiton of grub bootloader. If you have multiple hard drives you may want to setup &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.archlinux.org&#x2F;title&#x2F;RAID&quot;&gt;RAID&lt;&#x2F;a&gt; I guess. Checkout &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.archlinux.org&#x2F;title&#x2F;dm-crypt&#x2F;Encrypting_an_entire_system&quot;&gt;arch wiki&lt;&#x2F;a&gt; for more details about encryption types.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;how-to-set-up-lvm-on-luks&quot;&gt;How to Set-up LVM on LUKS&lt;&#x2F;h3&gt;
+&lt;p&gt;Okay Let&#x27;s directly talk about how we can setup my preferred encryption type for single storage device computers.&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Partition your storage into two using &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.archlinux.org&#x2F;title&#x2F;Partitioning#GUID_Partition_Table&quot;&gt;GPT&lt;&#x2F;a&gt;; First one is the boot partition of about 500MB and remaining the second.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Let&#x27;s say &lt;strong&gt;&#x2F;dev&#x2F;sda2&lt;&#x2F;strong&gt; is the second partition, then setup LUKS in &lt;strong&gt;&#x2F;dev&#x2F;sda2&lt;&#x2F;strong&gt;.&lt;br &#x2F;&gt;
+a. &lt;code&gt;cryptsetup luksFormat &#x2F;dev&#x2F;sda2&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+b. &lt;code&gt;cryptsetup open &#x2F;dev&#x2F;sda1 cryptlvm&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+It can be mapped to any name in place of &lt;code&gt;cryptlvm&lt;&#x2F;code&gt;.&lt;br &#x2F;&gt;
+The decrypted container is now available at &#x2F;dev&#x2F;mapper&#x2F;cryptlvm&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Prepare the logical volumes
+a. Create a physical volume on top of the opened LUKS container:&lt;br &#x2F;&gt;
+&lt;code&gt;pvcreate &#x2F;dev&#x2F;mapper&#x2F;cryptlvm&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+b. Create a volume group (in this example named &lt;code&gt;groot&lt;&#x2F;code&gt;, but it can be whatever you want) and add the previously created physical volume to it:&lt;br &#x2F;&gt;
+&lt;code&gt;vgcreate groot &#x2F;dev&#x2F;mapper&#x2F;cryptlvm&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+c. Create all your logical volumes for root, home, swap and others as per your requirements on the volume group:&lt;br &#x2F;&gt;
+&lt;code&gt;lvcreate -L 8G groot -n swap&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+&lt;code&gt;lvcreate -L 100G groot -n root&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+&lt;code&gt;lvcreate -l 100%FREE groot -n home&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Format your file systems&lt;br &#x2F;&gt;
+&lt;code&gt;mkfs.ext4 &#x2F;dev&#x2F;groot&#x2F;root&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+&lt;code&gt;mkfs.ext4 &#x2F;dev&#x2F;groot&#x2F;home&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+&lt;code&gt;mkswap &#x2F;dev&#x2F;groot&#x2F;swap&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+&lt;code&gt;mkfs.fat -F 32 &#x2F;dev&#x2F;sda1&lt;&#x2F;code&gt; (for your bootloader(boot partition))&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Mount your filesystems:&lt;br &#x2F;&gt;
+&lt;code&gt;mount &#x2F;dev&#x2F;groot&#x2F;root &#x2F;mnt&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+&lt;code&gt;mount --mkdir &#x2F;dev&#x2F;groot&#x2F;home &#x2F;mnt&#x2F;home&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+&lt;code&gt;swapon &#x2F;dev&#x2F;groot&#x2F;swap&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+&lt;code&gt;mount --mkdir &#x2F;dev&#x2F;sdb1 &#x2F;mnt&#x2F;boot&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Now install the OS as you do normally and chroot into the newly installed system.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Configuring mkinitcpio:&lt;br &#x2F;&gt;
+a. Make sure you have installed &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;archlinux.org&#x2F;packages&#x2F;core&#x2F;x86_64&#x2F;cryptsetup&#x2F;&quot;&gt;cryptsetup&lt;&#x2F;a&gt; and &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;archlinux.org&#x2F;packages&#x2F;core&#x2F;x86_64&#x2F;lvm2&#x2F;&quot;&gt;lvm2&lt;&#x2F;a&gt;.&lt;br &#x2F;&gt;
+b. Add the &lt;code&gt;keyboard&lt;&#x2F;code&gt;, &lt;code&gt;keymap&lt;&#x2F;code&gt;, &lt;code&gt;encrypt&lt;&#x2F;code&gt; and &lt;code&gt;lvm2&lt;&#x2F;code&gt; hooks to &#x2F;etc&#x2F;mkinitcpio.conf&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;HOOKS=(base udev autodetect modconf kms keyboard keymap consolefont block encrypt lvm2 filesystems fsck shutdown)
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Configuring the boot loader&lt;br &#x2F;&gt;
+a. Get the UUID of &#x2F;dev&#x2F;sda2 (your LUKS partition) using blkid command.&lt;br &#x2F;&gt;
+&lt;code&gt;# blkid&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+The Output should seem like following:&lt;br &#x2F;&gt;
+&lt;code&gt;&#x2F;dev&#x2F;sda2: UUID=&quot;27da5fec-b1f2-4b54-b2af-a2832d2c4522&quot; TYPE=&quot;crypto_LUKS&quot; PARTUUID=&quot;eeef0000-db63-5749-90d4-55c978558643&quot;&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+b. Set the kernel parameter in boot loader (grub) in &#x2F;etc&#x2F;default&#x2F;grub&lt;br &#x2F;&gt;
+&lt;code&gt;cryptdevice=UUID=Your-UUID:cryptlvm root=&#x2F;dev&#x2F;groot&#x2F;root&lt;&#x2F;code&gt;&lt;br &#x2F;&gt;
+It should seem like following:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;GRUB_CMDLINE_LINUX=&amp;quot;cryptdevice=UUID=27da5fec-b1f2-4b54-b2af-a2832d2c4522:cryptlvm root=&amp;#x2F;dev&amp;#x2F;groot&amp;#x2F;root&amp;quot;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Regenerate the initramfs&lt;br &#x2F;&gt;
+&lt;code&gt;mkinitcpio -P&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Regenerate grub config&lt;br &#x2F;&gt;
+&lt;code&gt;grub-mkconfig -o &#x2F;boot&#x2F;grub&#x2F;grub.cfg&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+</description>
+      </item>
+      <item>
+          <title>Create and delete GPG keypair | Introduction to GnuPG </title>
+          <pubDate>Sun, 30 Oct 2022 00:00:00 +0000</pubDate>
+          <author>whoisyoges@castorisdead.xyz (Castor)</author>
+          <link>https://castorisdead.xyz/blog/create-and-delete-gpg-key-pair/</link>
+          <guid>https://castorisdead.xyz/blog/create-and-delete-gpg-key-pair/</guid>
+          <description xml:base="https://castorisdead.xyz/blog/create-and-delete-gpg-key-pair/">&lt;p&gt;GnuPG, popularly known as GPG, is an extremely versatile tool, being widely used as the industry standard for encryption of things like emails, messages, files, or just anything you need to send to someone securely.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;assets&#x2F;images&#x2F;blogs&#x2F;create-and-delete-gpg-key-pair&#x2F;Gnupg.png&quot; alt=&quot;Encrypt and decrypt a file using gpg keys&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;introduction-to-gnupg&quot;&gt;Introduction to GnuPG&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gnupg.org&quot;&gt;GnuPG&lt;&#x2F;a&gt; is a hybrid encryption software module that uses &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.openpgp.org&quot;&gt;OpenPGP&lt;&#x2F;a&gt; at its core. PGP stands for Pretty Good Privacy. It is a tool for secure communication that provides authentication and cryptographic privacy for data communication.&lt;&#x2F;p&gt;
+&lt;p&gt;GPG uses public key encryption wherein you create a key pair: one private or secret key you keep to yourself and one public key you share with your correspondents or the world. The important part of this two-key system is that neither key can be calculated by having the other. They are each an independent and necessary part of the system and are based upon solid mathematical foundations.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;prerequisite&quot;&gt;Prerequisite&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A computer with &lt;code&gt;gnupg&lt;&#x2F;code&gt; installed on it.&lt;br &#x2F;&gt;
+Download and install the &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;gnupg.org&#x2F;download&#x2F;index.html&quot;&gt;latest version of the GPG command line tools&lt;&#x2F;a&gt; for your operating system if you haven&#x27;t yet.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;generating-a-gpg-key-pair&quot;&gt;Generating a GPG key pair&lt;&#x2F;h2&gt;
+&lt;p&gt;To start working with GPG you need to create a key pair for yourself.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use gpg with the --full-generate-key option to create a key pair.&lt;&#x2F;li&gt;
+&lt;li&gt;With this option, gpg creates and populates the ~&#x2F;.gnupg directory if it does not exist.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;gengpgkeypair&quot;&gt;gpg --full-generate-key
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;gengpgkeypairbtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;gengpgkeypair&#x27;,&#x27;gengpgkeypairbtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;overflowy imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --full-generate-key
+gpg (GnuPG) 2.2.39; Copyright (C) 2022 g10 Code GmbH
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.&lt;br&gt;
+gpg: directory &#x27;&#x2F;home&#x2F;castor&#x2F;.gnupg&#x27; created
+gpg: keybox &#x27;&#x2F;home&#x2F;castor&#x2F;.gnupg&#x2F;pubring.kbx&#x27; created
+Please select what kind of key you want:
+   (1) RSA and RSA (default)
+   (2) DSA and Elgamal
+   (3) DSA (sign only)
+   (4) RSA (sign only)
+  (14) Existing key from card
+Your selection? 1
+RSA keys may be between 1024 and 4096 bits long.
+What keysize do you want? (3072) 4096
+Requested keysize is 4096 bits
+Please specify how long the key should be valid.
+         0 = key does not expire
+      &amp;lt;n&amp;gt;  = key expires in n days
+      &amp;lt;n&amp;gt;w = key expires in n weeks
+      &amp;lt;n&amp;gt;m = key expires in n months
+      &amp;lt;n&amp;gt;y = key expires in n years
+Key is valid for? (0) 2
+Key expires at Tue 01 Nov 2022 09:29:11 AM +0545
+Is this correct? (y&#x2F;N) y&lt;br&gt;
+GnuPG needs to construct a user ID to identify your key.&lt;br&gt;
+Real name: yogesh
+Email address: castor@whoisyoges.eu.org
+Comment: just a test key
+You selected this USER-ID:
+    &quot;yogesh (just a test key) &amp;lt;castor@whoisyoges.eu.org&amp;gt;&quot;&lt;br&gt;
+Change (N)ame, (C)omment, (E)mail or (O)kay&#x2F;(Q)uit? O
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy.
+gpg: &#x2F;home&#x2F;castor&#x2F;.gnupg&#x2F;trustdb.gpg: trustdb created
+gpg: directory &#x27;&#x2F;home&#x2F;castor&#x2F;.gnupg&#x2F;openpgp-revocs.d&#x27; created
+gpg: revocation certificate stored as &#x27;&#x2F;home&#x2F;castor&#x2F;.gnupg&#x2F;openpgp-revocs.d&#x2F;036A752DE9DF5516B33E87BE33C05B4624890348.rev&#x27;
+public and secret key created and signed.&lt;br&gt;
+pub   rsa4096 2022-10-30 [SC] [expires: 2022-11-01]
+      036A752DE9DF5516B33E87BE33C05B4624890348
+uid                      yogesh (just a test key) &amp;lt;castor@whoisyoges.eu.org&amp;gt;
+sub   rsa4096 2022-10-30 [E] [expires: 2022-11-01]
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;sharing-your-public-key&quot;&gt;Sharing your public key&lt;&#x2F;h2&gt;
+&lt;p&gt;You need to share your public key so that people can encrypt and send any message and files to you which can be decrypted using only your private key.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;list-the-key-pair&quot;&gt;List the key pair&lt;&#x2F;h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;listurpubkeytoshare&quot;&gt;gpg --list-keys
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;listurpubkeytosharebtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;listurpubkeytoshare&#x27;,&#x27;listurpubkeytosharebtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --list-keys
+&#x2F;home&#x2F;castor&#x2F;.gnupg&#x2F;pubring.kbx
+--------------------------------
+pub   rsa4096 2022-10-30 [SC] [expires: 2022-11-01]
+      036A752DE9DF5516B33E87BE33C05B4624890348
+uid           [ultimate] yogesh (just a test key) &amp;lt;castor@whoisyoges.eu.org&amp;gt;
+sub   rsa4096 2022-10-30 [E] [expires: 2022-11-01]
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;getting-your-public-key&quot;&gt;Getting your public key&lt;&#x2F;h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;shareurpubkey&quot;&gt;gpg --armor --export &amp;lt;id&amp;gt;
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;shareurpubkeybtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;shareurpubkey&#x27;,&#x27;shareurpubkeybtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;overflowy imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --armor --export 036A752DE9DF5516B33E87BE33C05B4624890348
+-----BEGIN PGP PUBLIC KEY BLOCK-----&lt;br&gt;
+mQINBGNd8zcBEACpJLknkdJmlJ9FWnyc6W&#x2F;mMBuv&#x2F;DD9ECF4DB45+2mFhPc21bYW
+nKHZosvtmwBIYHArU6xlHkaOlL2K3Rda7zzwRXB+LzQNqWv0GxN2ukzbS3yixGBg
+s8yDTa4SM1KFBXuLe6j+x0t0&#x2F;M7p4yD0tTtK1zCIheel2pkWZ8djHqzvboj34ZN9
+5nlxTKSTDbsPOOrrD9Y9nM&#x2F;RVKdkklHT1esWc25i9rSHwJ0ds0F3F17mCIt+rRpl
+tm2vTD7Ml5Le5cR8FAz&#x2F;VBhSltDANtWjr4PtUncuwlUU9wFu6zUGMxzsoxLUXkZp
+bB+geMhnbE8Sk1kyYILExaoLcQZ9GmsmBwYc7n1lgWCCNdwuVh26CgQu2Y96VTaC
+&#x2F;lJMe+j&#x2F;HlkZKgZwPJd8JL7kxCvL3zYCsnJ4KPTMxUpgSp5JaUOGm5+mNsR2O98u
+EC8LGU5TplfE7TEsr7IvNH5Dq+XQHaTv54iOJyUDICZMmQyp32nhc7LAvWzRsxDU
+Axsx2lsJzrZC&#x2F;SkD7Kd7gZPGyA0i3KHNDWqq8YbGFIAv3uv+pvw26WKjvTLgm1d5
+5oKEYOGEJa&#x2F;LZAco3O2Mbl7sKMB7bpFcV4Q3Ff26rsp7oSCxU4C66pSdZdpAEQSY
+nnoCsmTtNUIVbyNU9S5lwOwQrWX7IOcfTuGALNq1yW7LnOZimKoGblCBxQARAQAB
+tDN5b2dlc2ggKGp1c3QgYSB0ZXN0IGtleSkgPGNhc3RvckB3aG9pc3lvZ2VzLmV1
+Lm9yZz6JAlQEEwEIAD4WIQQDanUt6d9VFrM+h74zwFtGJIkDSAUCY13zNwIbAwUJ
+AAKjAAULCQgHAgYVCgkICwIEFgIDAQIeAQIXgAAKCRAzwFtGJIkDSLgsEACRqvg6
+2Bcglte32vQNz5tHWqqKmmtSuJsXaxgIYjg+eKvkJrRW3QLK+YpiHYvyTDZLjq0&#x2F;
+VCFbCL3We9CFr3fgdXP1t0svhkidzHyyoe9WihMvxSVqnNKz1kU2NSldsoNmn32p
+VeXOFRI84uCbWFa&#x2F;XMwMryJkOagQQkveK4uTbULjzcSaOGILJEQY6kjo9cQAoPHX
+G9gdfva4Ik8cITVRvS6jISEDPF4atHsiOJ&#x2F;RDUlVhPLdoWpgfmaJgAybLHbOEfJb
+i&#x2F;jxz4TCvR&#x2F;q9z7yT5Znc9R8yHgrU2EKoK5rj0bmmCpYH&#x2F;eYDkehId07on8&#x2F;XXxh
+VC15ydz1RqQzLcEx8ZUMRZ4nqW+6TfIrv4lyvVi2eJbodc0iKqTL7blFaWA3bvHu
+X6ZPm+C3MzUP2tt3gvWrkfDJrn536Xrjt8r2P0W4BFT7tBiFFp4UNUxeS+ghVlJl
+zkMvvgccpEpn2HHHU8BLMgdtPHKtLmJXNLK44cgXBb&#x2F;lhS8DCusnzKB9dSFUliTS
+WuC&#x2F;ZUMgUFjL2TrnLbsUdQiSIwYsascqoCArcAd2++FBYTrD2yswv6ir+FzEUqjW
+KPa76oCrDgD34aG4nJa67xjXWVnahg87SljxP3d3S&#x2F;6q0+4RYC+I7uMmGeTxzdnZ
+WAVL&#x2F;7vFq7Hbmgvpx3YJj9LRJwQYUiQZpK+rDrkCDQRjXfM3ARAAo0Mlc25OPWJE
+lQr&#x2F;rEmCRTh5z8GejVPN4JL7rv2sqe+rctHxbjvofwH35ThInGfuq6Noq4l6r40F
+yHIUuib0MZZLTAifgZGS5YyNlB54x258JdcY5C6eENaV9G5Gqz3UpMdXOs&#x2F;jxzmh
+h3sPKLhFiDhRAylj2o78BZdIPsxGa7xNn0&#x2F;HLkdJ7zwyUGaoMwM+Ps3xHEA8kfA7
+daCHhkzCx4G8PGs2LXNkSMW51Km0ZCE9gyk1COL2TxCaniCy9PxcIbGd&#x2F;SZYUf89
+5RAXz7aBtPIYt1OhXAItvM+b00XLBxxGtRIb1Nyo7pwbqT72dIPXiMPBf0OK7Vbq
+JDUFiCIRsKTolUm2MCOcboGhgBxfR6uIUMOKXY2d3aer&#x2F;7UkWHe&#x2F;6y7+sGHkWBaf
+MUjqbAMPDBjKk2b6OodalQr8oyxZ79d5z2D4gBooxKpJA2NS5UOUaLBPtB83POfw
+5otQJk2RlnlWmV6MVQolwg+IXiRZQVkzJ0mazZ6eEwP&#x2F;EcZPpXur8LT6W2mo+rN2
+g8qC2nCRZUQ842PoNi9L5ug1fRsaiTYhC4pXUppBbY3Sp8GFuTxP9FhWhK2j2sX2
+xdDRmqDWePjimPZ4tzBBQalCLj0kuO8PtfChuWXk2Ro&#x2F;hEg59mPxOTR9uyLtZrPF
+wOM7KIgPondEa&#x2F;lYP9JFoaTCm3ktGi8AEQEAAYkCPAQYAQgAJhYhBANqdS3p31UW
+sz6HvjPAW0YkiQNIBQJjXfM3AhsMBQkAAqMAAAoJEDPAW0YkiQNIYl4P&#x2F;0yIj7WK
+hNyJtgKHv5QMEtbD3lL6IPNcUnEddbrCDuQD+&#x2F;CCb02Af9IG5wwuPlSIpBa2Nh4r
+NZrTkcPVitqaRdNPVTAeCFXGNnY+vMzbGBYHh+ajX6&#x2F;b1YCmNKtTC37FH8G6GAOl
+Hvi1xYhP&#x2F;jFNoX5ftkVNU6MJi2bfJx98jRSYk&#x2F;fhjAc&#x2F;bG7YpLR&#x2F;4B&#x2F;U7&#x2F;4Q4YAF
+u+OrrJOeYRz7OfuBaFBIO2E34nDyd6hxdjR6fOThidlyzPOgkOEc6OB3R&#x2F;IeKN69
+i0ASLp&#x2F;SJSpL25FE2r1olrxR8FMZnnAMe10T8fE5oRtKR5crmq58SdKQSW6DFh6O
+FcL&#x2F;2LOLDJn7Dazto&#x2F;pvgFVF9kJ89bZhcJdyVaUkP5T6W3qW7nSNvkKCfBI+shUT
+gvSue&#x2F;AqzhCTh4pXR9xO7SYNbXku9J1h0VXNpmH3U2z4GODhYzeeq1+e1QmOFVCR
+zRb&#x2F;45&#x2F;Tf4WT&#x2F;rHMfFzCOzmLW9IsH8k8yfi6gxmOEdRHOIqLqmf9Dgc2+KKnPWhO
+NodtiJD3ZN1f3krdy22bAIzOlfm5cb7hWoUBcRWqk76ZWcmIndffl2cc8MFaFcV3
+GNyVJ+vbeBq1mCC&#x2F;pQPqxwmkvwOmywdu9dDUoXH7+S4EXtwPDSlbS3bQBU1KqSMr
+igXd7Kt4qERYzmc1NLbHG7&#x2F;H&#x2F;DV6KyxuJ4dJ
+=oYnT
+-----END PGP PUBLIC KEY BLOCK-----
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Just copy the output starting from &lt;code&gt;-----BEGIN PGP PUBLIC KEY BLOCK-----&lt;&#x2F;code&gt; to &lt;code&gt;-----END PGP PUBLIC KEY BLOCK-----&lt;&#x2F;code&gt; and send it to anyone who need to send you an encrypted message.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;deleting-the-needless-key&quot;&gt;Deleting the needless key&lt;&#x2F;h2&gt;
+&lt;p&gt;Assuming you don&#x27;t need the keys anymore or if the key has been expired and you wish to delete it, here&#x27;s the procedure:&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;delete-secret-private-key&quot;&gt;Delete secret&#x2F;private key&lt;&#x2F;h3&gt;
+&lt;p&gt;First we should list if there are any secret keys available for the respective user and delete it if exists before deleting the public key.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;checking-private-secret-key&quot;&gt;Checking private&#x2F;secret key&lt;&#x2F;h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;listseckeyfordel&quot;&gt;gpg --list-secret-keys
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;listseckeyfordelbtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;listseckeyfordel&#x27;,&#x27;listseckeyfordelbtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --list-secret-keys
+&#x2F;home&#x2F;castor&#x2F;.gnupg&#x2F;pubring.kbx
+--------------------------------
+sec   rsa4096 2022-10-30 [SC] [expires: 2022-11-01]
+      036A752DE9DF5516B33E87BE33C05B4624890348
+uid           [ultimate] yogesh (just a test key) &amp;lt;castor@whoisyoges.eu.org&amp;gt;
+ssb   rsa4096 2022-10-30 [E] [expires: 2022-11-01]
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;deleting-private-secret-key&quot;&gt;Deleting private&#x2F;secret key&lt;&#x2F;h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;delsecgpgkey&quot;&gt;gpg --batch --delete-secret-keys --yes &amp;lt;id&amp;gt;
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;delsecgpgkeybtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;delsecgpgkey&#x27;,&#x27;delsecgpgkeybtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --batch --delete-secret-keys --yes 036A752DE9DF5516B33E87BE33C05B4624890348
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;verify-the-private-key-deletion&quot;&gt;Verify the private key deletion&lt;&#x2F;h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;verifysecgpgkeydln&quot;&gt;gpg --list-secret-keys
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;verifysecgpgkeydlnbtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;verifysecgpgkeydln&#x27;,&#x27;verifysecgpgkeydlnbtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;The deleted secret key shouldn&#x27;t exist anymore.&lt;&#x2F;p&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --list-secret-keys
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;delete-public-key&quot;&gt;Delete public key&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;checking-available-public-key-s&quot;&gt;Checking available public key&#x2F;s&lt;&#x2F;h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;listpubgpgkeytodel&quot;&gt;gpg --list-keys
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;listpubgpgkeytodelbtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;listpubgpgkeytodel&#x27;,&#x27;listpubgpgkeytodelbtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --list-keys
+&#x2F;home&#x2F;castor&#x2F;.gnupg&#x2F;pubring.kbx
+--------------------------------
+pub   rsa4096 2022-10-30 [SC] [expires: 2022-11-01]
+      036A752DE9DF5516B33E87BE33C05B4624890348
+uid           [ultimate] yogesh (just a test key) &amp;lt;castor@whoisyoges.eu.org&amp;gt;
+sub   rsa4096 2022-10-30 [E] [expires: 2022-11-01]
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;deleting-public-key&quot;&gt;Deleting public key&lt;&#x2F;h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;delpubgpgkey&quot;&gt;gpg --batch --delete-keys --yes &amp;lt;id&amp;gt;
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;delpubgpgkeybtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;delpubgpgkey&#x27;,&#x27;delpubgpgkeybtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --batch --delete-keys --yes 036A752DE9DF5516B33E87BE33C05B4624890348
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;verify-the-public-key-deletion&quot;&gt;Verify the public key deletion&lt;&#x2F;h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;verifypubgpgkeydln&quot;&gt;gpg --list-keys
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;verifypubgpgkeydlnbtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;verifypubgpgkeydln&#x27;,&#x27;verifypubgpgkeydlnbtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;The deleted public key shouldn&#x27;t exist anymore. If you have more than one key, the remaining keys will be shown.&lt;&#x2F;p&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --list-keys
+gpg: checking the trustdb
+gpg: no ultimately trusted keys found
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</description>
+      </item>
+      <item>
+          <title>Encrypt and decrypt a file using GPG keys</title>
+          <pubDate>Sat, 29 Oct 2022 00:00:00 +0000</pubDate>
+          <author>whoisyoges@castorisdead.xyz (Castor)</author>
+          <link>https://castorisdead.xyz/blog/encrypt-and-decrypt-a-file-using-gpg-keys/</link>
+          <guid>https://castorisdead.xyz/blog/encrypt-and-decrypt-a-file-using-gpg-keys/</guid>
+          <description xml:base="https://castorisdead.xyz/blog/encrypt-and-decrypt-a-file-using-gpg-keys/">&lt;p&gt;If you have someone&#x27;s public gpg key, you can use gnupg to safely encrypt a file and send it to them over an insecure connection (i.e. the internet). They can then use their private key to decrypt the file you sent.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;assets&#x2F;images&#x2F;blogs&#x2F;encrypt-and-decrypt-a-file-using-GPG-keys&#x2F;encrypt-and-decrypt-a-file-using-GPG-keys.jpg&quot; alt=&quot;Encrypt and decrypt a file using gpg keys&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;how-does-gpg-work&quot;&gt;How does GPG work?&lt;&#x2F;h2&gt;
+&lt;p&gt;To start using GPG, you’ll first need to have a GPG key.&lt;&#x2F;p&gt;
+&lt;p&gt;A GPG key is what you’ll use to encrypt or decrypt files. It’s also what is used to identity you, with things like your name and email being tied to the key as well.&lt;&#x2F;p&gt;
+&lt;br&gt;
+&lt;p&gt;GPG keys work by using two files, a private key and a public key. These two keys are tied to each other, and are both needed to use all of GPG’s functionality, notably encrypting and decrypting files.&lt;&#x2F;p&gt;
+&lt;br&gt;
+&lt;p&gt;When you encrypt a file with GPG, it uses either the private key or the public key. The new, encrypted file can then only be decrypted with the paired alternate public or private key.&lt;br &#x2F;&gt;
+Generally public key is used for encryption and private one for decryption.&lt;&#x2F;p&gt;
+&lt;br&gt;
+&lt;p&gt;The private key is meant to be stored in a fashion stated directly in its name – privately, and not given out to anyone.&lt;&#x2F;p&gt;
+&lt;p&gt;The public key on the other hand is meant to be given to others, or anyone you want to be able to encrypt files to send to you securely.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;prerequisite&quot;&gt;Prerequisite&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A computer with &lt;code&gt;gnupg&lt;&#x2F;code&gt; installed on it.&lt;&#x2F;li&gt;
+&lt;li&gt;A GPG key pair&lt;br &#x2F;&gt;
+&lt;a href=&quot;&#x2F;blog&#x2F;create-and-delete-gpg-key-pair&quot;&gt;Don&#x27;t know how to create one? Read this first.&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;encryption-using-a-public-gpg-key&quot;&gt;Encryption using a public GPG key&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;save-the-public-key-in-a-file-say-yoges-pubgpg-asc&quot;&gt;Save the public key in a file, say &lt;code&gt;yoges_pubgpg.asc&lt;&#x2F;code&gt;&lt;&#x2F;h3&gt;
+&lt;p&gt;Contents inside &lt;code&gt;yoges_pubgpg.asc&lt;&#x2F;code&gt; should seem something like below:&lt;&#x2F;p&gt;
+&lt;pre class=&quot;overflowy imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;-----BEGIN PGP PUBLIC KEY BLOCK-----&lt;br&gt;
+mQINBGNd8zcBEACpJLknkdJmlJ9FWnyc6W&#x2F;mMBuv&#x2F;DD9ECF4DB45+2mFhPc21bYW
+nKHZosvtmwBIYHArU6xlHkaOlL2K3Rda7zzwRXB+LzQNqWv0GxN2ukzbS3yixGBg
+s8yDTa4SM1KFBXuLe6j+x0t0&#x2F;M7p4yD0tTtK1zCIheel2pkWZ8djHqzvboj34ZN9
+5nlxTKSTDbsPOOrrD9Y9nM&#x2F;RVKdkklHT1esWc25i9rSHwJ0ds0F3F17mCIt+rRpl
+tm2vTD7Ml5Le5cR8FAz&#x2F;VBhSltDANtWjr4PtUncuwlUU9wFu6zUGMxzsoxLUXkZp
+bB+geMhnbE8Sk1kyYILExaoLcQZ9GmsmBwYc7n1lgWCCNdwuVh26CgQu2Y96VTaC
+&#x2F;lJMe+j&#x2F;HlkZKgZwPJd8JL7kxCvL3zYCsnJ4KPTMxUpgSp5JaUOGm5+mNsR2O98u
+EC8LGU5TplfE7TEsr7IvNH5Dq+XQHaTv54iOJyUDICZMmQyp32nhc7LAvWzRsxDU
+Axsx2lsJzrZC&#x2F;SkD7Kd7gZPGyA0i3KHNDWqq8YbGFIAv3uv+pvw26WKjvTLgm1d5
+5oKEYOGEJa&#x2F;LZAco3O2Mbl7sKMB7bpFcV4Q3Ff26rsp7oSCxU4C66pSdZdpAEQSY
+nnoCsmTtNUIVbyNU9S5lwOwQrWX7IOcfTuGALNq1yW7LnOZimKoGblCBxQARAQAB
+tDN5b2dlc2ggKGp1c3QgYSB0ZXN0IGtleSkgPGNhc3RvckB3aG9pc3lvZ2VzLmV1
+Lm9yZz6JAlQEEwEIAD4WIQQDanUt6d9VFrM+h74zwFtGJIkDSAUCY13zNwIbAwUJ
+AAKjAAULCQgHAgYVCgkICwIEFgIDAQIeAQIXgAAKCRAzwFtGJIkDSLgsEACRqvg6
+2Bcglte32vQNz5tHWqqKmmtSuJsXaxgIYjg+eKvkJrRW3QLK+YpiHYvyTDZLjq0&#x2F;
+VCFbCL3We9CFr3fgdXP1t0svhkidzHyyoe9WihMvxSVqnNKz1kU2NSldsoNmn32p
+VeXOFRI84uCbWFa&#x2F;XMwMryJkOagQQkveK4uTbULjzcSaOGILJEQY6kjo9cQAoPHX
+G9gdfva4Ik8cITVRvS6jISEDPF4atHsiOJ&#x2F;RDUlVhPLdoWpgfmaJgAybLHbOEfJb
+i&#x2F;jxz4TCvR&#x2F;q9z7yT5Znc9R8yHgrU2EKoK5rj0bmmCpYH&#x2F;eYDkehId07on8&#x2F;XXxh
+VC15ydz1RqQzLcEx8ZUMRZ4nqW+6TfIrv4lyvVi2eJbodc0iKqTL7blFaWA3bvHu
+X6ZPm+C3MzUP2tt3gvWrkfDJrn536Xrjt8r2P0W4BFT7tBiFFp4UNUxeS+ghVlJl
+zkMvvgccpEpn2HHHU8BLMgdtPHKtLmJXNLK44cgXBb&#x2F;lhS8DCusnzKB9dSFUliTS
+WuC&#x2F;ZUMgUFjL2TrnLbsUdQiSIwYsascqoCArcAd2++FBYTrD2yswv6ir+FzEUqjW
+KPa76oCrDgD34aG4nJa67xjXWVnahg87SljxP3d3S&#x2F;6q0+4RYC+I7uMmGeTxzdnZ
+WAVL&#x2F;7vFq7Hbmgvpx3YJj9LRJwQYUiQZpK+rDrkCDQRjXfM3ARAAo0Mlc25OPWJE
+lQr&#x2F;rEmCRTh5z8GejVPN4JL7rv2sqe+rctHxbjvofwH35ThInGfuq6Noq4l6r40F
+yHIUuib0MZZLTAifgZGS5YyNlB54x258JdcY5C6eENaV9G5Gqz3UpMdXOs&#x2F;jxzmh
+h3sPKLhFiDhRAylj2o78BZdIPsxGa7xNn0&#x2F;HLkdJ7zwyUGaoMwM+Ps3xHEA8kfA7
+daCHhkzCx4G8PGs2LXNkSMW51Km0ZCE9gyk1COL2TxCaniCy9PxcIbGd&#x2F;SZYUf89
+5RAXz7aBtPIYt1OhXAItvM+b00XLBxxGtRIb1Nyo7pwbqT72dIPXiMPBf0OK7Vbq
+JDUFiCIRsKTolUm2MCOcboGhgBxfR6uIUMOKXY2d3aer&#x2F;7UkWHe&#x2F;6y7+sGHkWBaf
+MUjqbAMPDBjKk2b6OodalQr8oyxZ79d5z2D4gBooxKpJA2NS5UOUaLBPtB83POfw
+5otQJk2RlnlWmV6MVQolwg+IXiRZQVkzJ0mazZ6eEwP&#x2F;EcZPpXur8LT6W2mo+rN2
+g8qC2nCRZUQ842PoNi9L5ug1fRsaiTYhC4pXUppBbY3Sp8GFuTxP9FhWhK2j2sX2
+xdDRmqDWePjimPZ4tzBBQalCLj0kuO8PtfChuWXk2Ro&#x2F;hEg59mPxOTR9uyLtZrPF
+wOM7KIgPondEa&#x2F;lYP9JFoaTCm3ktGi8AEQEAAYkCPAQYAQgAJhYhBANqdS3p31UW
+sz6HvjPAW0YkiQNIBQJjXfM3AhsMBQkAAqMAAAoJEDPAW0YkiQNIYl4P&#x2F;0yIj7WK
+hNyJtgKHv5QMEtbD3lL6IPNcUnEddbrCDuQD+&#x2F;CCb02Af9IG5wwuPlSIpBa2Nh4r
+NZrTkcPVitqaRdNPVTAeCFXGNnY+vMzbGBYHh+ajX6&#x2F;b1YCmNKtTC37FH8G6GAOl
+Hvi1xYhP&#x2F;jFNoX5ftkVNU6MJi2bfJx98jRSYk&#x2F;fhjAc&#x2F;bG7YpLR&#x2F;4B&#x2F;U7&#x2F;4Q4YAF
+u+OrrJOeYRz7OfuBaFBIO2E34nDyd6hxdjR6fOThidlyzPOgkOEc6OB3R&#x2F;IeKN69
+i0ASLp&#x2F;SJSpL25FE2r1olrxR8FMZnnAMe10T8fE5oRtKR5crmq58SdKQSW6DFh6O
+FcL&#x2F;2LOLDJn7Dazto&#x2F;pvgFVF9kJ89bZhcJdyVaUkP5T6W3qW7nSNvkKCfBI+shUT
+gvSue&#x2F;AqzhCTh4pXR9xO7SYNbXku9J1h0VXNpmH3U2z4GODhYzeeq1+e1QmOFVCR
+zRb&#x2F;45&#x2F;Tf4WT&#x2F;rHMfFzCOzmLW9IsH8k8yfi6gxmOEdRHOIqLqmf9Dgc2+KKnPWhO
+NodtiJD3ZN1f3krdy22bAIzOlfm5cb7hWoUBcRWqk76ZWcmIndffl2cc8MFaFcV3
+GNyVJ+vbeBq1mCC&#x2F;pQPqxwmkvwOmywdu9dDUoXH7+S4EXtwPDSlbS3bQBU1KqSMr
+igXd7Kt4qERYzmc1NLbHG7&#x2F;H&#x2F;DV6KyxuJ4dJ
+=oYnT
+-----END PGP PUBLIC KEY BLOCK-----
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;add-the-public-gpg-key-to-your-keyring&quot;&gt;Add the public GPG key to your keyring&lt;&#x2F;h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;addpubgpgkey&quot;&gt;gpg --import yoges_pubgpg.asc
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;addpubgpgkeybtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;addpubgpgkey&#x27;,&#x27;addpubgpgkeybtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --import yoges_pubgpg.asc
+gpg: key 33C05B4624890348: public key &quot;yogesh (just a test key) &amp;lt;castor@whoisyoges.eu.org&amp;gt;&quot; imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;signing-a-public-key&quot;&gt;Signing a Public Key&lt;&#x2F;h3&gt;
+&lt;p&gt;If you want to keep a file away from prying eyes and ensure that it comes from the person it says it comes from and that it has not be altered, you can sign the file using your private key and encrypt it using the recipient’s public key. The recipient can then decrypt it using his private key and verify the signature using the sender’s public key.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;check-recipient-s-public-key&quot;&gt;Check recipient&#x27;s public key&lt;&#x2F;h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;chkpubgpgkey&quot;&gt;gpg --list-public-keys
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;chkpubgpgkeybtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;chkpubgpgkey&#x27;,&#x27;chkpubgpgkeybtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --list-public-keys
+&#x2F;home&#x2F;useless&#x2F;.gnupg&#x2F;pubring.kbx
+--------------------------------------------
+pub   rsa4096 2022-10-29 [SC]
+      D8C96133251FFDCC8ACFE645AC5C5F04930D8ACF
+uid           [ultimate] Castor (Trusted GPG Key of Castor from https:&#x2F;&#x2F;castorIsDead.xyz; send map of hidden treasure to castor!) &amp;lt;whoisYoges@castorIsDead.xyz&amp;gt;
+sub   rsa4096 2022-10-29 [E]&lt;br&gt;
+pub   rsa4096 2022-10-30 [SC] [expires: 2022-11-01]
+      036A752DE9DF5516B33E87BE33C05B4624890348
+uid           [ unknown] yogesh (just a test key) &amp;lt;castor@whoisyoges.eu.org&amp;gt;
+sub   rsa4096 2022-10-30 [E] [expires: 2022-11-01]
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The &lt;code&gt;[ultimate]&lt;&#x2F;code&gt; one is your personal key. And the other &lt;code&gt;[unknown]&lt;&#x2F;code&gt; is the public key you just added.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;sign-the-public-key-with-your-gpg-key&quot;&gt;Sign the public key with your GPG key&lt;&#x2F;h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;signpubgpgkey&quot;&gt;gpg --sign-key &amp;lt;id&amp;gt;
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;signpubgpgkeybtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;signpubgpgkey&#x27;,&#x27;signpubgpgkeybtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --sign-key 036A752DE9DF5516B33E87BE33C05B4624890348&lt;br&gt;
+pub  rsa4096&#x2F;33C05B4624890348
+     created: 2022-10-30  expires: 2022-11-01  usage: SC
+     trust: unknown       validity: unknown
+sub  rsa4096&#x2F;58A64F87EEA58B99
+     created: 2022-10-30  expires: 2022-11-01  usage: E
+[ unknown] (1). yogesh (just a test key) &amp;lt;castor@whoisyoges.eu.org&amp;gt;&lt;br&gt;&lt;br&gt;
+pub  rsa4096&#x2F;33C05B4624890348
+     created: 2022-10-30  expires: 2022-11-01  usage: SC
+     trust: unknown       validity: unknown
+ Primary key fingerprint: 036A 752D E9DF 5516 B33E  87BE 33C0 5B46 2489 0348&lt;br&gt;
+     yogesh (just a test key) &amp;lt;castor@whoisyoges.eu.org&amp;gt;&lt;br&gt;
+This key is due to expire on 2022-11-01.
+Are you sure that you want to sign this key with your
+key &quot;Castor (Trusted GPG Key of Castor from https:&#x2F;&#x2F;castorIsDead.xyz; send map of hidden treasure to castor!) &amp;lt;whoisYoges@castorIsDead.xyz&amp;gt;&quot; (AC5C5F04930D8ACF)&lt;br&gt;
+Really sign? (y&#x2F;N) y
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;And then you&#x27;ll be prompted to enter your GPG key password, enter that and the key is signed.&lt;br &#x2F;&gt;
+After signing the public key, the &lt;code&gt;[unknown]&lt;&#x2F;code&gt; key is signed and shown as &lt;code&gt;[ full ]&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --list-public-keys
+pub   rsa4096 2022-10-29 [SC]
+      D8C96133251FFDCC8ACFE645AC5C5F04930D8ACF
+uid           [ultimate] Castor (Trusted GPG Key of Castor from https:&#x2F;&#x2F;castorIsDead.xyz; send map of hidden treasure to castor!) &amp;lt;whoisYoges@castorIsDead.xyz&amp;gt;
+sub   rsa4096 2022-10-29 [E]&lt;br&gt;
+pub   rsa4096 2022-10-30 [SC] [expires: 2022-11-01]
+      036A752DE9DF5516B33E87BE33C05B4624890348
+uid           [  full  ] yogesh (just a test key) &amp;lt;castor@whoisyoges.eu.org&amp;gt;
+sub   rsa4096 2022-10-30 [E] [expires: 2022-11-01]
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;encrypt-the-file-you-re-sending-using-the-public-gpg-key&quot;&gt;Encrypt the file you&#x27;re sending, using the public GPG key:&lt;&#x2F;h3&gt;
+&lt;p&gt;In this example &lt;code&gt;message.txt&lt;&#x2F;code&gt; is the secret text message, &lt;code&gt;message.txt.gpg&lt;&#x2F;code&gt; is the encrypted file and &lt;code&gt;castor@whoisYoges.eu.org&lt;&#x2F;code&gt; is the email address from the receiver&#x27;s public key. The encrypted file can be named whatever you like.&lt;&#x2F;p&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;secmsgpgpinc&quot;&gt;gpg --encrypt --output message.txt.gpg --recipient castor@whoisYoges.eu.org message.txt
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;secmsgpgpincbtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;secmsgpgpinc&#x27;,&#x27;secmsgpgpincbtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --encrypt --output message.txt.gpg --recipient castor@whoisYoges.eu.org message.txt
+gpg: checking the trustdb
+gpg: marginals needed: 3  completes needed: 1  trust model: pgp
+gpg: depth: 0  valid:   1  signed:   1  trust: 0-, 0q, 0n, 0m, 0f, 1u
+gpg: depth: 1  valid:   1  signed:   0  trust: 1-, 0q, 0n, 0m, 0f, 0u
+gpg: next trustdb check due at 2022-11-01
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now you can send the encrypted file (&lt;code&gt;message.txt.pgp&lt;&#x2F;code&gt;) to the recipient. It is even safe to upload the file&#x2F;s to a public file sharing service and tell the recipient to download them from there.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;decrypting-using-private-gpg-key&quot;&gt;Decrypting using private GPG key&lt;&#x2F;h2&gt;
+&lt;p&gt;Here the encrypted file is message.txt.pgp and the decrypted file will be named message.txt&lt;&#x2F;p&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;decpgpkey&quot;&gt;gpg --decrypt --output message.txt message.txt.pgp
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;decpgpkeybtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;decpgpkey&#x27;,&#x27;decpgpkeybtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --decrypt --output message.txt message.txt.gpg 
+gpg: encrypted with 4096-bit RSA key, ID 58A64F87EEA58B99, created 2022-10-30
+      &quot;yogesh (just a test key) &amp;lt;castor@whoisyoges.eu.org&amp;gt;&quot;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;deleting-public-keys-from-keyring&quot;&gt;Deleting public keys from keyring&lt;&#x2F;h2&gt;
+&lt;p&gt;Assuming you don&#x27;t need the key any more and wish to delete it:&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;list-the-available-keys-for-the-respective-user&quot;&gt;list the available keys for the respective user&lt;&#x2F;h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;listpubgpgkeytodel&quot;&gt;gpg --list-public-keys
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;listpubgpgkeytodelbtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;listpubgpgkeytodel&#x27;,&#x27;listpubgpgkeytodelbtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --list-public-keys
+pub   rsa4096 2022-10-29 [SC]
+      D8C96133251FFDCC8ACFE645AC5C5F04930D8ACF
+uid           [ultimate] Castor (Trusted GPG Key of Castor from https:&#x2F;&#x2F;castorIsDead.xyz; send map of hidden treasure to castor!) &amp;lt;whoisYoges@castorIsDead.xyz&amp;gt;
+sub   rsa4096 2022-10-29 [E]&lt;br&gt;
+pub   rsa4096 2022-10-30 [SC] [expires: 2022-11-01]
+      036A752DE9DF5516B33E87BE33C05B4624890348
+uid           [  full  ] yogesh (just a test key) &amp;lt;castor@whoisyoges.eu.org&amp;gt;
+sub   rsa4096 2022-10-30 [E] [expires: 2022-11-01]
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;delete-the-unrequired-key&quot;&gt;Delete the unrequired key&lt;&#x2F;h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;delunrequiredpgpkey&quot;&gt;gpg --batch --delete-keys --yes &amp;lt;id&amp;gt;
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;delunrequiredpgpkeybtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;delunrequiredpgpkey&#x27;,&#x27;delunrequiredpgpkeybtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --batch --delete-keys --yes 036A752DE9DF5516B33E87BE33C05B4624890348
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;verify-the-deletion&quot;&gt;Verify the deletion&lt;&#x2F;h4&gt;
+&lt;div class=&quot;highlight&quot;&gt;
+&lt;pre&gt;&lt;code id=&quot;verifygpgkeydelition&quot;&gt;gpg --list-public-keys
+&lt;&#x2F;code&gt;
+&lt;button id=&quot;verifygpgkeydelitionbtn&quot; type=&quot;button&quot; onclick=&quot;copyCode(&#x27;verifygpgkeydelition&#x27;,&#x27;verifygpgkeydelitionbtn&#x27;)&quot; value=&quot;click&quot;&gt;Copy&lt;&#x2F;button&gt;
+&lt;&#x2F;pre&gt;
+&lt;&#x2F;div&gt;
+&lt;pre class=&quot;imagecode&quot;&gt;&lt;code class=&quot;imagecode&quot;&gt;$ gpg --list-public-keys
+pub   rsa4096 2022-10-29 [SC]
+      D8C96133251FFDCC8ACFE645AC5C5F04930D8ACF
+uid           [ultimate] Castor (Trusted GPG Key of Castor from https:&#x2F;&#x2F;castorIsDead.xyz; send map of hidden treasure to castor!) &amp;lt;whoisYoges@castorIsDead.xyz&amp;gt;
+sub   rsa4096 2022-10-29 [E]
+
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</description>
+      </item>
+    </channel>
+</rss>

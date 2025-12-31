@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/images/avatar/avatar.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/assets/images/avatar/avatar.png">
+    <link rel="preload" href="/assets/fonts/FreePixel/FreePixel.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="/assets/css/style.css" as="style">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <meta name="author" content="Castor, whoisyoges@castorisdead.xyz">
+    <meta name="msapplication-TileColor" content="#141414">
+    <meta name="theme-color" content="#141414">
+    <meta name="msapplication-TileImage" content="/assets/images/avatar/avatar.png">
+    <meta name="twitter:creator" content="@whoisYoges">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:locale" content="en_US">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large max-video-preview:-1">
+    <meta name="reply-to" content="whoisyoges@castorisdead.xyz">
+    <meta property="og:email" content="whoisyoges@castorisdead.xyz">
+    <meta name="twitter:site" content="@whoisYoges">
+    
+    <meta name="keywords" content="Encrypt,Encryption key,Disk encryption software,Full disk encryption, File encryption, Hard drive encryption, BitLocker, VeraCrypt, Disk encryption algorithms, Data encryption, lvmonluks, luks encryption">
+    
+    
+    <title>Disk encryption in linux installation</title>
+    <meta name="twitter:title" content="Disk encryption in linux installation">
+    <meta property="og:title" content="Disk encryption in linux installation">
+    <meta name="dc.title" content="Disk encryption in linux installation">
+    
+    
+    <meta name="twitter:description" content="Disk encryption in linux prevents a disk drive, like a hard drive or a portable USB storage device or laptop, from booting up unless the user inputs the correct authentication data. And here we&#x27;re going to encrypt a disk while installing linux and learn how it works?">
+    <meta property="og:description" content="Disk encryption in linux prevents a disk drive, like a hard drive or a portable USB storage device or laptop, from booting up unless the user inputs the correct authentication data. And here we&#x27;re going to encrypt a disk while installing linux and learn how it works?">
+    <meta name="description" content="Disk encryption in linux prevents a disk drive, like a hard drive or a portable USB storage device or laptop, from booting up unless the user inputs the correct authentication data. And here we&#x27;re going to encrypt a disk while installing linux and learn how it works?">
+    <meta name="dc.description" content="Disk encryption in linux prevents a disk drive, like a hard drive or a portable USB storage device or laptop, from booting up unless the user inputs the correct authentication data. And here we&#x27;re going to encrypt a disk while installing linux and learn how it works?">
+    
+    
+    <meta property="twitter:url" content="https://castorisdead.xyz/blog/disk-encryption-in-linux-installation/">
+    <meta property="og:url" content="https://castorisdead.xyz/blog/disk-encryption-in-linux-installation/">
+    <meta property="og:type" content="article">
+    <meta name="dc.relation" content="https://castorisdead.xyz/blog/disk-encryption-in-linux-installation/">
+    
+    
+    <meta name="og:image" content="https://castorisdead.xyz/assets/images/blogs/disk-encryption-in-linux-installation/disk-encryption-in-linux-installation.jpg">
+    <meta name="twitter:image:src" content="https://castorisdead.xyz/assets/images/blogs/disk-encryption-in-linux-installation/disk-encryption-in-linux-installation.jpg">
+    
+</head>
+
+<body id="top">
+    <div class="contents">
+        <div class="twocols">
+            <div class="navcol">
+                <nav>
+                    <div class="fixedcol">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li> <a href="/"> <i class="arrow"></i> Home</a></li>
+                            <li> <a href="/about"> <i class="arrow"></i> About</a> </li>
+                            <li> <a href="/blog"> <i class="arrow"></i> Blog</a> </li>
+                            <li> <a href="/contact"> <i class="arrow"></i> Contact</a> </li>
+                            <li> <a href="/donate"> <i class="arrow"></i> Donate</a> </li>
+                            <li> <a href="/homies"> <i class="arrow"></i> Homies</a> </li>
+                            <li> <a href="/programs"> <i class="arrow"></i> Programs</a> </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="maincol">
+                
+<div id="blog">
+    <h1 id="blog-title">Disk encryption in linux installation</h1>
+    <hr>
+    
+    <small class="blog-date"> 2022-12-22 </small>
+    
+    <p>Disk encryption in linux prevents a disk drive, like a hard drive or a portable USB storage device or laptop, from booting up unless the user inputs the correct authentication data. And here I'm going to talk about my preferred method of disk encryption while installing linux and see how it works?</p>
+<span id="continue-reading"></span>
+<p><img src="/assets/images/blogs/disk-encryption-in-linux-installation/disk-encryption-in-linux-installation.jpg" alt="disk-encryption-in-linux-installation" /></p>
+<h2 id="introduction">Introduction</h2>
+<p>The booting up process for an operating system involves the first section of the disk — the master boot record — informing the system of where to read the first file, which initiates the loading of the operating system. Without encryption, no special instructions are required to interpret the contents of the disk. By default, files are written in plain text.</p>
+<p>When you use disk encryption, this process is modified. The contents of the disk (except for the master boot record) are encrypted using a modern symmetric cipher accessible via a secret key. The master boot record is modified so that it loads this system, which validates the authentication data from the user. If the authentication process is successful, the encryption key is unlocked.</p>
+<p>This system, which varies between different implementations, stores the master key for the device. Authentication information might be a password, a public key-based token, or a fingerprint scan. Once the valid authentication data is read, the master key is decrypted. The master key then remains in the computer’s memory while it’s powered-on. This allows the operating system to first read the disk to boot up, as well as read any other disk contents the user requests while using the computer.</p>
+<h2 id="who-uses-disk-encryption">Who Uses Disk Encryption</h2>
+<p>The main motive of encryption is to keep your data and personal information safe from others. So If anyone other than you has any access to your computer, then in should be encrypted. Also, I highly recommend encrypting the portable devices like laptops and raspberry-pi that has a chance of getting lost, stolen or access by others.</p>
+<h2 id="my-preferred-method-of-disk-encryption">My preferred method of disk encryption</h2>
+<p>So I do have a sigle hard drive in my computer so, I use <a rel="noopener" target="_blank" href="https://wiki.archlinux.org/title/LVM">LVM</a> on <a rel="noopener" target="_blank" href="https://wiki.archlinux.org/title/Dm-crypt">LUKS</a> encrypting all the filesystem and partitions excluding /boot partiton of grub bootloader. If you have multiple hard drives you may want to setup <a rel="noopener" target="_blank" href="https://wiki.archlinux.org/title/RAID">RAID</a> I guess. Checkout <a rel="noopener" target="_blank" href="https://wiki.archlinux.org/title/dm-crypt/Encrypting_an_entire_system">arch wiki</a> for more details about encryption types.</p>
+<h3 id="how-to-set-up-lvm-on-luks">How to Set-up LVM on LUKS</h3>
+<p>Okay Let's directly talk about how we can setup my preferred encryption type for single storage device computers.</p>
+<ol>
+<li>
+<p>Partition your storage into two using <a rel="noopener" target="_blank" href="https://wiki.archlinux.org/title/Partitioning#GUID_Partition_Table">GPT</a>; First one is the boot partition of about 500MB and remaining the second.</p>
+</li>
+<li>
+<p>Let's say <strong>/dev/sda2</strong> is the second partition, then setup LUKS in <strong>/dev/sda2</strong>.<br />
+a. <code>cryptsetup luksFormat /dev/sda2</code><br />
+b. <code>cryptsetup open /dev/sda1 cryptlvm</code><br />
+It can be mapped to any name in place of <code>cryptlvm</code>.<br />
+The decrypted container is now available at /dev/mapper/cryptlvm</p>
+</li>
+<li>
+<p>Prepare the logical volumes
+a. Create a physical volume on top of the opened LUKS container:<br />
+<code>pvcreate /dev/mapper/cryptlvm</code><br />
+b. Create a volume group (in this example named <code>groot</code>, but it can be whatever you want) and add the previously created physical volume to it:<br />
+<code>vgcreate groot /dev/mapper/cryptlvm</code><br />
+c. Create all your logical volumes for root, home, swap and others as per your requirements on the volume group:<br />
+<code>lvcreate -L 8G groot -n swap</code><br />
+<code>lvcreate -L 100G groot -n root</code><br />
+<code>lvcreate -l 100%FREE groot -n home</code></p>
+</li>
+<li>
+<p>Format your file systems<br />
+<code>mkfs.ext4 /dev/groot/root</code><br />
+<code>mkfs.ext4 /dev/groot/home</code><br />
+<code>mkswap /dev/groot/swap</code><br />
+<code>mkfs.fat -F 32 /dev/sda1</code> (for your bootloader(boot partition))</p>
+</li>
+<li>
+<p>Mount your filesystems:<br />
+<code>mount /dev/groot/root /mnt</code><br />
+<code>mount --mkdir /dev/groot/home /mnt/home</code><br />
+<code>swapon /dev/groot/swap</code><br />
+<code>mount --mkdir /dev/sdb1 /mnt/boot</code></p>
+</li>
+<li>
+<p>Now install the OS as you do normally and chroot into the newly installed system.</p>
+</li>
+<li>
+<p>Configuring mkinitcpio:<br />
+a. Make sure you have installed <a rel="noopener" target="_blank" href="https://archlinux.org/packages/core/x86_64/cryptsetup/">cryptsetup</a> and <a rel="noopener" target="_blank" href="https://archlinux.org/packages/core/x86_64/lvm2/">lvm2</a>.<br />
+b. Add the <code>keyboard</code>, <code>keymap</code>, <code>encrypt</code> and <code>lvm2</code> hooks to /etc/mkinitcpio.conf</p>
+<pre><code>HOOKS=(base udev autodetect modconf kms keyboard keymap consolefont block encrypt lvm2 filesystems fsck shutdown)
+</code></pre>
+</li>
+<li>
+<p>Configuring the boot loader<br />
+a. Get the UUID of /dev/sda2 (your LUKS partition) using blkid command.<br />
+<code># blkid</code><br />
+The Output should seem like following:<br />
+<code>/dev/sda2: UUID="27da5fec-b1f2-4b54-b2af-a2832d2c4522" TYPE="crypto_LUKS" PARTUUID="eeef0000-db63-5749-90d4-55c978558643"</code><br />
+b. Set the kernel parameter in boot loader (grub) in /etc/default/grub<br />
+<code>cryptdevice=UUID=Your-UUID:cryptlvm root=/dev/groot/root</code><br />
+It should seem like following:</p>
+<pre><code>GRUB_CMDLINE_LINUX=&quot;cryptdevice=UUID=27da5fec-b1f2-4b54-b2af-a2832d2c4522:cryptlvm root=&#x2F;dev&#x2F;groot&#x2F;root&quot;
+</code></pre>
+</li>
+<li>
+<p>Regenerate the initramfs<br />
+<code>mkinitcpio -P</code></p>
+</li>
+<li>
+<p>Regenerate grub config<br />
+<code>grub-mkconfig -o /boot/grub/grub.cfg</code></p>
+</li>
+</ol>
+
+    
+    <div class="shareable">
+        <p class="shareon">SHARE ON</p>
+        <a title="Share on facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://castorisdead.xyz/blog/disk-encryption-in-linux-installation/" target="_blank" rel="noopener" class="social"><img src="/assets/images/social-icons/facebook.png" alt="facebook icon"> Facebook</a>
+        <a title="Share on twitter" href="https://twitter.com/intent/tweet?url=https://castorisdead.xyz/blog/disk-encryption-in-linux-installation/" target="_blank" rel="noopener" class="social"><img src="/assets/images/social-icons/twitter.png" alt="twitter icon"> Twitter</a>
+        <a href="https://www.linkedin.com/share?url=https://castorisdead.xyz/blog/disk-encryption-in-linux-installation/" target="_blank" rel="noopener" class="social" title="Share on linkedin"><img src="/assets/images/social-icons/linkedin.png" alt="linkedin icon"> LinkedIn</a>
+    </div>
+    
+    
+    <p class="shareable"><a href="/blog/">VIEW ALL POSTS</a></p>
+    
+</div>
+
+                <footer class="center">
+                    <hr>
+                    <div class="sociallinks">
+                        <a title="Get Connected on LinkedIn" href="https://www.linkedin.com/in/whoisYoges" target="_blank" rel="noopener" class="eachsociallinks"><img src="/assets/images/social-icons/linkedin.png" alt="LinkedIn"></a>
+                        <a title="Follow me on Mastodon" href="https://fosstodon.org/@whoisYoges" target="_blank" rel="noopener" class="eachsociallinks"><img src="/assets/images/social-icons/mastodon.png" alt="Mastodon"></a>
+                        <a title="Follow me on Twitter" href="https://twitter.com/whoisYoges" target="_blank" rel="noopener" class="eachsociallinks"><img src="/assets/images/social-icons/x.png" alt="Twitter"></a>
+                        <a title="Check my codes on GitHub" href="https://github.com/whoisYoges" target="_blank" rel="noopener" class="eachsociallinks"><img src="/assets/images/social-icons/github.png" alt="GitHub"></a>
+                        <a href="/atom.xml" target="_blank" rel="noopener" class="eachsociallinks" title="My Rss Feed"><img src="/assets/images/social-icons/rssfeed.png" alt="RSS Feed"></a>
+                    </div>
+                    <p><span class="copyright">&copy;</span> Copyright <a href="/">Castor</a>, <a href="https://www.gnu.org/licenses/agpl-3.0.en.html#license-text" target="_blank" rel="noopener nofollow noreferrer">AGPL-3.0</a> licensed.</p>
+                    <p>Made with <span><img class="heart" src="/assets/images/site/blue-heart.png" alt="&lt;3"></span> in <a href="https://en.wikipedia.org/wiki/Nepal" target="_blank" rel="noopener nofollow noreferrer">Nepal</a> | Powered by <a href="https://www.getzola.org" target="_blank" rel="noopener">zola</a>.</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    
+    <div class="gototop">
+        <a class="gototoplink" href="#top">^</a>
+    </div>
+    
+    
+    
+    
+</body>
+
+</html>
